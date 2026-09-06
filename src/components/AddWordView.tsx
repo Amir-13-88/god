@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import Icon from "./icons";
 import { useApp } from "../store";
-import type { CustomInput } from "../store";
 import { CEFR_ORDER, CEFR_INFO } from "../lib/dictionary";
 import type { CEFR } from "../lib/dictionary";
 import { faNum } from "../lib/leitner";
@@ -24,10 +23,9 @@ function parseBulk(text: string): { w: string; fa: string }[] {
 }
 
 export default function AddWordView() {
-  const { addCustom, imported, removeCustom, toast, baseHeadwords } = useApp();
+  const { addCustom, imported, removeCustom, toast } = useApp();
   const [mode, setMode] = useState<"single" | "bulk">("single");
 
-  /* حالت تکی */
   const [w, setW] = useState("");
   const [fa, setFa] = useState("");
   const [pos, setPos] = useState("n.");
@@ -37,7 +35,6 @@ export default function AddWordView() {
   const [lvl, setLvl] = useState<CEFR>("B1");
   const [saveBox, setSaveBox] = useState(true);
 
-  /* حالت گروهی */
   const [bulk, setBulk] = useState("");
   const bulkParsed = useMemo(() => parseBulk(bulk), [bulk]);
 
@@ -124,7 +121,7 @@ export default function AddWordView() {
                 </select>
               </label>
               <label className="block">
-                <span className="text-[11.5px] font-bold text-mute block mb-1">تلفظ (IPA)</span>
+                <span className="text-[11.5px] font-bold text-mute block mb-1">تلفظ نوشتاری (IPA)</span>
                 <input
                   value={ph}
                   onChange={(e) => setPh(e.target.value)}
@@ -203,7 +200,7 @@ export default function AddWordView() {
               placeholder={"book - کتاب\nwater - آب\nrun: دویدن"}
               className="w-full bg-paper border-2 border-line focus:border-oxford-mid outline-none rounded-xl px-3 py-2.5 text-[13.5px] font-medium resize-y"
             />
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <span className="text-[11.5px] font-bold text-mute">سطح:</span>
               {CEFR_ORDER.map((l) => (
                 <button
@@ -229,7 +226,6 @@ export default function AddWordView() {
         </Card>
       )}
 
-      {/* واژه‌های دستی */}
       {imported.length > 0 && (
         <Card title={`واژه‌های دستی شما (${faNum(imported.length)})`} icon="cards" tone="#178a55">
           <div className="space-y-2 max-h-72 overflow-y-auto no-scrollbar">
@@ -242,9 +238,6 @@ export default function AddWordView() {
                   </div>
                   <div className="text-[12.5px] text-ink font-medium truncate">{e.fa}</div>
                 </div>
-                {baseHeadwords.has(e.w.toLowerCase()) && (
-                  <span className="text-[9.5px] font-bold bg-gold-soft text-gold-deep rounded px-1.5 py-0.5 shrink-0">تکراری</span>
-                )}
                 <button
                   onClick={() => {
                     removeCustom(e.w);

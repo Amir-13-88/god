@@ -21,15 +21,14 @@ export default function SettingsView() {
       window.setTimeout(() => setArmed(false), 2500);
       return;
     }
-    localStorage.removeItem("vaazhe.words.v1");
-    localStorage.removeItem("vaazhe.imported.v1");
-    localStorage.removeItem("vaazhe.enrich.v1");
+    localStorage.removeItem("leitner.words.v1");
+    localStorage.removeItem("leitner.imported.v1");
+    localStorage.removeItem("leitner.enrich.v1");
     location.reload();
   };
 
   return (
     <div className="space-y-4">
-      {/* نصب و آفلاین */}
       <Card title="نصب و کارکرد آفلاین" icon="install" tone="#a86f14">
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-2.5">
@@ -77,12 +76,11 @@ export default function SettingsView() {
           <p className="text-[11.5px] text-mute leading-6 flex gap-2">
             <span className="text-ok shrink-0"><Icon name="info" className="w-4 h-4" /></span>
             بعد از اولین باز شدن، کل برنامه و دیکشنری روی دستگاه کش می‌شود و حتی با اینترنت خیلی ضعیف یا قطع، کامل کار می‌کند.
-            واژه‌هایی که یک بار با اینترنت باز شوند هم برای همیشه آفلاین می‌مانند ({faNum(cachedCount())} واژه کش‌شده).
+            واژه‌هایی که یک بار با اینترنت باز شوند هم برای همیشه آفلاین می‌مانند ({faNum(cachedCount())} واژه‌ی کش‌شده).
           </p>
         </div>
       </Card>
 
-      {/* فایل فرهنگ لغت */}
       <Card title="فایل فرهنگ لغت" icon="download" tone="#0b2e52">
         <div className="space-y-3">
           <button
@@ -124,13 +122,12 @@ export default function SettingsView() {
           />
           <p className="text-[11.5px] text-mute leading-6 flex gap-2">
             <span className="text-oxford-mid shrink-0"><Icon name="info" className="w-4 h-4" /></span>
-            فرهنگ پایه {faNum(baseCount)} واژه را آفلاین دارد؛ بقیه‌ی واژه‌های دنیا با یک اتصال کوتاه اینترنت برای همیشه آفلاین می‌شوند.
+            دیکشنری پایه {faNum(baseCount)} واژه را به‌شکل آفلاین دارد؛ بقیه‌ی واژه‌های دنیا با یک اتصال کوتاه اینترنت برای همیشه آفلاین می‌شوند.
             {importedCount > 0 && <> · {faNum(importedCount)} واژه‌ی دستی هم دارید.</>}
           </p>
         </div>
       </Card>
 
-      {/* درباره‌ی لایتنر */}
       <Card title="روش مرور لایتنر" icon="layers" tone="#178a55">
         <p className="text-[12.5px] text-mute leading-7">
           واژه‌ها در جعبه‌هایی با فاصله‌های <b className="text-ink">{INTERVALS.map((d) => faNum(d)).join("، ")}</b> روز مرور می‌شوند.
@@ -138,17 +135,14 @@ export default function SettingsView() {
         </p>
       </Card>
 
-      {/* پاک کردن */}
       <Card title="داده‌های شما" icon="trash" tone="#ce4b62">
         <button
           onClick={handleClear}
           className={`w-full flex items-center justify-center gap-2 rounded-xl py-3 font-bold text-[13.5px] border-2 transition-all active:scale-[0.98] ${
-            armed
-              ? "bg-bad text-white border-bad"
-              : "bg-card text-bad border-bad/30 hover:border-bad"
+            armed ? "bg-bad text-white border-bad" : "bg-card text-bad border-bad/30 hover:border-bad"
           }`}
         >
-          <Icon name="trash" className="w-4.5 h-4.5" />
+          <Icon name="trash" className="w-4 h-4" />
           {armed ? "مطمئنید؟ دوباره بزنید تا پاک شود" : "پاک کردن همه‌ی داده‌ها"}
         </button>
       </Card>

@@ -59,7 +59,7 @@ export default function WordDetail() {
       try {
         new Audio(audio).play();
         return;
-      } catch { /* fall through */ }
+      } catch { /* از TTS استفاده می‌شود */ }
     }
     speak(detail.w);
   };
@@ -71,7 +71,6 @@ export default function WordDetail() {
         className="relative anim-rise bg-card w-full sm:max-w-lg sm:rounded-2xl rounded-t-2xl shadow-2xl overflow-hidden max-h-[94dvh] flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* سربرگ آکسفوردی */}
         <div className="bg-oxford-deep px-5 pt-4 pb-5 text-white relative overflow-hidden shrink-0">
           <div
             className="absolute inset-0 pointer-events-none"
@@ -119,7 +118,6 @@ export default function WordDetail() {
         </div>
 
         <div className="p-5 space-y-4 overflow-y-auto">
-          {/* تعریف انگلیسی */}
           <section>
             <div className="flex items-center gap-2 mb-1.5">
               <Icon name="book" className="w-4 h-4 text-oxford-mid" />
@@ -138,7 +136,7 @@ export default function WordDetail() {
               <div className="bg-gold-soft/60 rounded-lg p-3.5 text-[12.5px] text-gold-deep leading-6 flex gap-2">
                 <Icon name="wifioff" className="w-4 h-4 shrink-0 mt-0.5" />
                 <span>
-                  برای این واژه تعریف انگلیسی ذخیره نشده. یک بار با اینترنت بازش کنید تا برای همیشه آفلاین شود — معنی فارسیِ آن همیشه در دسترس است.
+                  برای این واژه تعریف انگلیسی ذخیره نشده. یک بار با اینترنت بازش کنید تا برای همیشه آفلاین شود — معنی فارسی‌اش همیشه در دسترس است.
                 </span>
               </div>
             ) : notFound ? (
@@ -149,7 +147,6 @@ export default function WordDetail() {
             ) : null}
           </section>
 
-          {/* مثال */}
           {detail.ex && (
             <section>
               <div className="flex items-center gap-2 mb-1.5">
@@ -162,9 +159,8 @@ export default function WordDetail() {
             </section>
           )}
 
-          {/* وضعیت لایتنر */}
           <section className="bg-paper rounded-xl p-4">
-            <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
               <div className="flex items-center gap-2">
                 <Icon name="layers" className="w-4 h-4 text-oxford-mid" />
                 <h3 className="text-[12.5px] font-bold text-oxford">جایگاه در لایتنر</h3>

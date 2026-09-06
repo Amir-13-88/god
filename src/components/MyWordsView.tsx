@@ -2,9 +2,9 @@ import { useMemo, useState } from "react";
 import Icon from "./icons";
 import { useApp } from "../store";
 import { INTERVALS, BOX_COLORS, BOX_NAMES, isDue, isMastered, dueLabel, faNum } from "../lib/leitner";
-import { WordRow, EmptyState, StatCard, SaveButton } from "./ui";
-import { CEFR_INFO } from "../lib/dictionary";
 import type { CEFR } from "../lib/dictionary";
+import { CEFR_INFO, CEFR_ORDER } from "../lib/dictionary";
+import { WordRow, EmptyState, StatCard, SaveButton } from "./ui";
 
 type Filter = "all" | "due" | "mastered" | number;
 
@@ -21,6 +21,7 @@ export default function MyWordsView() {
 
   const dueCount = list.filter((s) => isDue(s)).length;
   const masteredCount = list.filter(isMastered).length;
+
   const boxCounts = useMemo(() => {
     const c = [0, 0, 0, 0, 0, 0, 0];
     for (const s of list) if (s.box <= 6) c[s.box]++;
@@ -36,7 +37,7 @@ export default function MyWordsView() {
     }
     return c;
   }, [list, entryOf]);
-  const maxLvl = Math.max(1, ...Object.values(levelCounts));
+  const maxLevel = Math.max(1, ...CEFR_ORDER.map((l) => levelCounts[l]));
 
   const filtered = useMemo(() => {
     let r = list;
@@ -56,14 +57,14 @@ export default function MyWordsView() {
       <EmptyState
         icon="cards"
         title="مجموعه‌ی شما خالی است"
-        desc="واژه‌ها را در فرهنگ لغت پیدا کنید و با دکمه‌ی «+» به مجموعه‌ی شخصی خود اضافه کنید تا مرور لایتنر برایشان برنامه‌ریزی شود."
+        desc="واژه‌ها را در دیکشنری پیدا کنید و با دکمه‌ی «+» به مجموعه‌ی شخصی خود اضافه کنید تا مرور لایتنر برایشان برنامه‌ریزی شود."
         action={
           <div className="flex items-center gap-2.5 flex-wrap justify-center">
             <button
               onClick={() => setTab("dict")}
               className="bg-gold text-oxford-deep font-bold text-[13.5px] rounded-full px-6 py-3 hover:bg-[#f0b254] transition-all active:scale-95 shadow-lg shadow-gold/30"
             >
-              رفتن به فرهنگ لغت
+              رفتن به دیکشنری
             </button>
             <button
               onClick={() => setTab("add")}
@@ -86,8 +87,8 @@ export default function MyWordsView() {
       </div>
 
       {/* نردبان لایتنر */}
-      <section className="anim-rise bg-card border border-line rounded-xl p-4">
-        <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
+      <section className="anim-rise bg-card border-2 border-line rounded-xl p-4">
+        <div className="flex items-center justify-between mb-3 flex-wrap gap-1">
           <h2 className="font-display text-lg text-oxford">نردبان لایتنر</h2>
           <span className="text-[11px] text-mute font-bold">فاصله‌های مرور: ۱، ۳، ۷، ۲۱، ۳۰ و ۹۰ روز</span>
         </div>
@@ -107,56 +108,36 @@ export default function MyWordsView() {
                   style={{ width: `${(boxCounts[b] / maxBox) * 100}%`, backgroundColor: BOX_COLORS[b], animationDelay: `${b * 60}ms` }}
                 />
               </span>
-              <span className="w-8 shrink-0 text-end text-[12px] font-bold font-latin text-mute" dir="ltr">
-                {boxCounts[b]}
-              </span>
-              <span className="w-14 shrink-0 text-[10px] text-mute">
-                {b < 6 ? `${faNum(INTERVALS[b])} روز` : "آخرین"}
-              </span>
+              <span className="w-8 shrink-0 text-end text-[12px] font-bold font-latin text-mute" dir="ltr">{boxCounts[b]}</span>
+              <span className="w-14 shrink-0 text-[10px] text-mute">{b < 6 ? `${faNum(INTERVALS[b])} روز` : "آخرین"}</span>
             </button>
           ))}
-          {masteredCount > 0 && (
-            <button
-              onClick={() => setFilter(filter === "mastered" ? "all" : "mastered")}
-              className={`w-full flex items-center gap-2.5 rounded-lg px-2 py-1.5 transition-all ${
-                filter === "mastered" ? "bg-ok-soft ring-2 ring-ok/40" : "hover:bg-paper"
-              }`}
-            >
-              <span className="w-14 shrink-0 text-start text-[11.5px] font-bold text-ok">یادگرفته</span>
-              <span className="flex-1 h-5 bg-paper rounded-md overflow-hidden">
-                <span className="block h-full rounded-md bar-grow bg-ok" style={{ width: `${(masteredCount / maxBox) * 100}%` }} />
-              </span>
-              <span className="w-8 shrink-0 text-end text-[12px] font-bold font-latin text-ok" dir="ltr">
-                {masteredCount}
-              </span>
-              <span className="w-14 shrink-0 text-[10px] text-ok font-bold">پایان مسیر</span>
-            </button>
-          )}
         </div>
       </section>
 
-      {/* نمودار سطح */}
-      {list.length > 0 && (
-        <section className="anim-rise bg-card border border-line rounded-xl p-4">
-          <h2 className="font-display text-lg text-oxford mb-3">سطح واژه‌های شما</h2>
-          <div className="flex items-end gap-2" dir="ltr">
-            {(Object.keys(levelCounts) as CEFR[]).map((l) => (
-              <div key={l} className="flex-1 text-center">
-                <div className="text-[11px] font-bold font-latin text-ink mb-1">{levelCounts[l]}</div>
-                <div className="h-16 bg-paper rounded-t-lg overflow-hidden flex items-end">
-                  <div
-                    className="w-full rounded-t-lg bar-grow"
-                    style={{ height: `${(levelCounts[l] / maxLvl) * 100}%`, backgroundColor: CEFR_INFO[l].color, animationDelay: "120ms" }}
-                  />
-                </div>
-                <div className="font-latin text-[11px] font-bold mt-1" style={{ color: CEFR_INFO[l].color }}>
-                  {l}
-                </div>
+      {/* پخش سطح */}
+      <section className="anim-rise bg-card border-2 border-line rounded-xl p-4">
+        <h2 className="font-display text-lg text-oxford mb-3">سطح واژه‌های شما (CEFR)</h2>
+        <div className="flex gap-2 items-end" dir="ltr">
+          {CEFR_ORDER.map((l, i) => (
+            <div key={l} className="flex-1 text-center">
+              <div className="h-20 bg-paper rounded-lg flex items-end overflow-hidden">
+                <div
+                  className="w-full rounded-lg bar-grow"
+                  style={{
+                    height: `${(levelCounts[l] / maxLevel) * 100}%`,
+                    backgroundColor: CEFR_INFO[l].color,
+                    animationDelay: `${i * 80}ms`,
+                    minHeight: levelCounts[l] > 0 ? "8px" : "0",
+                  }}
+                />
               </div>
-            ))}
-          </div>
-        </section>
-      )}
+              <div className="font-latin font-bold text-[11px] mt-1.5" style={{ color: CEFR_INFO[l].color }}>{l}</div>
+              <div className="text-[11px] font-bold text-ink">{faNum(levelCounts[l])}</div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* فیلتر سریع */}
       <div className="flex gap-2 flex-wrap">
@@ -188,7 +169,6 @@ export default function MyWordsView() {
         )}
       </div>
 
-      {/* فهرست */}
       {filtered.length === 0 ? (
         <p className="text-center text-mute text-[13px] py-8">در این بخش واژه‌ای نیست.</p>
       ) : (
@@ -204,7 +184,7 @@ export default function MyWordsView() {
                 delay={i * 20}
                 trailing={
                   <span
-                    className={`hidden sm:inline text-[10.5px] font-bold rounded-full px-2 py-1 ${
+                    className={`hidden sm:inline text-[10.5px] font-bold rounded-full px-2 py-1 shrink-0 ${
                       isDue(s) ? "bg-gold-soft text-gold-deep" : isMastered(s) ? "bg-ok-soft text-ok" : "bg-paper text-mute"
                     }`}
                   >
@@ -212,6 +192,19 @@ export default function MyWordsView() {
                   </span>
                 }
               />
+            );
+          })}
+          {filtered.map((s) => {
+            const e = entryOf.get(s.w);
+            if (e) return null;
+            return (
+              <div key={s.w} className="bg-card border-2 border-line rounded-xl px-4 py-3 flex items-center gap-3">
+                <div className="flex-1 min-w-0">
+                  <span className="ltr-i font-latin font-bold text-[16px] text-oxford">{s.w}</span>
+                  <span className="block text-[11px] text-mute">واژه‌ی دستی — در دیکشنری پایه نیست</span>
+                </div>
+                <SaveButton entry={{ id: s.w, w: s.w, pos: "", en: "", fa: "", ph: "", lvl: "B1" }} />
+              </div>
             );
           })}
         </div>

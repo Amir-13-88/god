@@ -8,19 +8,15 @@ import { speakWord } from "./lib/enrich";
 
 export type Tab = "dict" | "my" | "add" | "review" | "settings";
 
-export interface Toast {
-  id: number;
-  msg: string;
-  kind: "ok" | "bad" | "info";
-}
+export interface Toast { id: number; msg: string; kind: "ok" | "bad" | "info" }
 
 interface InstallPromptEvent extends Event {
   prompt: () => Promise<void>;
   userChoice: Promise<{ outcome: string }>;
 }
 
-const LS_WORDS = "vaazhe.words.v1";
-const LS_IMPORTED = "vaazhe.imported.v1";
+const LS_WORDS = "leitner.words.v1";
+const LS_IMPORTED = "leitner.imported.v1";
 
 function load<T>(key: string, fallback: T): T {
   try {
@@ -34,9 +30,7 @@ function load<T>(key: string, fallback: T): T {
 function persist(key: string, value: unknown) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
-  } catch {
-    /* حافظه پر */
-  }
+  } catch { /* حافظه پر */ }
 }
 
 export interface CustomInput {
@@ -52,6 +46,8 @@ export interface CustomInput {
 interface AppCtx {
   tab: Tab;
   setTab: (t: Tab) => void;
+  dictReady: boolean;
+  baseCount: number;
   saved: Record<string, SavedWord>;
   isSaved: (w: string) => boolean;
   toggleSave: (e: Entry) => void;
@@ -60,8 +56,6 @@ interface AppCtx {
   removeSaved: (w: string) => void;
   imported: Entry[];
   allEntries: Entry[];
-  dictReady: boolean;
-  baseCount: number;
   baseHeadwords: Set<string>;
   addCustom: (list: CustomInput[], opts: { save: boolean; prefix: string }) => number;
   removeCustom: (w: string) => void;
@@ -96,8 +90,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [detail, setDetail] = useState<Entry | null>(null);
   const [installEvt, setInstallEvt] = useState<InstallPromptEvent | null>(null);
   const [online, setOnline] = useState(navigator.onLine);
-
-  /* دیکشنری به‌صورت تنبل در پس‌زمینه بارگذاری می‌شود — پوسته فوراً بالاست */
   const [baseEntries, setBaseEntries] = useState<Entry[]>([]);
   const [dictReady, setDictReady] = useState(false);
 
@@ -111,23 +103,26 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => persist(LS_WORDS, saved), [saved]);
   useEffect(() => persist(LS_IMPORTED, imported), [imported]);
 
-  /* بارگذاری دیکشنری؛ اگر دانلود قطع شد دوباره تلاش می‌شود */
+  /* بارگذاری تنبل دیکشنری — پوسته فوراً بالا می‌آید، داده‌ها پشت‌صحنه */
   useEffect(() => {
     let mounted = true;
-    const doLoad = () =>
-      loadBaseEntries()
-        .then((entries) => {
+    loadBaseEntries()
+      .then((entries) => {
+        if (!mounted) return;
+        setBaseEntries(entries);
+        setDictReady(true);
+      })
+      .catch(() => {
+        window.setTimeout(() => {
           if (!mounted) return;
-          setBaseEntries(entries);
-          setDictReady(true);
-        })
-        .catch(() => {
-          if (mounted) window.setTimeout(doLoad, 2500);
-        });
-    doLoad();
-    return () => {
-      mounted = false;
-    };
+          loadBaseEntries().then((entries) => {
+            if (!mounted) return;
+            setBaseEntries(entries);
+            setDictReady(true);
+          });
+        }, 2500);
+      });
+    return () => { mounted = false; };
   }, []);
 
   useEffect(() => {
@@ -141,7 +136,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  /* رویداد نصب PWA */
   useEffect(() => {
     const handler = (e: Event) => {
       e.preventDefault();
@@ -151,13 +145,29 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("beforeinstallprompt", handler);
   }, []);
 
+  /* کش کامل برنامه در service worker — بعد از اولین بار، آفلاین کامل */
+  useEffect(() => {
+    const send = () => {
+      if (!("serviceWorker" in navigator)) return;
+      navigator.serviceWorker.ready.then((reg) => {
+        const urls = performance
+          .getEntriesByType("resource")
+          .map((r) => r.name)
+          .filter((u) => u.startsWith(location.origin))
+          .concat([location.href]);
+        reg.active?.postMessage({ type: "PRECACHE", urls: [...new Set(urls)] });
+      });
+    };
+    const t = window.setTimeout(send, 2000);
+    return () => window.clearTimeout(t);
+  }, []);
+
   const toast = useCallback((msg: string, kind: Toast["kind"] = "info") => {
     const id = Date.now() + Math.random();
     setToasts((ts) => [...ts, { id, msg, kind }]);
     window.setTimeout(() => setToasts((ts) => ts.filter((t) => t.id !== id)), 3200);
   }, []);
 
-  /* ---------- واژه‌های من ---------- */
   const isSaved = useCallback((w: string) => Boolean(saved[w]), [saved]);
 
   const toggleSave = useCallback(
@@ -201,7 +211,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  /* ---------- داده‌ها ---------- */
   const allEntries = useMemo(() => [...baseEntries, ...imported], [baseEntries, imported]);
   const baseHeadwords = useMemo(
     () => new Set(baseEntries.map((e) => e.w.toLowerCase())),
@@ -243,7 +252,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setImported((prev) => prev.filter((e) => e.w !== w));
   }, []);
 
-  /* ---------- PWA ---------- */
   const promptInstall = useCallback(async () => {
     if (!installEvt) return "unavailable" as const;
     installEvt.prompt();
@@ -255,7 +263,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
     return "dismissed" as const;
   }, [installEvt]);
 
-  /* ---------- تلفظ ---------- */
   const speak = useCallback((w: string) => {
     speakWord(w, () => {
       try {
@@ -264,13 +271,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
         u.rate = 0.92;
         speechSynthesis.cancel();
         speechSynthesis.speak(u);
-      } catch {
-        /* تلفظ در دسترس نیست */
-      }
+      } catch { /* تلفظ در دسترس نیست */ }
     });
   }, []);
 
-  /* ---------- ورودی و خروجی فایل ---------- */
   const exportDict = useCallback(() => {
     const data = allEntries.map((e) => ({
       w: e.w, pos: e.pos, en: e.en, fa: e.fa, ex: e.ex ?? "", ph: e.ph, lvl: e.lvl,
@@ -279,7 +283,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "oxford-learner-dictionary-fa.json";
+    a.download = "dictionary-english-fa.json";
     a.click();
     URL.revokeObjectURL(url);
     toast("فایل فرهنگ لغت دانلود شد", "ok");
@@ -304,10 +308,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
   );
 
   const value: AppCtx = {
-    tab, setTab,
+    tab, setTab, dictReady, baseCount: baseEntries.length,
     saved, isSaved, toggleSave, saveMany, reviewResult, removeSaved,
-    imported, allEntries, dictReady, baseCount: baseEntries.length, baseHeadwords,
-    addCustom, removeCustom,
+    imported, allEntries, baseHeadwords, addCustom, removeCustom,
     importedCount: imported.length,
     detail, openDetail: (e) => setDetail(e), closeDetail: () => setDetail(null),
     toasts, toast,

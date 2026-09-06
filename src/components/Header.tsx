@@ -15,9 +15,9 @@ function Logo() {
       </div>
       <div>
         <h1 className="font-display text-[22px] leading-7 text-white">
-          واژه‌آموز <span className="text-gold">آکسفورد</span>
+          لایتنر <span className="text-gold">زبان</span>
         </h1>
-        <p className="ltr-i text-[10.5px] tracking-[0.18em] text-white/50 font-latin uppercase">Oxford Learner's Pocket</p>
+        <p className="ltr-i text-[10.5px] tracking-[0.18em] text-white/50 font-latin uppercase">Leitner English</p>
       </div>
     </div>
   );
@@ -48,7 +48,7 @@ export function InstallModal({ onClose }: { onClose: () => void }) {
             <ol className="list-decimal list-inside space-y-1.5 text-ink/85 leading-6">
               <li>روی منوی <b className="ltr-i font-latin">⋮</b> (سه‌نقطه) بالای مرورگر بزنید.</li>
               <li>گزینه‌ی <b>«افزودن به صفحه‌ی اصلی»</b> یا <b>«نصب برنامه»</b> را انتخاب کنید.</li>
-              <li>تأیید کنید — آیکون واژه‌آموز به صفحه‌ی خانه اضافه می‌شود.</li>
+              <li>تأیید کنید — آیکون برنامه به صفحه‌ی خانه اضافه می‌شود.</li>
             </ol>
           </div>
           <div className="bg-gold-soft/60 rounded-xl p-4">
@@ -62,7 +62,7 @@ export function InstallModal({ onClose }: { onClose: () => void }) {
           </div>
           <p className="text-[12px] text-mute leading-6 flex gap-2">
             <span className="text-ok shrink-0"><Icon name="wifi" className="w-4 h-4" /></span>
-            پس از نصب، برنامه مثل یک اپ واقعی تمام‌صفحه باز می‌شود و حتی بدون اینترنت هم کامل کار می‌کند.
+            پس از نصب، برنامه تمام‌صفحه باز می‌شود و حتی بدون اینترنت هم کامل کار می‌کند.
           </p>
         </div>
         <button
@@ -147,15 +147,5 @@ export default function Header() {
 
       {showHelp && <InstallModal onClose={() => setShowHelp(false)} />}
     </>
-  );
-}
-
-export function DictStatusChip() {
-  const { dictReady, allEntries } = useApp();
-  return (
-    <span className="bg-ok-soft text-ok rounded-full px-2.5 py-0.5 text-[10.5px] font-bold flex items-center gap-1">
-      <Icon name="wifi" className="w-3 h-3" strokeWidth={2.6} />
-      {dictReady ? `${faNum(allEntries.length)} واژه آفلاین` : "در حال بارگذاری…"}
-    </span>
   );
 }
