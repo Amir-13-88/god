@@ -1,7 +1,7 @@
 /*
- * تکمیل واژه‌ها — تعریف انگلیسی و تلفظ برای واژه‌هایی که در فرهنگ پایه نیستند.
- * هنگام اتصال به اینترنت از API رایگان دریافت و در localStorage کش می‌شود؛
- * بنابراین بعد از یک بار دیدن، واژه برای همیشه آفلاین می‌شود.
+ * تکمیل واژه‌ها — برای واژه‌هایی که تعریف/تلفذ ندارند (مثل واژه‌های دستی یا کم‌کاربرد).
+ * با یک اتصال اینترنت از API رایگان دریافت و برای همیشه در localStorage کش می‌شود؛
+ * یعنی بعد از یک بار دیدن، آن واژه هم آفلاین می‌شود.
  */
 export interface EnrichData {
   en?: string;
@@ -10,7 +10,7 @@ export interface EnrichData {
   source: "api";
 }
 
-const LS_KEY = "vaazhe.enrich.v1";
+const LS_KEY = "leitner.enrich.v1";
 const MAX_CACHE = 3000;
 
 let cache: Record<string, EnrichData> = (() => {
@@ -32,9 +32,7 @@ function scheduleSave() {
         for (const k of keys.slice(0, keys.length - MAX_CACHE)) delete cache[k];
       }
       localStorage.setItem(LS_KEY, JSON.stringify(cache));
-    } catch {
-      /* حافظه پر */
-    }
+    } catch { /* حافظه پر */ }
   }, 400);
 }
 
@@ -49,7 +47,6 @@ export function cachedCount(): number {
   return Object.keys(cache).length;
 }
 
-/** دریافت تعریف و تلفظ برای یک واژه (اول کش، بعد API) */
 export function enrichWord(word: string): Promise<EnrichData | null> {
   const key = norm(word);
   const cached = getCached(key);
@@ -59,7 +56,6 @@ export function enrichWord(word: string): Promise<EnrichData | null> {
   const p = (async () => {
     if (!navigator.onLine) return null;
     try {
-      /* تایم‌اوت ۸ ثانیه — روی اینترنت ضعیف هرگز معطل نمی‌ماند */
       const ctrl = new AbortController();
       const timer = window.setTimeout(() => ctrl.abort(), 8000);
       const res = await fetch(
@@ -105,7 +101,7 @@ export function enrichWord(word: string): Promise<EnrichData | null> {
   return p;
 }
 
-/** پخش تلفظ صوتی — اول صدای واقعی کش‌شده، بعد TTS مرورگر */
+/** تلفظ صوتی: اول صدای واقعی کش‌شده، بعد TTS مرورگر */
 export function speakWord(word: string, fallbackTTS: () => void) {
   const cached = getCached(word);
   if (cached?.audio) {

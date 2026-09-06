@@ -1,5 +1,5 @@
-/* واژه‌آموز آکسفورد — service worker: کش خودترمیم برای کارکرد کاملاً آفلاین */
-const VERSION = "oxfordfa-v1";
+/* لایتنر زبان — service worker: کش خودترمیم برای کارکرد کاملاً آفلاین */
+const VERSION = "leitner-fa-v1";
 const CORE = "core-" + VERSION;
 const RUNTIME = "runtime-" + VERSION;
 const FONTS = "fonts-" + VERSION;
@@ -49,7 +49,6 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
 
-  /* فونت‌های گوگل: کش دائم */
   if (url.hostname.includes("fonts.googleapis.com") || url.hostname.includes("fonts.gstatic.com")) {
     e.respondWith(
       caches.open(FONTS).then(async (cache) => {
@@ -67,7 +66,6 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  /* ناوبری: شبکه، با fallback به کش — آفلاین هم باز می‌شود */
   if (req.mode === "navigate") {
     e.respondWith(
       fetch(req)
@@ -81,7 +79,6 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  /* بقیه منابع هم‌دامنه: اول کش (سریع‌ترین)، بعد شبکه + کش */
   if (url.origin === self.location.origin) {
     e.respondWith(
       caches.match(req).then(

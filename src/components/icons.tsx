@@ -1,10 +1,12 @@
+import type { ReactNode } from "react";
+
 interface IconProps {
   name: string;
   className?: string;
   strokeWidth?: number;
 }
 
-const PATHS: Record<string, React.ReactNode> = {
+const PATHS: Record<string, ReactNode> = {
   search: (<><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></>),
   book: (<><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z" /><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-4.5" /><path d="M9 7h7M9 11h5" /></>),
   cards: (<><rect x="3" y="7" width="13" height="14" rx="2" /><path d="M8 3h11a2 2 0 0 1 2 2v11" /><path d="M7 13l3-3 3 3M7 17h6" /></>),
@@ -30,9 +32,8 @@ const PATHS: Record<string, React.ReactNode> = {
   sparkle: (<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z" />),
   phone: (<><rect x="6" y="2" width="12" height="20" rx="3" /><path d="M10 18h4" /></>),
   globe: (<><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z" /></>),
-  shuffle: (<><path d="M3 7h4l10 10h4" /><path d="m17 13 4 4-4 4" /><path d="M3 17h4l3-3" /><path d="M14 7h7" /><path d="m17 3 4 4-4 4" /></>),
-  moon: (<path d="M20 13.5A8 8 0 0 1 10.5 4 8 8 0 1 0 20 13.5Z" />),
-  arrow: (<><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></>),
+  pencil: (<><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3Z" /><path d="m15 5 4 4" /></>),
+  flame: (<path d="M12 2c1 4-4 6-4 11a4 4 0 0 0 8 0c0-2-1-3.5-1-3.5s3 1.5 3 4.5a7 7 0 1 1-14 0C4 8 10 6 12 2Z" />),
 };
 
 export default function Icon({ name, className = "w-5 h-5", strokeWidth = 2 }: IconProps) {

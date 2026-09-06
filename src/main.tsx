@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import ErrorBoundary from "./components/ErrorBoundary";
 
-/* علامت‌گذاری لودر به‌عنوان سوارشده و پنهان کردن آن */
 const boot = document.getElementById("boot");
 if (boot) {
   boot.dataset.mounted = "1";
@@ -19,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   </React.StrictMode>
 );
 
-/* ثبت service worker برای کارکرد کاملاً آفلاین */
+/* Service worker: بعد از اولین بارگذاری، برنامه کاملاً آفلاین می‌شود */
 if ("serviceWorker" in navigator && !location.hostname.includes("localhost")) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -35,16 +34,7 @@ if ("serviceWorker" in navigator && !location.hostname.includes("localhost")) {
             });
           }
         });
-        /* کش کامل منابع بارگذاری‌شده برای آفلاینِ کامل */
-        window.setTimeout(() => {
-          const urls = performance
-            .getEntriesByType("resource")
-            .map((r) => r.name)
-            .filter((u) => u.startsWith(location.origin))
-            .concat([location.href]);
-          reg.active?.postMessage({ type: "PRECACHE", urls: [...new Set(urls)] });
-        }, 1500);
       })
-      .catch(() => { /* بدون SW هم با کش مرورگر کار می‌کند */ });
+      .catch(() => { /* کش مرورگر همچنان کمک می‌کند */ });
   });
 }

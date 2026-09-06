@@ -1,1233 +1,618 @@
-/* فرهنگ لغت آفلاین — بخش G تا Z و واژه‌های پیشرفته | فرمت: word|pos|fa|ipa|lvl */
-export const DICT_B = `achieve|v.|دست یافتن|/əˈtʃiːv/|B1
-achievement|n.|دستاورد|/əˈtʃiːvmənt/|B1
-adventure|n.|ماجراجویی|/ədˈventʃə/|A2
-affect|v.|تأثیر گذاشتن|/əˈfekt/|B1
-afford|v.|توانایی مالی داشتن|/əˈfɔːd/|B1
-agent|n.|نماینده|/ˈeɪdʒənt/|B1
-alarm|n.|هشدار|/əˈlɑːm/|A2
-album|n.|آلبوم|/ˈælbəm/|A2
-already|adv.|از قبل|/ɔːlˈredi/|A2
-amount|n.|مقدار|/əˈmaʊnt/|B1
-ancient|adj.|باستانی|/ˈeɪnʃənt/|B1
-announce|v.|اعلام کردن|/əˈnaʊns/|B1
-annual|adj.|سالانه|/ˈænjuəl/|B1
-anxious|adj.|مضطرب|/ˈæŋkʃəs/|B1
-apartment|n.|آپارتمان|/əˈpɑːtmənt/|A2
-appear|v.|ظاهر شدن|/əˈpɪə/|A2
-appearance|n.|ظاهر|/əˈpɪərəns/|B1
-apply|v.|درخواست دادن|/əˈplaɪ/|B1
-appoint|v.|منصوب کردن|/əˈpɔɪnt/|B2
-appreciate|v.|قدردانی کردن|/əˈpriːʃieɪt/|B1
-approach|v.|نزدیک شدن|/əˈprəʊtʃ/|B1
-approve|v.|تأیید کردن|/əˈpruːv/|B1
-argue|v.|بحث کردن|/ˈɑːɡjuː/|B1
-argument|n.|بحث|/ˈɑːɡjumənt/|B1
-army|n.|ارتش|/ˈɑːmi/|B1
-arrange|v.|مرتب کردن|/əˈreɪndʒ/|B1
-arrest|v.|دستگیر کردن|/əˈrest/|B1
-article|n.|مقاله|/ˈɑːtɪkl/|B1
-artist|n.|هنرمند|/ˈɑːtɪst/|A2
-asleep|adj.|در خواب|/əˈsliːp/|A2
-assistant|n.|دستیار|/əˈsɪstənt/|B1
-assume|v.|فرض کردن|/əˈsjuːm/|B1
-atmosphere|n.|جو|/ˈætməsfɪə/|B1
-attach|v.|پیوست کردن|/əˈtætʃ/|B1
-attack|n.|حمله|/əˈtæk/|B1
-attempt|v.|تلاش کردن|/əˈtempt/|B1
-attend|v.|شرکت کردن|/əˈtend/|B1
-attention|n.|توجه|/əˈtenʃn/|B1
-attract|v.|جذب کردن|/əˈtrækt/|B1
-audience|n.|تماشاگران|/ˈɔːdiəns/|B1
-author|n.|نویسنده|/ˈɔːθə/|B1
-available|adj.|در دسترس|/əˈveɪləbl/|B1
-average|adj.|متوسط|/ˈævərɪdʒ/|B1
-avoid|v.|اجتناب کردن|/əˈvɔɪd/|B1
-award|n.|جایزه|/əˈwɔːd/|B1
-aware|adj.|آگاه|/əˈweə/|B1
-awful|adj.|وحشتناک|/ˈɔːfl/|A2
-background|n.|پیشینه|/ˈbækɡraʊnd/|B1
-balance|n.|تعادل|/ˈbæləns/|B1
-band|n.|گروه موسیقی|/bænd/|A2
-bargain|n.|معامله به‌صرفه|/ˈbɑːɡɪn/|B1
-basic|adj.|پایه‌ای|/ˈbeɪsɪk/|B1
-battery|n.|باتری|/ˈbætəri/|A2
-beauty|n.|زیبایی|/ˈbjuːti/|B1
-behave|v.|رفتار کردن|/bɪˈheɪv/|B1
-behaviour|n.|رفتار|/bɪˈheɪvjə/|B1
-benefit|n.|مزیت|/ˈbenɪfɪt/|B1
-bill|n.|صورتحساب|/bɪl/|A2
-birth|n.|تولد|/bɜːθ/|B1
-bit|n.|کمی|/bɪt/|A2
-bite|v.|گاز گرفتن|/baɪt/|A2
-blame|v.|سرزنش کردن|/bleɪm/|B1
-blank|adj.|خالی|/blæŋk/|B1
-block|n.|بلوک|/blɒk/|B1
-blood|n.|خون|/blʌd/|B1
-blow|v.|وزیدن|/bləʊ/|A2
-board|n.|تخته|/bɔːd/|A2
-borrow|v.|قرض گرفتن|/ˈbɒrəʊ/|A2
-boss|n.|رئیس|/bɒs/|A2
-bother|v.|اذیت کردن|/ˈbɒðə/|B1
-bottom|n.|پایین|/ˈbɒtəm/|A2
-brain|n.|مغز|/breɪn/|B1
-brave|adj.|شجاع|/breɪv/|A2
-breath|n.|نفس|/breθ/|B1
-breathe|v.|نفس کشیدن|/briːð/|B1
-bright|adj.|روشن|/braɪt/|A2
-brilliant|adj.|درخشان|/ˈbrɪliənt/|B1
-broad|adj.|پهن|/brɔːd/|B1
-budget|n.|بودجه|/ˈbʌdʒɪt/|B1
-burn|v.|سوختن|/bɜːn/|A2
-burst|v.|ترکیدن|/bɜːst/|B1
-button|n.|دکمه|/ˈbʌtn/|A2
-cabin|n.|کابین|/ˈkæbɪn/|B1
-cable|n.|کابل|/ˈkeɪbl/|B1
-calm|adj.|آرام|/kɑːm/|A2
-camp|n.|اردوگاه|/kæmp/|A2
-campaign|n.|کمپین|/kæmˈpeɪn/|B1
-cancel|v.|لغو کردن|/ˈkænsl/|B1
-cancer|n.|سرطان|/ˈkænsə/|B1
-candidate|n.|نامزد|/ˈkændɪdət/|B1
-capable|adj.|توانا|/ˈkeɪpəbl/|B1
-captain|n.|کاپیتان|/ˈkæptɪn/|B1
-career|n.|حرفه|/kəˈrɪə/|B1
-careless|adj.|بی‌احتیاط|/ˈkeələs/|B1
-carpet|n.|فرش|/ˈkɑːpɪt/|A2
-cash|n.|نقد|/kæʃ/|A2
-cast|n.|بازیگران|/kɑːst/|B1
-celebrate|v.|جشن گرفتن|/ˈselɪbreɪt/|A2
-celebrity|n.|افراد مشهور|/səˈlebrəti/|B1
-central|adj.|مرکزی|/ˈsentrəl/|B1
-ceremony|n.|مراسم|/ˈserəməni/|B1
-certain|adj.|مطمئن|/ˈsɜːtn/|B1
-chain|n.|زنجیر|/tʃeɪn/|B1
-challenge|n.|چالش|/ˈtʃælɪndʒ/|B1
-champion|n.|قهرمان|/ˈtʃæmpiən/|B1
-chance|n.|شانس|/tʃɑːns/|B1
-character|n.|شخصیت|/ˈkærəktə/|B1
-charge|v.|شارژ کردن|/tʃɑːdʒ/|B1
-charity|n.|خیریه|/ˈtʃærəti/|B1
-chart|n.|نمودار|/tʃɑːt/|B1
-chat|v.|گپ زدن|/tʃæt/|A2
-check|v.|بررسی کردن|/tʃek/|A2
-cheer|v.|تشویق کردن|/tʃɪə/|B1
-chemical|adj.|شیمیایی|/ˈkemɪkl/|B1
-chest|n.|سینه|/tʃest/|B1
-chief|n.|رئیس|/tʃiːf/|B1
-choice|n.|انتخاب|/tʃɔɪs/|B1
-church|n.|کلیسا|/tʃɜːtʃ/|A2
-cigarette|n.|سیگار|/ˌsɪɡəˈret/|B1
-circle|n.|دایره|/ˈsɜːkl/|A2
-citizen|n.|شهروند|/ˈsɪtɪzn/|B1
-claim|v.|ادعا کردن|/kleɪm/|B1
-clap|v.|کف زدن|/klæp/|A2
-classic|adj.|کلاسیک|/ˈklæsɪk/|B1
-climate|n.|اقلیم|/ˈklaɪmət/|B1
-clinic|n.|درمانگاه|/ˈklɪnɪk/|B1
-coach|n.|مربی|/kəʊtʃ/|B1
-coal|n.|زغال‌سنگ|/kəʊl/|B1
-coast|n.|ساحل|/kəʊst/|B1
-code|n.|کد|/kəʊd/|B1
-coin|n.|سکه|/kɔɪn/|A2
-colleague|n.|همکار|/ˈkɒliːɡ/|B1
-comment|n.|نظر|/ˈkɒment/|B1
-commit|v.|متعهد شدن|/kəˈmɪt/|B1
-communication|n.|ارتباط|/kəˌmjuːnɪˈkeɪʃn/|B1
-community|n.|جامعه|/kəˈmjuːnəti/|B1
-compare|v.|مقایسه کردن|/kəmˈpeə/|B1
-complain|v.|شکایت کردن|/kəmˈpleɪn/|B1
-complete|adj.|کامل|/kəmˈpliːt/|B1
-complex|adj.|پیچیده|/ˈkɒmpleks/|B1
-concert|n.|کنسرت|/ˈkɒnsət/|A2
-condition|n.|شرایط|/kənˈdɪʃn/|B1
-conference|n.|کنفرانس|/ˈkɒnfərəns/|B1
-confidence|n.|اعتمادبه‌نفس|/ˈkɒnfɪdəns/|B1
-confirm|v.|تأیید کردن|/kənˈfɜːm/|B1
-confuse|v.|گیج کردن|/kənˈfjuːz/|B1
-connect|v.|وصل کردن|/kəˈnekt/|B1
-consider|v.|در نظر گرفتن|/kənˈsɪdə/|B1
-consist|v.|تشکیل شدن|/kənˈsɪst/|B1
-constant|adj.|دائمی|/ˈkɒnstənt/|B1
-contain|v.|شامل بودن|/kənˈteɪn/|B1
-content|n.|محتوا|/ˈkɒntent/|B1
-continue|v.|ادامه دادن|/kənˈtɪnjuː/|B1
-control|n.|کنترل|/kənˈtrəʊl/|B1
-convenient|adj.|راحت|/kənˈviːniənt/|B1
-conversation|n.|مکالمه|/ˌkɒnvəˈseɪʃn/|B1
-convince|v.|متقاعد کردن|/kənˈvɪns/|B1
-cool|adj.|باحال|/kuːl/|A2
-copy|v.|کپی کردن|/ˈkɒpi/|A2
-costume|n.|لباس نمایشی|/ˈkɒstjuːm/|B1
-cottage|n.|کلبه|/ˈkɒtɪdʒ/|B1
-cotton|n.|پنبه|/ˈkɒtn/|B1
-cough|v.|سرفه کردن|/kɒf/|A2
-council|n.|شورا|/ˈkaʊnsl/|B1
-count|n.|شمردن|/kaʊnt/|A2
-couple|n.|زوج|/ˈkʌpl/|B1
-courage|n.|شجاعت|/ˈkʌrɪdʒ/|B1
-cover|v.|پوشاندن|/ˈkʌvə/|A2
-crash|v.|تصادف کردن|/kræʃ/|B1
-creative|adj.|خلاق|/kriˈeɪtɪv/|B1
-crime|n.|جرم|/kraɪm/|B1
-criminal|n.|مجرم|/ˈkrɪmɪnl/|B1
-crisis|n.|بحران|/ˈkraɪsɪs/|B1
-critic|n.|منتقد|/ˈkrɪtɪk/|B1
-crowd|n.|جمعیت|/kraʊd/|B1
-cruel|adj.|بی‌رحم|/ˈkruːəl/|B1
-cultural|adj.|فرهنگی|/ˈkʌltʃərəl/|B1
-culture|n.|فرهنگ|/ˈkʌltʃə/|B1
-cure|n.|درمان|/kjʊə/|B1
-curious|adj.|کنجکاو|/ˈkjʊəriəs/|B1
-current|adj.|فعلی|/ˈkʌrənt/|B1
-curtain|n.|پرده|/ˈkɜːtn/|A2
-curve|n.|منحنی|/kɜːv/|B1
-custom|n.|رسم|/ˈkʌstəm/|B1
-customer|n.|مشتری|/ˈkʌstəmə/|B1
-daily|adj.|روزانه|/ˈdeɪli/|B1
-damage|n.|آسیب|/ˈdæmɪdʒ/|B1
-dangerous|adj.|خطرناک|/ˈdeɪndʒərəs/|A2
-dare|v.|جرئت کردن|/deə/|B1
-data|n.|داده|/ˈdeɪtə/|B1
-deal|v.|سر و کار داشتن|/diːl/|B1
-dear|adj.|عزیز|/dɪə/|A2
-death|n.|مرگ|/deθ/|B1
-debt|n.|بدهی|/det/|B1
-decade|n.|دهه|/ˈdekeɪd/|B1
-decision|n.|تصمیم|/dɪˈsɪʒn/|B1
-declare|v.|اعلام کردن|/dɪˈkleə/|B1
-decrease|v.|کاهش دادن|/dɪˈkriːs/|B1
-deeply|adv.|عمیقاً|/ˈdiːpli/|B1
-defeat|v.|شکست دادن|/dɪˈfiːt/|B1
-defend|v.|دفاع کردن|/dɪˈfend/|B1
-define|v.|تعریف کردن|/dɪˈfaɪn/|B1
-degree|n.|مدرک؛ درجه|/dɪˈɡriː/|B1
-delay|v.|به تأخیر انداختن|/dɪˈleɪ/|B1
-delight|n.|خوشی|/dɪˈlaɪt/|B1
-deliver|v.|تحویل دادن|/dɪˈlɪvə/|B1
-demand|n.|تقاضا|/dɪˈmɑːnd/|B1
-deny|v.|انکار کردن|/dɪˈnaɪ/|B1
-depend|v.|بستگی داشتن|/dɪˈpend/|B1
-deposit|n.|ودیعه|/dɪˈpɒzɪt/|B1
-describe|v.|توصیف کردن|/dɪˈskraɪb/|B1
-desert|n.|بیابان|/ˈdezət/|A2
-design|n.|طراحی|/dɪˈzaɪn/|B1
-desire|n.|میل|/dɪˈzaɪə/|B1
-destroy|v.|نابود کردن|/dɪˈstrɔɪ/|B1
-detail|n.|جزئیات|/ˈdiːteɪl/|B1
-detect|v.|کشف کردن|/dɪˈtekt/|B1
-develop|v.|توسعه دادن|/dɪˈveləp/|B1
-device|n.|دستگاه|/dɪˈvaɪs/|B1
-devote|v.|اختصاص دادن|/dɪˈvəʊt/|B1
-diet|n.|رژیم|/ˈdaɪət/|B1
-differ|v.|متفاوت بودن|/ˈdɪfə/|B1
-difficulty|n.|دشواری|/ˈdɪfɪkəlti/|B1
-dig|v.|کندن|/dɪɡ/|A2
-digital|adj.|دیجیتال|/ˈdɪdʒɪtl/|B1
-direct|adj.|مستقیم|/dəˈrekt/|B1
-direction|n.|جهت|/dəˈrekʃn/|B1
-disappear|v.|ناپدید شدن|/ˌdɪsəˈpɪə/|B1
-disappoint|v.|ناامید کردن|/ˌdɪsəˈpɔɪnt/|B1
-disaster|n.|فاجعه|/dɪˈzɑːstə/|B1
-discount|n.|تخفیف|/ˈdɪskaʊnt/|B1
-discuss|v.|بحث کردن|/dɪˈskʌs/|B1
-disease|n.|بیماری|/dɪˈziːz/|B1
-dismiss|v.|رد کردن|/dɪsˈmɪs/|B1
-display|v.|نمایش دادن|/dɪˈspleɪ/|B1
-distance|n.|فاصله|/ˈdɪstəns/|B1
-distribute|v.|توزیع کردن|/dɪˈstrɪbjuːt/|B1
-district|n.|منطقه|/ˈdɪstrɪkt/|B1
-divide|v.|تقسیم کردن|/dɪˈvaɪd/|B1
-document|n.|سند|/ˈdɒkjumənt/|B1
-dollar|n.|دلار|/ˈdɒlə/|A1
-domestic|adj.|خانگی|/dəˈmestɪk/|B1
-double|adj.|دوبرابر|/ˈdʌbl/|A2
-doubt|n.|شک|/daʊt/|B1
-dozen|n.|دوجین|/ˈdʌzn/|B1
-drama|n.|درام|/ˈdrɑːmə/|B1
-draw|v.|جذب کردن|/drɔː/|A2
-drawer|n.|کشو|/drɔː/|A2
-earn|v.|درآمد داشتن|/ɜːn/|B1
-earthquake|n.|زلزله|/ˈɜːθkweɪk/|B1
-eastern|adj.|شرقی|/ˈiːstən/|B1
-economic|adj.|اقتصادی|/ˌiːkəˈnɒmɪk/|B1
-economy|n.|اقتصاد|/ɪˈkɒnəmi/|B1
-edge|n.|لبه|/edʒ/|B1
-education|n.|آموزش|/ˌedʒuˈkeɪʃn/|B1
-effect|n.|اثر|/ɪˈfekt/|B1
-effort|n.|تلاش|/ˈefət/|B1
-elderly|adj.|سالخورده|/ˈeldəli/|B1
-elect|v.|انتخاب کردن|/ɪˈlekt/|B1
-electric|adj.|الکتریکی|/ɪˈlektrɪk/|A2
-element|n.|عنصر|/ˈelɪmənt/|B1
-elevator|n.|آسانسور|/ˈelɪveɪtə/|A2
-emergency|n.|اورژانس|/ɪˈmɜːdʒənsi/|B1
-emotion|n.|احساس|/ɪˈməʊʃn/|B1
-employ|v.|استخدام کردن|/ɪmˈplɔɪ/|B1
-employee|n.|کارمند|/ɪmˈplɔɪiː/|B1
-employer|n.|کارفرما|/ɪmˈplɔɪə/|B1
-empty|v.|خالی کردن|/ˈempti/|A2
-encourage|v.|تشویق کردن|/ɪnˈkʌrɪdʒ/|B1
-energy|n.|انرژی|/ˈenədʒi/|B1
-engine|n.|موتور|/ˈendʒɪn/|B1
-engineer|n.|مهندس|/ˌendʒɪˈnɪə/|B1
-enormous|adj.|عظیم|/ɪˈnɔːməs/|B1
-ensure|v.|تضمین کردن|/ɪnˈʃʊə/|B1
-entertain|v.|سرگرم کردن|/ˌentəˈteɪn/|B1
-entire|adj.|کامل|/ɪnˈtaɪə/|B1
-entrance|n.|ورودی|/ˈentrəns/|B1
-environment|n.|محیط زیست|/ɪnˈvaɪrənmənt/|B1
-equal|adj.|برابر|/ˈiːkwəl/|B1
-equipment|n.|تجهیزات|/ɪˈkwɪpmənt/|B1
-escape|v.|فرار کردن|/ɪˈskeɪp/|B1
-essential|adj.|ضروری|/ɪˈsenʃl/|B1
-establish|v.|تأسیس کردن|/ɪˈstæblɪʃ/|B1
-estimate|v.|تخمین زدن|/ˈestɪmeɪt/|B1
-evaluate|v.|ارزیابی کردن|/ɪˈvæljueɪt/|B1
-event|n.|رویداد|/ɪˈvent/|B1
-evidence|n.|مدرک|/ˈevɪdəns/|B1
-evil|adj.|شرور|/ˈiːvl/|B1
-exact|adj.|دقیق|/ɪɡˈzækt/|B1
-examine|v.|معاینه کردن|/ɪɡˈzæmɪn/|B1
-exchange|v.|مبادله کردن|/ɪksˈtʃeɪndʒ/|B1
-excite|v.|هیجان‌زده کردن|/ɪkˈsaɪt/|B1
-excuse|n.|بهانه|/ɪkˈskjuːs/|A2
-exist|v.|وجود داشتن|/ɪɡˈzɪst/|B1
-expand|v.|گسترش دادن|/ɪkˈspænd/|B1
-expect|v.|انتظار داشتن|/ɪkˈspekt/|B1
-expense|n.|هزینه|/ɪkˈspens/|B1
-experience|n.|تجربه|/ɪkˈspɪəriəns/|B1
-experiment|n.|آزمایش|/ɪkˈsperɪmənt/|B1
-expert|n.|متخصص|/ˈekspɜːt/|B1
-explain|v.|توضیح دادن|/ɪkˈspleɪn/|A2
-explore|v.|کاوش کردن|/ɪkˈsplɔː/|B1
-export|n.|صادرات|/ˈekspɔːt/|B1
-express|v.|ابراز کردن|/ɪkˈspres/|B1
-extend|v.|گسترش دادن|/ɪkˈstend/|B1
-extra|adj.|اضافی|/ˈekstrə/|A2
-extreme|adj.|شدید|/ɪkˈstriːm/|B1
-facility|n.|تسهیلات|/fəˈsɪləti/|B1
-fail|v.|شکست خوردن|/feɪl/|B1
-fair|adj.|عادلانه|/feə/|B1
-faith|n.|ایمان|/feɪθ/|B1
-familiar|adj.|آشنا|/fəˈmɪliə/|B1
-fan|n.|پنکه؛ هوادار|/fæn/|A2
-fancy|adj.|لوکس|/ˈfænsi/|B1
-fare|n.|کرایه|/feə/|B1
-fashion|n.|مد|/ˈfæʃn/|B1
-fasten|v.|بستن|/ˈfɑːsn/|B1
-fault|n.|تقصیر|/fɔːlt/|B1
-fear|n.|ترس|/fɪə/|B1
-feature|n.|ویژگی|/ˈfiːtʃə/|B1
-fee|n.|هزینه|/fiː/|B1
-feed|v.|غذا دادن|/fiːd/|B1
-female|adj.|مونث|/ˈfiːmeɪl/|B1
-fetch|v.|آوردن|/fetʃ/|B1
-fever|n.|تب|/ˈfiːvə/|A2
-figure|n.|شکل؛ عدد|/ˈfɪɡə/|B1
-file|n.|پرونده|/faɪl/|B1
-final|adj.|نهایی|/ˈfaɪnl/|B1
-finance|n.|امور مالی|/ˈfaɪnæns/|B1
-fine|n.|جریمه|/faɪn/|B1
-fix|v.|تعمیر کردن|/fɪks/|A2
-flag|n.|پرچم|/flæɡ/|A2
-flat|adj.|صاف|/flæt/|B1
-flee|v.|گریختن|/fliː/|B1
-flexible|adj.|انعطاف‌پذیر|/ˈfleksəbl/|B1
-flight|n.|پرواز|/flaɪt/|B1
-float|v.|شناور بودن|/fləʊt/|B1
-flood|n.|سیل|/flʌd/|B1
-flow|v.|جاری شدن|/fləʊ/|B1
-focus|v.|تمرکز کردن|/ˈfəʊkəs/|B1
-fold|v.|تا کردن|/fəʊld/|B1
-folk|n.|مردم|/fəʊk/|B1
-fool|n.|احمق|/fuːl/|B1
-forbid|v.|ممنوع کردن|/fəˈbɪd/|B1
-force|n.|نیرو|/fɔːs/|B1
-forecast|n.|پیش‌بینی|/ˈfɔːkɑːst/|B1
-foreign|adj.|خارجی|/ˈfɒrən/|B1
-forever|adv.|برای همیشه|/fərˈevə/|B1
-formal|adj.|رسمی|/ˈfɔːml/|B1
-former|adj.|قبلی|/ˈfɔːmə/|B1
-fortunate|adj.|خوش‌شانس|/ˈfɔːtʃənət/|B1
-forward|adv.|جلو|/ˈfɔːwəd/|B1
-freeze|v.|یخ زدن|/friːz/|B1
-frequent|adj.|مکرر|/ˈfriːkwənt/|B1
-fresh|adj.|تازه|/freʃ/|A2
-fridge|n.|یخچال|/frɪdʒ/|A1
-frighten|v.|ترساندن|/ˈfraɪtn/|B1
-fuel|n.|سوخت|/ˈfjuːəl/|B1
-fulfil|v.|برآورده کردن|/fʊlˈfɪl/|B1
-funeral|n.|مراسم تدفین|/ˈfjuːnərəl/|B1
-furniture|n.|مبلمان|/ˈfɜːnɪtʃə/|B1
-further|adv.|بیشتر|/ˈfɜːðə/|B1
-gain|v.|به دست آوردن|/ɡeɪn/|B1
-gallery|n.|گالری|/ˈɡæləri/|B1
-gap|n.|شکاف|/ɡæp/|B1
-garage|n.|گاراژ|/ˈɡærɑːʒ/|A2
-gas|n.|گاز|/ɡæs/|A2
-gate|n.|دروازه|/ɡeɪt/|A1
-gather|v.|گردآوری کردن|/ˈɡæðə/|B1
-general|adj.|کلی|/ˈdʒenrəl/|B1
-generous|adj.|سخاوتمند|/ˈdʒenərəs/|B1
-gentle|adj.|ملایم|/ˈdʒentl/|B1
-gently|adv.|به‌آرامی|/ˈdʒentli/|B1
-giant|adj.|غول‌پیکر|/ˈdʒaɪənt/|B1
-global|adj.|جهانی|/ˈɡləʊbl/|B1
-glory|n.|شکوه|/ˈɡlɔːri/|B1
-goods|n.|کالاها|/ɡʊdz/|B1
-govern|v.|حکومت کردن|/ˈɡʌvn/|B1
-government|n.|دولت|/ˈɡʌvənmənt/|B1
-grab|v.|چنگ زدن|/ɡræb/|B1
-grade|n.|نمره|/ɡreɪd/|B1
-graduate|v.|فارغ‌التحصیل شدن|/ˈɡrædʒueɪt/|B1
-grain|n.|غلات|/ɡreɪn/|B1
-grand|adj.|باشکوه|/ɡrænd/|B1
-grant|v.|اعطا کردن|/ɡrɑːnt/|B1
-grateful|adj.|سپاس‌گزار|/ˈɡreɪtfl/|B1
-growth|n.|رشد|/ɡrəʊθ/|B1
-guarantee|n.|ضمانت|/ˌɡærənˈtiː/|B1
-guard|n.|نگهبان|/ɡɑːd/|B1
-guest|n.|مهمان|/ɡest/|A2
-guide|n.|راهنما|/ɡaɪd/|B1
-guilty|adj.|مقصر|/ˈɡɪlti/|B1
-habit|n.|عادت|/ˈhæbɪt/|B1
-hall|n.|سالن|/hɔːl/|A2
-handle|v.|رسیدگی کردن|/ˈhændl/|B1
-handsome|adj.|خوش‌تیپ|/ˈhænsəm/|A2
-hang|v.|آویزان کردن|/hæŋ/|B1
-harm|n.|آسیب|/hɑːm/|B1
-harvest|n.|برداشت محصول|/ˈhɑːvɪst/|B1
-heat|n.|گرما|/hiːt/|B1
-heel|n.|پاشنه|/hiːl/|B1
-height|n.|ارتفاع|/haɪt/|B1
-hero|n.|قهرمان|/ˈhɪərəʊ/|B1
-hide|v.|پنهان کردن|/haɪd/|B1
-hire|v.|استخدام کردن|/ˈhaɪə/|B1
-historic|adj.|تاریخی|/hɪˈstɒrɪk/|B1
-hit|n.|ضربه|/hɪt/|B1
-hold|n.|نگه داشتن|/həʊld/|B1
-hollow|adj.|توخالی|/ˈhɒləʊ/|B1
-honest|adj.|صادق|/ˈɒnɪst/|B1
-honour|n.|افتخار|/ˈɒnə/|B1
-hook|n.|قلاب|/hʊk/|B1
-horrible|adj.|وحشتناک|/ˈhɒrəbl/|B1
-horror|n.|وحشت|/ˈhɒrə/|B1
-host|n.|میزبان|/həʊst/|B1
-huge|adj.|عظیم|/hjuːdʒ/|B1
-human|adj.|انسانی|/ˈhjuːmən/|B1
-humorous|adj.|طنزآمیز|/ˈhjuːmərəs/|B1
-hunt|v.|شکار کردن|/hʌnt/|B1
-hurt|adj.|آزرده|/hɜːt/|B1
-ideal|adj.|ایده‌آل|/aɪˈdiːəl/|B1
-identify|v.|شناسایی کردن|/aɪˈdentɪfaɪ/|B1
-identity|n.|هویت|/aɪˈdentəti/|B1
-ignore|v.|نادیده گرفتن|/ɪɡˈnɔː/|B1
-illegal|adj.|غیرقانونی|/ɪˈliːɡl/|B1
-illness|n.|بیماری|/ˈɪlnəs/|B1
-illustrate|v.|نشان دادن|/ˈɪləstreɪt/|B1
-image|n.|تصویر|/ˈɪmɪdʒ/|B1
-immediate|adj.|فوری|/ɪˈmiːdiət/|B1
-immigrant|n.|مهاجر|/ˈɪmɪɡrənt/|B1
-impact|n.|تأثیر|/ˈɪmpækt/|B1
-import|n.|واردات|/ˈɪmpɔːt/|B1
-impose|v.|تحمیل کردن|/ɪmˈpəʊz/|B1
-impress|v.|تحت تأثیر قرار دادن|/ɪmˈpres/|B1
-impression|n.|برداشت|/ɪmˈpreʃn/|B1
-incident|n.|حادثه|/ˈɪnsɪdənt/|B1
-income|n.|درآمد|/ˈɪnkʌm/|B1
-increase|v.|افزایش دادن|/ɪnˈkriːs/|B1
-indeed|adv.|در واقع|/ɪnˈdiːd/|B1
-independent|adj.|مستقل|/ˌɪndɪˈpendənt/|B1
-indicate|v.|نشان دادن|/ˈɪndɪkeɪt/|B1
-individual|n.|فرد|/ˌɪndɪˈvɪdʒuəl/|B1
-industry|n.|صنعت|/ˈɪndəstri/|B1
-infect|v.|آلوده کردن|/ɪnˈfekt/|B1
-influence|n.|نفوذ|/ˈɪnfluəns/|B1
-inform|v.|اطلاع دادن|/ɪnˈfɔːm/|B1
-initial|adj.|اولیه|/ɪˈnɪʃl/|B1
-injure|v.|مجروح کردن|/ˈɪndʒə/|B1
-inner|adj.|داخلی|/ˈɪnə/|B1
-innocent|adj.|بی‌گناه|/ˈɪnəsnt/|B1
-input|n.|ورودی|/ˈɪnpʊt/|B1
-insect|n.|حشره|/ˈɪnsekt/|B1
-insert|v.|وارد کردن|/ɪnˈsɜːt/|B1
-insist|v.|اصرار کردن|/ɪnˈsɪst/|B1
-inspect|v.|بازرسی کردن|/ɪnˈspekt/|B1
-inspire|v.|الهام بخشیدن|/ɪnˈspaɪə/|B1
-install|v.|نصب کردن|/ɪnˈstɔːl/|B1
-instance|n.|نمونه|/ˈɪnstəns/|B1
-institute|n.|مؤسسه|/ˈɪnstɪtjuːt/|B1
-instruction|n.|دستورالعمل|/ɪnˈstrʌkʃn/|B1
-instrument|n.|ساز|/ˈɪnstrəmənt/|B1
-insurance|n.|بیمه|/ɪnˈʃʊərəns/|B1
-intelligent|adj.|باهوش|/ɪnˈtelɪdʒənt/|B1
-intend|v.|قصد داشتن|/ɪnˈtend/|B1
-international|adj.|بین‌المللی|/ˌɪntəˈnæʃnəl/|B1
-interpret|v.|تفسیر کردن|/ɪnˈtɜːprɪt/|B1
-interrupt|v.|وقفه انداختن|/ˌɪntəˈrʌpt/|B1
-interview|n.|مصاحبه|/ˈɪntəvjuː/|B1
-introduce|v.|معرفی کردن|/ˌɪntrəˈdjuːs/|B1
-invent|v.|اختراع کردن|/ɪnˈvent/|B1
-invest|v.|سرمایه‌گذاری کردن|/ɪnˈvest/|B1
-investigate|v.|تحقیق کردن|/ɪnˈvestɪɡeɪt/|B1
-invite|v.|دعوت کردن|/ɪnˈvaɪt/|A2
-involve|v.|شامل شدن|/ɪnˈvɒlv/|B1
-iron|n.|اتو؛ آهن|/ˈaɪən/|A2
-issue|n.|مسئله|/ˈɪʃuː/|B1
-item|n.|مورد|/ˈaɪtəm/|B1
-journey|n.|سفر|/ˈdʒɜːni/|B1
-joy|n.|شادی|/dʒɔɪ/|B1
-judge|n.|قاضی|/dʒʌdʒ/|B1
-juice|n.|آبمیوه|/dʒuːs/|A1
-junior|adj.|پایه‌تر|/ˈdʒuːniə/|B1
-jury|n.|هیئت منصفه|/ˈdʒʊəri/|B1
-justice|n.|عدالت|/ˈdʒʌstɪs/|B1
-keen|adj.|مشتاق|/kiːn/|B1
-knowledge|n.|دانش|/ˈnɒlɪdʒ/|B1
-lack|n.|کمبود|/læk/|B1
-ladder|n.|نردبان|/ˈlædə/|B1
-lady|n.|خانم|/ˈleɪdi/|A2
-landlord|n.|صاحب‌خانه|/ˈlændlɔːd/|B1
-landscape|n.|منظره|/ˈlændskeɪp/|B1
-lane|n.|کوچه|/leɪn/|B1
-latest|adj.|آخرین|/ˈleɪtɪst/|B1
-law|n.|قانون|/lɔː/|B1
-lawyer|n.|وکیل|/ˈlɔːjə/|B1
-lay|v.|گذاشتن|/leɪ/|B1
-lazy|adj.|تنبل|/ˈleɪzi/|A2
-lead|v.|رهبری کردن|/liːd/|B1
-leader|n.|رهبر|/ˈliːdə/|B1
-league|n.|لیگ|/liːɡ/|B1
-lean|v.|تکیه دادن|/liːn/|B1
-leather|n.|چرم|/ˈleðə/|B1
-lecture|n.|سخنرانی|/ˈlektʃə/|B1
-legal|adj.|قانونی|/ˈliːɡl/|B1
-leisure|n.|اوقات فراغت|/ˈleʒə/|B1
-lend|v.|قرض دادن|/lend/|B1
-length|n.|طول|/leŋθ/|B1
-less|det.|کمتر|/les/|A2
-level|n.|سطح|/ˈlevl/|B1
-license|n.|مجوز|/ˈlaɪsns/|B1
-lift|v.|بلند کردن|/lɪft/|A2
-likely|adj.|محتمل|/ˈlaɪkli/|B1
-limit|n.|محدودیت|/ˈlɪmɪt/|B1
-link|n.|پیوند|/lɪŋk/|B1
-liquid|n.|مایع|/ˈlɪkwɪd/|B1
-literature|n.|ادبیات|/ˈlɪtrətʃə/|B1
-lively|adj.|پرشور|/ˈlaɪvli/|B1
-load|n.|بار|/ləʊd/|B1
-loan|n.|وام|/ləʊn/|B1
-local|adj.|محلی|/ˈləʊkl/|B1
-location|n.|موقعیت|/ləʊˈkeɪʃn/|B1
-lock|n.|قفل|/lɒk/|A2
-log|n.|کنده|/lɒɡ/|B1
-lonely|adj.|تنها|/ˈləʊnli/|B1
-look|n.|نگاه|/lʊk/|A1
-loose|adj.|شل|/luːs/|B1
-lord|n.|ارباب|/lɔːd/|B1
-lorry|n.|کامیون|/ˈlɒri/|B1
-loss|n.|زیان|/lɒs/|B1
-lost|adj.|گمشده|/lɒst/|A2
-loudly|adv.|با صدای بلند|/ˈlaʊdli/|B1
-lovely|adj.|دلنشین|/ˈlʌvli/|A2
-low|adj.|پایین|/ləʊ/|B1
-loyal|adj.|وفادار|/ˈlɔɪəl/|B1
-lucky|adj.|خوش‌شانس|/ˈlʌki/|A2
-luggage|n.|چمدان|/ˈlʌɡɪdʒ/|B1
-luxury|n.|تجمل|/ˈlʌkʃəri/|B1
-mad|adj.|دیوانه|/mæd/|A2
-main|adj.|اصلی|/meɪn/|B1
-maintain|v.|حفظ کردن|/meɪnˈteɪn/|B1
-major|adj.|عمده|/ˈmeɪdʒə/|B1
-majority|n.|اکثریت|/məˈdʒɒrəti/|B1
-manage|v.|مدیریت کردن|/ˈmænɪdʒ/|B1
-manager|n.|مدیر|/ˈmænɪdʒə/|B1
-manner|n.|رفتار|/ˈmænə/|B1
-manufacture|v.|تولید کردن|/ˌmænjuˈfæktʃə/|B1
-many|pron.|زیاد|/ˈmeni/|A1
-margin|n.|حاشیه|/ˈmɑːdʒɪn/|B1
-mark|n.|نمره|/mɑːk/|B1
-mass|n.|جرم|/mæs/|B1
-massive|adj.|عظیم|/ˈmæsɪv/|B1
-master|n.|استاد|/ˈmɑːstə/|B1
-match|n.|مسابقه|/mætʃ/|B1
-material|n.|ماده|/məˈtɪəriəl/|B1
-matter|n.|موضوع|/ˈmætə/|B1
-maximum|n.|حداکثر|/ˈmæksɪməm/|B1
-mayor|n.|شهردار|/meə/|B1
-meal|n.|وعده|/miːl/|A1
-measure|v.|اندازه گرفتن|/ˈmeʒə/|B1
-medical|adj.|پزشکی|/ˈmedɪkl/|B1
-medium|n.|رسانه|/ˈmiːdiəm/|B1
-meeting|n.|جلسه|/ˈmiːtɪŋ/|A2
-melody|n.|ملودی|/ˈmelədi/|B1
-mental|adj.|ذهنی|/ˈmentl/|B1
-mention|v.|اشاره کردن|/ˈmenʃn/|B1
-menu|n.|منو|/ˈmenjuː/|A1
-metal|n.|فلز|/ˈmetl/|B1
-method|n.|روش|/ˈmeθəd/|B1
-middle|n.|وسط|/ˈmɪdl/|A1
-might|v.|شاید|/maɪt/|A2
-mild|adj.|ملایم|/maɪld/|B1
-military|adj.|نظامی|/ˈmɪlətri/|B1
-mind|n.|ذهن|/maɪnd/|B1
-mine|pron.|مال من|/maɪn/|A1
-minimum|n.|حداقل|/ˈmɪnɪməm/|B1
-minister|n.|وزیر|/ˈmɪnɪstə/|B1
-minor|adj.|جزئی|/ˈmaɪnə/|B1
-mirror|n.|آینه|/ˈmɪrə/|A2
-mix|v.|مخلوط کردن|/mɪks/|B1
-model|n.|مدل|/ˈmɒdl/|B1
-modern|adj.|مدرن|/ˈmɒdn/|B1
-modest|adj.|متواضع|/ˈmɒdɪst/|B1
-moment|n.|لحظه|/ˈməʊmənt/|B1
-monitor|n.|نمایشگر|/ˈmɒnɪtə/|B1
-mood|n.|خلق‌وخو|/muːd/|B1
-moral|adj.|اخلاقی|/ˈmɒrəl/|B1
-moreover|adv.|علاوه بر این|/mɔːrˈəʊvə/|B1
-motivate|v.|انگیزه دادن|/ˈməʊtɪveɪt/|B1
-motor|n.|موتور|/ˈməʊtə/|B1
-mum|n.|مامان|/mʌm/|A1
-murder|n.|قتل|/ˈmɜːdə/|B1
-muscle|n.|عضله|/ˈmʌsl/|B1
-mystery|n.|رمز و راز|/ˈmɪstri/|B1
-narrow|adj.|باریک|/ˈnærəʊ/|B1
-national|adj.|ملی|/ˈnæʃnəl/|B1
-native|adj.|بومی|/ˈneɪtɪv/|B1
-nature|n.|طبیعت|/ˈneɪtʃə/|B1
-naval|adj.|دریایی|/ˈneɪvl/|B1
-necessary|adj.|ضروری|/ˈnesəsəri/|B1
-neck|n.|گردن|/nek/|A1
-negative|adj.|منفی|/ˈneɡətɪv/|B1
-negotiate|v.|مذاکره کردن|/nɪˈɡəʊʃieɪt/|B1
-neighbour|n.|همسایه|/ˈneɪbə/|A1
-nervous|adj.|عصبی|/ˈnɜːvəs/|B1
-network|n.|شبکه|/ˈnetwɜːk/|B1
-news|n.|اخبار|/njuːz/|A1
-newspaper|n.|روزنامه|/ˈnjuːzpeɪpə/|A1
-noise|n.|سروصدا|/nɔɪz/|A2
-normal|adj.|عادی|/ˈnɔːml/|B1
-northern|adj.|شمالی|/ˈnɔːðən/|B1
-notice|v.|متوجه شدن|/ˈnəʊtɪs/|B1
-novel|n.|رمان|/ˈnɒvl/|B1
-nuclear|adj.|هسته‌ای|/ˈnjuːkliə/|B1
-numerous|adj.|بیشمار|/ˈnjuːmərəs/|B1
-object|n.|شیء|/ˈɒbdʒɪkt/|B1
-observe|v.|مشاهده کردن|/əbˈzɜːv/|B1
-obtain|v.|به دست آوردن|/əbˈteɪn/|B1
-obvious|adj.|آشکار|/ˈɒbviəs/|B1
-occasion|n.|مناسبت|/əˈkeɪʒn/|B1
-occupy|v.|اشغال کردن|/ˈɒkjupaɪ/|B1
-occur|v.|رخ دادن|/əˈkɜː/|B1
-ocean|n.|اقیانوس|/ˈəʊʃn/|B1
-odd|adj.|عجیب|/ɒd/|B1
-offer|v.|پیشنهاد دادن|/ˈɒfə/|B1
-official|adj.|رسمی|/əˈfɪʃl/|B1
-often|adv.|اغلب|/ˈɒfn/|A1
-operate|v.|اداره کردن|/ˈɒpəreɪt/|B1
-opinion|n.|نظر|/əˈpɪnjən/|B1
-opportunity|n.|فرصت|/ˌɒpəˈtjuːnəti/|B1
-opposite|adj.|مقابل|/ˈɒpəzɪt/|B1
-option|n.|گزینه|/ˈɒpʃn/|B1
-ordinary|adj.|معمولی|/ˈɔːdnri/|B1
-organ|n.|اندام|/ˈɔːɡən/|B1
-organize|v.|سازماندهی کردن|/ˈɔːɡənaɪz/|B1
-original|adj.|اصلی|/əˈrɪdʒənl/|B1
-outcome|n.|نتیجه|/ˈaʊtkʌm/|B1
-outdoor|adj.|بیرونی|/ˈaʊtdɔː/|B1
-output|n.|خروجی|/ˈaʊtpʊt/|B1
-oven|n.|فر|/ˈʌvn/|A2
-overall|adj.|کلی|/ˌəʊvərˈɔːl/|B1
-overcome|v.|غلبه کردن|/ˌəʊvəˈkʌm/|B1
-owe|v.|بدهکار بودن|/əʊ/|B1
-owner|n.|مالک|/ˈəʊnə/|B1
-pace|n.|سرعت|/peɪs/|B1
-pack|v.|بسته‌بندی کردن|/pæk/|B1
-package|n.|بسته|/ˈpækɪdʒ/|B1
-pain|n.|درد|/peɪn/|B1
-pair|n.|جفت|/peə/|A2
-palace|n.|کاخ|/ˈpæləs/|B1
-pan|n.|تابه|/pæn/|A2
-panel|n.|پنل|/ˈpænl/|B1
-panic|n.|هراس|/ˈpænɪk/|B1
-parking|n.|پارکینگ|/ˈpɑːkɪŋ/|A2
-participate|v.|شرکت کردن|/pɑːˈtɪsɪpeɪt/|B1
-particular|adj.|خاص|/pəˈtɪkjələ/|B1
-partner|n.|شریک|/ˈpɑːtnə/|B1
-passenger|n.|مسافر|/ˈpæsɪndʒə/|B1
-passion|n.|شوق|/ˈpæʃn/|B1
-path|n.|مسیر|/pɑːθ/|B1
-patient|n.|بیمار|/ˈpeɪʃnt/|B1
-pattern|n.|الگو|/ˈpætn/|B1
-pause|v.|مکث کردن|/pɔːz/|B1
-payment|n.|پرداخت|/ˈpeɪmənt/|B1
-peace|n.|صلح|/piːs/|B1
-peak|n.|قله|/piːk/|B1
-pension|n.|بازنشستگی|/ˈpenʃn/|B1
-perceive|v.|درک کردن|/pəˈsiːv/|B1
-percent|n.|درصد|/pəˈsent/|B1
-perfect|adj.|کامل|/ˈpɜːfɪkt/|B1
-perform|v.|اجرا کردن|/pəˈfɔːm/|B1
-perhaps|adv.|شاید|/pəˈhæps/|A2
-permanent|adj.|دائمی|/ˈpɜːmənənt/|B1
-permission|n.|اجازه|/pəˈmɪʃn/|B1
-permit|v.|اجازه دادن|/pəˈmɪt/|B1
-personality|n.|شخصیت|/ˌpɜːsəˈnæləti/|B1
-persuade|v.|متقاعد کردن|/pəˈsweɪd/|B1
-petrol|n.|بنزین|/ˈpetrəl/|A2
-phase|n.|فاز|/feɪz/|B1
-philosophy|n.|فلسفه|/fəˈlɒsəfi/|B1
-physical|adj.|جسمی|/ˈfɪzɪkl/|B1
-piano|n.|پیانو|/piˈænəʊ/|A1
-pile|n.|توده|/paɪl/|B1
-pilot|n.|خلبان|/ˈpaɪlət/|B1
-pitch|n.|زمین بازی|/pɪtʃ/|B1
-plain|adj.|ساده|/pleɪn/|B1
-planet|n.|سیاره|/ˈplænɪt/|B1
-plant|v.|کاشتن|/plɑːnt/|A1
-plastic|n.|پلاستیک|/ˈplæstɪk/|B1
-platform|n.|سکو|/ˈplætfɔːm/|B1
-pleasant|adj.|دلپذیر|/ˈpleznt/|B1
-pleasure|n.|لذت|/ˈpleʒə/|B1
-plenty|n.|فراوانی|/ˈplenti/|B1
-plot|n.|طرح داستان|/plɒt/|B1
-plug|n.|پریز|/plʌɡ/|B1
-pocket|n.|جیب|/ˈpɒkɪt/|A1
-poem|n.|شعر|/ˈpəʊɪm/|B1
-poet|n.|شاعر|/ˈpəʊɪt/|B1
-poetry|n.|شاعری|/ˈpəʊətri/|B1
-point|v.|اشاره کردن|/pɔɪnt/|B1
-poison|n.|سم|/ˈpɔɪzn/|B1
-policy|n.|سیاست|/ˈpɒləsi/|B1
-polite|adj.|مودب|/pəˈlaɪt/|B1
-political|adj.|سیاسی|/pəˈlɪtɪkl/|B1
-pollution|n.|آلودگی|/pəˈluːʃn/|B1
-pool|n.|استخر|/puːl/|A1
-pop|n.|موسیقی پاپ|/pɒp/|A2
-population|n.|جمعیت|/ˌpɒpjuˈleɪʃn/|B1
-port|n.|بندر|/pɔːt/|B1
-positive|adj.|مثبت|/ˈpɒzətɪv/|B1
-possess|v.|داشتن|/pəˈzes/|B1
-possibility|n.|امکان|/ˌpɒsəˈbɪləti/|B1
-post|n.|پست|/pəʊst/|A2
-pour|v.|ریختن|/pɔː/|B1
-poverty|n.|فقر|/ˈpɒvəti/|B1
-power|n.|قدرت|/ˈpaʊə/|B1
-practical|adj.|عملی|/ˈpræktɪkl/|B1
-praise|n.|ستایش|/preɪz/|B1
-pray|v.|دعا کردن|/preɪ/|B1
-precious|adj.|گران‌بها|/ˈpreʃəs/|B1
-predict|v.|پیش‌بینی کردن|/prɪˈdɪkt/|B1
-prefer|v.|ترجیح دادن|/prɪˈfɜː/|B1
-prepare|v.|آماده کردن|/prɪˈpeə/|B1
-presence|n.|حضور|/ˈprezns/|B1
-pressure|n.|فشار|/ˈpreʃə/|B1
-pretend|v.|تظاهر کردن|/prɪˈtend/|B1
-prevent|v.|جلوگیری کردن|/prɪˈvent/|B1
-previous|adj.|قبلی|/ˈpriːviəs/|B1
-pride|n.|غرور|/praɪd/|B1
-primary|adj.|اولیه|/ˈpraɪməri/|B1
-prince|n.|شاهزاده|/prɪns/|B1
-princess|n.|شاهدخت|/ˌprɪnˈses/|B1
-principal|adj.|اصلی|/ˈprɪnsəpl/|B1
-principle|n.|اصل|/ˈprɪnsəpl/|B1
-print|v.|چاپ کردن|/prɪnt/|B1
-prison|n.|زندان|/ˈprɪzn/|B1
-private|adj.|خصوصی|/ˈpraɪvət/|B1
-prize|n.|جایزه|/praɪz/|B1
-procedure|n.|رویه|/prəˈsiːdʒə/|B1
-process|n.|فرایند|/ˈprəʊses/|B1
-produce|v.|تولید کردن|/prəˈdjuːs/|B1
-product|n.|محصول|/ˈprɒdʌkt/|B1
-profession|n.|حرفه|/prəˈfeʃn/|B1
-profit|n.|سود|/ˈprɒfɪt/|B1
-program|n.|برنامه|/ˈprəʊɡræm/|B1
-progress|n.|پیشرفت|/ˈprəʊɡres/|B1
-promise|v.|قول دادن|/ˈprɒmɪs/|B1
-promote|v.|ارتقا دادن|/prəˈməʊt/|B1
-prompt|adj.|سریع|/prɒmpt/|B1
-proof|n.|مدرک|/pruːf/|B1
-proper|adj.|مناسب|/ˈprɒpə/|B1
-property|n.|املاک|/ˈprɒpəti/|B1
-proposal|n.|پیشنهاد|/prəˈpəʊzl/|B1
-propose|v.|پیشنهاد دادن|/prəˈpəʊz/|B1
-prospect|n.|چشم‌انداز|/ˈprɒspekt/|B1
-protect|v.|محافظت کردن|/prəˈtekt/|B1
-protest|n.|اعتراض|/ˈprəʊtest/|B1
-proud|adj.|مفتخر|/praʊd/|B1
-prove|v.|اثبات کردن|/pruːv/|B1
-provide|v.|فراهم کردن|/prəˈvaɪd/|B1
-public|adj.|عمومی|/ˈpʌblɪk/|B1
-publish|v.|منتشر کردن|/ˈpʌblɪʃ/|B1
-pull|n.|کشیدن|/pʊl/|A1
-punish|v.|مجازات کردن|/ˈpʌnɪʃ/|B1
-pupil|n.|دانش‌آموز|/ˈpjuːpl/|B1
-purchase|v.|خریدن|/ˈpɜːtʃəs/|B1
-pure|adj.|خالص|/pjʊə/|B1
-purpose|n.|هدف|/ˈpɜːpəs/|B1
-pursue|v.|دنبال کردن|/pəˈsjuː/|B1
-push|v.|هل دادن|/pʊʃ/|A1
-quality|n.|کیفیت|/ˈkwɒləti/|B1
-quantity|n.|مقدار|/ˈkwɒntəti/|B1
-quarter|n.|یک‌چهارم|/ˈkwɔːtə/|A2
-race|n.|مسابقه|/reɪs/|B1
-rail|n.|ریل|/reɪl/|B1
-raise|v.|بالا بردن|/reɪz/|B1
-range|n.|محدوده|/reɪndʒ/|B1
-rank|n.|رتبه|/ræŋk/|B1
-rapid|adj.|سریع|/ˈræpɪd/|B1
-rare|adj.|نادر|/reə/|B1
-rate|n.|نرخ|/reɪt/|B1
-rather|adv.|ترجیحاً|/ˈrɑːðə/|B1
-raw|adj.|خام|/rɔː/|B1
-reach|v.|رسیدن|/riːtʃ/|B1
-react|v.|واکنش نشان دادن|/riˈækt/|B1
-reaction|n.|واکنش|/riˈækʃn/|B1
-reality|n.|واقعیت|/riˈæləti/|B1
-realize|v.|متوجه شدن|/ˈrɪəlaɪz/|B1
-recall|v.|به‌یاد آوردن|/rɪˈkɔːl/|B1
-receipt|n.|رسید|/rɪˈsiːt/|B1
-recent|adj.|اخیر|/ˈriːsnt/|B1
-recognize|v.|تشخیص دادن|/ˈrekəɡnaɪz/|B1
-recommend|v.|توصیه کردن|/ˌrekəˈmend/|B1
-record|n.|رکورد|/ˈrekɔːd/|B1
-recover|v.|بهبود یافتن|/rɪˈkʌvə/|B1
-reduce|v.|کاهش دادن|/rɪˈdjuːs/|B1
-refer|v.|ارجاع دادن|/rɪˈfɜː/|B1
-reflect|v.|بازتاب دادن|/rɪˈflekt/|B1
-refuse|v.|رد کردن|/rɪˈfjuːz/|B1
-regard|v.|در نظر گرفتن|/rɪˈɡɑːd/|B1
-region|n.|منطقه|/ˈriːdʒən/|B1
-register|v.|ثبت‌نام کردن|/ˈredʒɪstə/|B1
-regret|n.|پشیمانی|/rɪˈɡret/|B1
-regular|adj.|منظم|/ˈreɡjələ/|B1
-reject|v.|رد کردن|/rɪˈdʒekt/|B1
-relate|v.|مرتبط بودن|/rɪˈleɪt/|B1
-relation|n.|رابطه|/rɪˈleɪʃn/|B1
-relationship|n.|رابطه|/rɪˈleɪʃnʃɪp/|B1
-relative|n.|فامیل|/ˈrelətɪv/|B1
-relax|v.|استراحت کردن|/rɪˈlæks/|B1
-release|v.|آزاد کردن|/rɪˈliːs/|B1
-relevant|adj.|مرتبط|/ˈreləvənt/|B1
-relief|n.|تسکین|/rɪˈliːf/|B1
-religion|n.|دین|/rɪˈlɪdʒən/|B1
-rely|v.|تکیه کردن|/rɪˈlaɪ/|B1
-remain|v.|باقی ماندن|/rɪˈmeɪn/|B1
-remark|n.|نظر|/rɪˈmɑːk/|B1
-remember|v.|به‌یاد آوردن|/rɪˈmembə/|A1
-remind|v.|یادآوری کردن|/rɪˈmaɪnd/|B1
-remove|v.|برداشتن|/rɪˈmuːv/|B1
-rent|n.|اجاره|/rent/|B1
-repair|v.|تعمیر کردن|/rɪˈpeə/|B1
-replace|v.|جایگزین کردن|/rɪˈpleɪs/|B1
-reply|n.|پاسخ|/rɪˈplaɪ/|B1
-report|v.|گزارش دادن|/rɪˈpɔːt/|B1
-represent|v.|نمایندگی کردن|/ˌreprɪˈzent/|B1
-republic|n.|جمهوری|/rɪˈpʌblɪk/|B1
-reputation|n.|شهرت|/ˌrepjuˈteɪʃn/|B1
-request|n.|درخواست|/rɪˈkwest/|B1
-require|v.|نیاز داشتن|/rɪˈkwaɪə/|B1
-rescue|v.|نجات دادن|/ˈreskjuː/|B1
-research|n.|تحقیق|/rɪˈsɜːtʃ/|B1
-reserve|v.|رزرو کردن|/rɪˈzɜːv/|B1
-resident|n.|ساکن|/ˈrezɪdənt/|B1
-resist|v.|مقاومت کردن|/rɪˈzɪst/|B1
-resource|n.|منبع|/rɪˈsɔːs/|B1
-respect|n.|احترام|/rɪˈspekt/|B1
-respond|v.|پاسخ دادن|/rɪˈspɒnd/|B1
-response|n.|پاسخ|/rɪˈspɒns/|B1
-responsible|adj.|مسئول|/rɪˈspɒnsəbl/|B1
-rest|v.|استراحت کردن|/rest/|A1
-restaurant|n.|رستوران|/ˈrestrɒnt/|A1
-restrict|v.|محدود کردن|/rɪˈstrɪkt/|B1
-result|v.|نتیجه دادن|/rɪˈzʌlt/|B1
-retire|v.|بازنشسته شدن|/rɪˈtaɪə/|B1
-return|n.|بازگشت|/rɪˈtɜːn/|B1
-reveal|v.|آشکار کردن|/rɪˈviːl/|B1
-revenue|n.|درآمد|/ˈrevənjuː/|B1
-review|n.|نقد|/rɪˈvjuː/|B1
-revolution|n.|انقلاب|/ˌrevəˈluːʃn/|B1
-reward|n.|پاداش|/rɪˈwɔːd/|B1
-rhythm|n.|ریتم|/ˈrɪðəm/|B1
-rid|v.|خلاص کردن|/rɪd/|B1
-riddle|n.|معما|/ˈrɪdl/|B1
-rifle|n.|تفنگ|/ˈraɪfl/|B1
-rise|n.|افزایش|/raɪz/|B1
-risk|n.|ریسک|/rɪsk/|B1
-rival|n.|رقیب|/ˈraɪvl/|B1
-role|n.|نقش|/rəʊl/|B1
-roll|v.|غلتیدن|/rəʊl/|B1
-roof|n.|سقف|/ruːf/|B1
-root|n.|ریشه|/ruːt/|B1
-rope|n.|طناب|/rəʊp/|B1
-rough|adj.|ناهموار|/rʌf/|B1
-route|n.|مسیر|/ruːt/|B1
-routine|n.|روال|/ruːˈtiːn/|B1
-row|n.|ردیف|/rəʊ/|B1
-royal|adj.|سلطنتی|/ˈrɔɪəl/|B1
-rude|adj.|بی‌ادب|/ruːd/|B1
-ruin|v.|ویران کردن|/ˈruːɪn/|B1
-rule|v.|حکومت کردن|/ruːl/|B1
-rural|adj.|روستایی|/ˈrʊərəl/|B1
-rush|v.|عجله کردن|/rʌʃ/|B1
-sacrifice|n.|فداکاری|/ˈsækrɪfaɪs/|B1
-sadness|n.|غم|/ˈsædnəs/|B1
-sail|v.|قایق‌رانی کردن|/seɪl/|B1
-salary|n.|حقوق|/ˈsæləri/|B1
-sale|n.|فروش|/seɪl/|B1
-satisfy|v.|راضی کردن|/ˈsætɪsfaɪ/|B1
-scale|n.|مقیاس|/skeɪl/|B1
-scene|n.|صحنه|/siːn/|B1
-schedule|n.|برنامه زمانی|/ˈʃedjuːl/|B1
-scheme|n.|طرح|/skiːm/|B1
-scholar|n.|دانش‌پژوه|/ˈskɒlə/|B1
-scientific|adj.|علمی|/ˌsaɪənˈtɪfɪk/|B1
-score|n.|امتیاز|/skɔː/|B1
-screen|n.|صفحه نمایش|/skriːn/|B1
-search|v.|جست‌وجو کردن|/sɜːtʃ/|B1
-secret|n.|راز|/ˈsiːkrət/|B1
-secretary|n.|منشی|/ˈsekrətri/|B1
-section|n.|بخش|/ˈsekʃn/|B1
-sector|n.|بخش|/ˈsektə/|B1
-secure|adj.|امن|/sɪˈkjʊə/|B1
-seek|v.|جست‌وجو کردن|/siːk/|B1
-seem|v.|به‌نظر رسیدن|/siːm/|A2
-select|v.|انتخاب کردن|/sɪˈlekt/|B1
-self|n.|خود|/self/|B1
-senior|adj.|ارشد|/ˈsiːniə/|B1
-sense|n.|حس|/sens/|B1
-sensitive|adj.|حساس|/ˈsensətɪv/|B1
-separate|adj.|جدا|/ˈseprət/|B1
-serious|adj.|جدی|/ˈsɪəriəs/|B1
-servant|n.|خدمتکار|/ˈsɜːvənt/|B1
-session|n.|جلسه|/ˈseʃn/|B1
-settle|v.|ساکن شدن|/ˈsetl/|B1
-severe|adj.|شدید|/sɪˈvɪə/|B1
-shade|n.|سایه|/ʃeɪd/|B1
-shadow|n.|سایه|/ˈʃædəʊ/|B1
-shake|v.|تکان دادن|/ʃeɪk/|B1
-shall|v.|ـ|/ʃæl/|A2
-shallow|adj.|کم‌عمق|/ˈʃæləʊ/|B1
-shape|n.|شکل|/ʃeɪp/|B1
-share|v.|به اشتراک گذاشتن|/ʃeə/|B1
-sharp|adj.|تیز|/ʃɑːp/|B1
-shelter|n.|پناهگاه|/ˈʃeltə/|B1
-shift|n.|تغییر|/ʃɪft/|B1
-shine|v.|درخشیدن|/ʃaɪn/|A2
-ship|v.|ارسال کردن|/ʃɪp/|B1
-shock|n.|شوک|/ʃɒk/|B1
-shoot|v.|شلیک کردن|/ʃuːt/|B1
-shore|n.|ساحل|/ʃɔː/|B1
-shortage|n.|کمبود|/ˈʃɔːtɪdʒ/|B1
-shoulder|n.|شانه|/ˈʃəʊldə/|B1
-shout|v.|فریاد زدن|/ʃaʊt/|B1
-sight|n.|منظره|/saɪt/|B1
-sign|v.|امضا کردن|/saɪn/|B1
-signal|n.|سیگنال|/ˈsɪɡnəl/|B1
-significant|adj.|قابل توجه|/sɪɡˈnɪfɪkənt/|B1
-silence|n.|سکوت|/ˈsaɪləns/|B1
-silk|n.|ابریشم|/sɪlk/|B1
-silly|adj.|احمقانه|/ˈsɪli/|B1
-silver|n.|نقره|/ˈsɪlvə/|B1
-simple|adj.|ساده|/ˈsɪmpl/|B1
-since|conj.|از آنجا که|/sɪns/|B1
-single|adj.|مجرد|/ˈsɪŋɡl/|B1
-sink|v.|غرق شدن|/sɪŋk/|B1
-site|n.|سایت|/saɪt/|B1
-situation|n.|موقعیت|/ˌsɪtʃuˈeɪʃn/|B1
-skill|n.|مهارت|/skɪl/|B1
-skin|n.|پوست|/skɪn/|B1
-sky|n.|آسمان|/skaɪ/|A1
-slave|n.|برده|/sleɪv/|B1
-slice|n.|برش|/slaɪs/|B1
-slide|v.|سُر خوردن|/slaɪd/|B1
-slight|adj.|جزئی|/slaɪt/|B1
-slip|v.|لیز خوردن|/slɪp/|B1
-slope|n.|شیب|/sləʊp/|B1
-smart|adj.|باهوش|/smɑːt/|B1
-smooth|adj.|صاف|/smuːð/|B1
-snake|n.|مار|/sneɪk/|A1
-social|adj.|اجتماعی|/ˈsəʊʃl/|B1
-society|n.|جامعه|/səˈsaɪəti/|B1
-soil|n.|خاک|/sɔɪl/|B1
-soldier|n.|سرباز|/ˈsəʊldʒə/|B1
-solid|adj.|جامد|/ˈsɒlɪd/|B1
-solution|n.|راه‌حل|/səˈluːʃn/|B1
-solve|v.|حل کردن|/sɒlv/|B1
-somehow|adv.|به‌نحوی|/ˈsʌmhaʊ/|B1
-sort|n.|نوع|/sɔːt/|B1
-soul|n.|روح|/səʊl/|B1
-source|n.|منبع|/sɔːs/|B1
-southern|adj.|جنوبی|/ˈsʌðən/|B1
-spare|adj.|اضافی|/speə/|B1
-special|adj.|ویژه|/ˈspeʃl/|B1
-species|n.|گونه|/ˈspiːʃiːz/|B1
-specific|adj.|خاص|/spəˈsɪfɪk/|B1
-speech|n.|سخنرانی|/spiːtʃ/|B1
-speed|n.|سرعت|/spiːd/|B1
-spirit|n.|روح|/ˈspɪrɪt/|B1
-spite|n.|کینه|/spaɪt/|B1
-split|v.|تقسیم کردن|/splɪt/|B1
-spoil|v.|خراب کردن|/spɔɪl/|B1
-sponsor|n.|حامی|/ˈspɒnsə/|B1
-spoon|n.|قاشق|/spuːn/|A1
-spot|n.|نقطه|/spɒt/|B1
-spread|v.|پخش کردن|/spred/|B1
-square|n.|میدان|/skweə/|B1
-stable|adj.|باثبات|/ˈsteɪbl/|B1
-staff|n.|کارکنان|/stɑːf/|B1
-stage|n.|مرحله|/steɪdʒ/|B1
-stair|n.|پله|/steə/|A1
-stake|n.|سهم|/steɪk/|B1
-stall|n.|غرفه|/stɔːl/|B1
-standard|n.|استاندارد|/ˈstændəd/|B1
-starve|v.|از گرسنگی مردن|/stɑːv/|B1
-state|n.|ایالت|/steɪt/|B1
-statement|n.|بیانیه|/ˈsteɪtmənt/|B1
-station|v.|مستقر کردن|/ˈsteɪʃn/|B1
-statistic|n.|آمار|/stəˈtɪstɪk/|B1
-status|n.|وضعیت|/ˈsteɪtəs/|B1
-steady|adj.|باثبات|/ˈstedi/|B1
-steep|adj.|شیب‌دار|/stiːp/|B1
-stick|v.|چسباندن|/stɪk/|B1
-stiff|adj.|سفت|/stɪf/|B1
-still|adj.|ساکن|/stɪl/|B1
-stock|n.|موجودی|/stɒk/|B1
-stomach|n.|شکم|/ˈstʌmək/|B1
-store|v.|ذخیره کردن|/stɔː/|B1
-storm|v.|طوفان کردن|/stɔːm/|B1
-straight|adj.|صاف|/streɪt/|B1
-strange|adj.|عجیب|/streɪndʒ/|B1
-strategy|n.|استراتژی|/ˈstrætədʒi/|B1
-stream|n.|جویبار|/striːm/|B1
-strength|n.|قدرت|/streŋθ/|B1
-stress|n.|استرس|/stres/|B1
-stretch|v.|کشیدن|/stretʃ/|B1
-strict|adj.|سخت‌گیر|/strɪkt/|B1
-strike|v.|اعتصاب کردن|/straɪk/|B1
-string|n.|ریسمان|/strɪŋ/|B1
-strip|n.|نوار|/strɪp/|B1
-stroke|n.|سکته|/strəʊk/|B1
-structure|n.|ساختار|/ˈstrʌktʃə/|B1
-struggle|v.|تقلا کردن|/ˈstrʌɡl/|B1
-studio|n.|استودیو|/ˈstjuːdiəʊ/|B1
-stuff|n.|وسایل|/stʌf/|B1
-stupid|adj.|احمق|/ˈstjuːpɪd/|B1
-style|n.|سبک|/staɪl/|B1
-succeed|v.|موفق شدن|/səkˈsiːd/|B1
-success|n.|موفقیت|/səkˈses/|B1
-sudden|adj.|ناگهانی|/ˈsʌdn/|B1
-suffer|v.|رنج بردن|/ˈsʌfə/|B1
-sufficient|adj.|کافی|/səˈfɪʃnt/|B1
-suggest|v.|پیشنهاد دادن|/səˈdʒest/|B1
-suit|n.|کت‌وشلوار|/suːt/|B1
-sum|n.|مجموع|/sʌm/|B1
-supply|n.|تأمین|/səˈplaɪ/|B1
-support|v.|حمایت کردن|/səˈpɔːt/|B1
-suppose|v.|فرض کردن|/səˈpəʊz/|B1
-sure|adv.|مطمئن|/ʃʊə/|A1
-surface|n.|سطح|/ˈsɜːfɪs/|B1
-surgery|n.|جراحی|/ˈsɜːdʒəri/|B1
-surplus|n.|مازاد|/ˈsɜːpləs/|B1
-surprise|v.|غافلگیر کردن|/səˈpraɪz/|B1
-surround|v.|احاطه کردن|/səˈraʊnd/|B1
-survey|n.|نظرسنجی|/ˈsɜːveɪ/|B1
-survive|v.|زنده ماندن|/səˈvaɪv/|B1
-suspect|v.|مشکوک شدن|/səˈspekt/|B1
-swallow|v.|بلعیدن|/ˈswɒləʊ/|B1
-swear|v.|قسم خوردن|/sweə/|B1
-sweat|n.|عرق|/swet/|B1
-sweep|v.|جارو کردن|/swiːp/|B1
-swing|v.|تاب خوردن|/swɪŋ/|B1
-switch|v.|تعویض کردن|/swɪtʃ/|B1
-symbol|n.|نماد|/ˈsɪmbl/|B1
-sympathy|n.|همدردی|/ˈsɪmpəθi/|B1
-system|n.|سیستم|/ˈsɪstəm/|B1
-tail|n.|دم|/teɪl/|B1
-tale|n.|داستان|/teɪl/|B1
-talent|n.|استعداد|/ˈtælənt/|B1
-tank|n.|تانک|/tæŋk/|B1
-tap|n.|شیر آب|/tæp/|B1
-target|n.|هدف|/ˈtɑːɡɪt/|B1
-task|n.|وظیفه|/tɑːsk/|B1
-taste|n.|مزه|/teɪst/|B1
-tax|n.|مالیات|/tæks/|B1
-tear|n.|اشک|/tɪə/|B1
-technical|adj.|فنی|/ˈteknɪkl/|B1
-technique|n.|تکنیک|/tekˈniːk/|B1
-technology|n.|فناوری|/tekˈnɒlədʒi/|B1
-teenager|n.|نوجوان|/ˈtiːneɪdʒə/|B1
-temperature|n.|دما|/ˈtemprətʃə/|B1
-temporary|adj.|موقت|/ˈtemprəri/|B1
-tend|v.|تمایل داشتن|/tend/|B1
-tension|n.|تنش|/ˈtenʃn/|B1
-term|n.|ترم|/tɜːm/|B1
-terrible|adj.|وحشتناک|/ˈterəbl/|A2
-territory|n.|قلمرو|/ˈterətri/|B1
-terror|n.|وحشت|/ˈterə/|B1
-theme|n.|موضوع|/θiːm/|B1
-theory|n.|نظریه|/ˈθɪəri/|B1
-thick|adj.|ضخیم|/θɪk/|B1
-thief|n.|دزد|/θiːf/|B1
-threat|n.|تهدید|/θret/|B1
-throat|n.|گلو|/θrəʊt/|B1
-throughout|prep.|در سراسر|/θruːˈaʊt/|B1
-thumb|n.|شست|/θʌm/|B1
-thus|adv.|بنابراین|/ðʌs/|B1
-tight|adj.|تنگ|/taɪt/|B1
-tiny|adj.|ریز|/ˈtaɪni/|B1
-tip|n.|نکته|/tɪp/|B1
-tobacco|n.|تنباکو|/təˈbækəʊ/|B1
-toe|n.|انگشت پا|/təʊ/|B1
-tone|n.|لحن|/təʊn/|B1
-tool|n.|ابزار|/tuːl/|B1
-tooth|n.|دندان|/tuːθ/|A1
-topic|n.|موضوع|/ˈtɒpɪk/|B1
-tough|adj.|سخت|/tʌf/|B1
-tour|n.|تور|/tʊə/|B1
-tourist|n.|گردشگر|/ˈtʊərɪst/|B1
-towards|prep.|به سمت|/təˈwɔːdz/|B1
-towel|n.|حوله|/ˈtaʊəl/|B1
-tower|n.|برج|/ˈtaʊə/|B1
-trace|n.|رد|/treɪs/|B1
-track|n.|مسیر|/træk/|B1
-trade|n.|تجارت|/treɪd/|B1
-tradition|n.|سنت|/trəˈdɪʃn/|B1
-traffic|n.|ترافیک|/ˈtræfɪk/|B1
-tragedy|n.|تراژدی|/ˈtrædʒədi/|B1
-transfer|v.|انتقال دادن|/trænsˈfɜː/|B1
-transform|v.|تبدیل کردن|/trænsˈfɔːm/|B1
-translate|v.|ترجمه کردن|/trænsˈleɪt/|B1
-transport|n.|حمل‌ونقل|/ˈtrænspɔːt/|B1
-trap|n.|تله|/træp/|B1
-treasure|n.|گنج|/ˈtreʒə/|B1
-treat|v.|رفتار کردن|/triːt/|B1
-treatment|n.|درمان|/ˈtriːtmənt/|B1
-trend|n.|روند|/trend/|B1
-trial|n.|محاکمه|/ˈtraɪəl/|B1
-tribe|n.|قبیله|/traɪb/|B1
-trick|n.|ترفند|/trɪk/|B1
-troop|n.|سربازان|/truːp/|B1
-truck|n.|کامیون|/trʌk/|B1
-truly|adv.|واقعاً|/ˈtruːli/|B1
-trust|n.|اعتماد|/trʌst/|B1
-truth|n.|حقیقت|/truːθ/|B1
-tube|n.|لوله|/tjuːb/|B1
-tune|n.|آهنگ|/tjuːn/|B1
-tunnel|n.|تونل|/ˈtʌnl/|B1
-twin|n.|دوقلو|/twɪn/|B1
-typical|adj.|معمول|/ˈtɪpɪkl/|B1
-tyre|n.|لاستیک|/ˈtaɪə/|B1
-ugly|adj.|زشت|/ˈʌɡli/|A2
-ultimate|adj.|نهایی|/ˈʌltɪmət/|B1
-unable|adj.|ناتوان|/ʌnˈeɪbl/|B1
-unaware|adj.|بی‌خبر|/ˌʌnəˈweə/|B1
-uncertain|adj.|نامطمئن|/ʌnˈsɜːtn/|B1
-uncomfortable|adj.|ناراحت|/ʌnˈkʌmftəbl/|B1
-unconscious|adj.|بیهوش|/ʌnˈkɒnʃəs/|B1
-underground|adj.|زیرزمینی|/ˌʌndəˈɡraʊnd/|B1
-underneath|prep.|زیر|/ˌʌndəˈniːθ/|B1
-understand|v.|فهمیدن|/ˌʌndəˈstænd/|A1
-undertake|v.|به عهده گرفتن|/ˌʌndəˈteɪk/|B1
-unemployed|adj.|بیکار|/ˌʌnɪmˈplɔɪd/|B1
-unexpected|adj.|غیرمنتظره|/ˌʌnɪkˈspektɪd/|B1
-unfair|adj.|ناعادلانه|/ˌʌnˈfeə/|B1
-unfortunately|adv.|متأسفانه|/ʌnˈfɔːtʃənətli/|B1
-unhappy|adj.|ناراضی|/ʌnˈhæpi/|B1
-uniform|n.|یونیفرم|/ˈjuːnɪfɔːm/|A2
-unique|adj.|منحصر به فرد|/juˈniːk/|B1
-unit|n.|واحد|/ˈjuːnɪt/|B1
-unite|v.|متحد کردن|/juˈnaɪt/|B1
-universal|adj.|جهانی|/ˌjuːnɪˈvɜːsl/|B1
-unknown|adj.|ناشناخته|/ˌʌnˈnəʊn/|B1
-unless|conj.|مگر اینکه|/ənˈles/|B1
-unlike|prep.|برخلاف|/ˌʌnˈlaɪk/|B1
-unlikely|adj.|کم‌احتمال|/ʌnˈlaɪkli/|B1
-unload|v.|تخلیه کردن|/ʌnˈləʊd/|B1
-unusual|adj.|غیرمعمول|/ʌnˈjuːʒuəl/|B1
-upper|adj.|بالایی|/ˈʌpə/|B1
-upset|adj.|ناراحت|/ʌpˈset/|B1
-upstairs|adv.|طبقه بالا|/ˌʌpˈsteəz/|A1
-urban|adj.|شهری|/ˈɜːbən/|B1
-urge|v.|ترغیب کردن|/ɜːdʒ/|B1
-urgent|adj.|فوری|/ˈɜːdʒənt/|B1
-useful|adj.|مفید|/ˈjuːsfl/|A2
-useless|adj.|بی‌فایده|/ˈjuːsləs/|B1
-user|n.|کاربر|/ˈjuːzə/|B1
-usual|adj.|معمول|/ˈjuːʒuəl/|A2
-vacation|n.|تعطیلات|/vəˈkeɪʃn/|A2
-valley|n.|دره|/ˈvæli/|B1
-valuable|adj.|ارزشمند|/ˈvæljuəbl/|B1
-value|n.|ارزش|/ˈvæljuː/|B1
-vanish|v.|ناپدید شدن|/ˈvænɪʃ/|B1
-variety|n.|تنوع|/vəˈraɪəti/|B1
-various|adj.|مختلف|/ˈveəriəs/|B1
-vary|v.|متفاوت بودن|/ˈveəri/|B1
-vast|adj.|وسیع|/vɑːst/|B1
-vehicle|n.|وسیله نقلیه|/ˈviːəkl/|B1
-venture|n.|ماجراجویی|/ˈventʃə/|B1
-version|n.|نسخه|/ˈvɜːʃn/|B1
-vertical|adj.|عمودی|/ˈvɜːtɪkl/|B1
-victim|n.|قربانی|/ˈvɪktɪm/|B1
-victory|n.|پیروزی|/ˈvɪktəri/|B1
-view|n.|منظره|/vjuː/|B1
-village|n.|روستا|/ˈvɪlɪdʒ/|A1
-violence|n.|خشونت|/ˈvaɪələns/|B1
-virtual|adj.|مجازی|/ˈvɜːtʃuəl/|B1
-visible|adj.|قابل مشاهده|/ˈvɪzəbl/|B1
-vision|n.|چشم‌انداز|/ˈvɪʒn/|B1
-visit|n.|دیدار|/ˈvɪzɪt/|A2
-vital|adj.|حیاتی|/ˈvaɪtl/|B1
-voice|n.|صدا|/vɔɪs/|B1
-volume|n.|جلد؛ حجم|/ˈvɒljuːm/|B1
-vote|n.|رأی|/vəʊt/|B1
-wage|n.|دستمزد|/weɪdʒ/|B1
-waist|n.|کمر|/weɪst/|B1
-wait|n.|انتظار|/weɪt/|A1
-wake|n.|بیداری|/weɪk/|A1
-wander|v.|پرسه زدن|/ˈwɒndə/|B1
-warn|v.|هشدار دادن|/wɔːn/|B1
-waste|n.|زباله|/weɪst/|B1
-wave|n.|موج|/weɪv/|B1
-weak|adj.|ضعیف|/wiːk/|B1
-wealth|n.|ثروت|/welθ/|B1
-weapon|n.|سلاح|/ˈwepən/|B1
-weather|n.|آب‌وهوا|/ˈweðə/|A1
-weigh|v.|وزن کردن|/weɪ/|B1
-weight|n.|وزن|/weɪt/|B1
-weird|adj.|عجیب|/wɪəd/|B1
-welcome|v.|خوش‌آمد گفتن|/ˈwelkəm/|A1
-welfare|n.|رفاه|/ˈwelfeə/|B1
-wheel|n.|چرخ|/wiːl/|B1
-whenever|conj.|هر وقت|/wenˈevə/|B1
-whereas|conj.|در حالی که|/weərˈæz/|B1
-wherever|conj.|هر جا|/weərˈevə/|B1
-whether|conj.|آیا|/ˈweðə/|B1
-while|conj.|در حالی که|/waɪl/|B1
-whisper|v.|پچ‌پچ کردن|/ˈwɪspə/|B1
-whistle|n.|سوت|/ˈwɪsl/|B1
-whole|adj.|کل|/həʊl/|B1
-whom|pron.|چه کسی را|/huːm/|B1
-wide|adj.|پهن|/waɪd/|B1
-width|n.|عرض|/wɪdθ/|B1
-wildlife|n.|حیات وحش|/ˈwaɪldlaɪf/|B1
-willing|adj.|مایل|/ˈwɪlɪŋ/|B1
-wise|adj.|عاقل|/waɪz/|B1
-witness|n.|شاهد|/ˈwɪtnəs/|B1
-wonder|v.|کنجکاو بودن|/ˈwʌndə/|B1
-wooden|adj.|چوبی|/ˈwʊdn/|B1
-wool|n.|پشم|/wʊl/|B1
-worker|n.|کارگر|/ˈwɜːkə/|B1
-worldwide|adj.|جهانی|/ˌwɜːldˈwaɪd/|B1
-worried|adj.|نگران|/ˈwʌrid/|B1
-worth|adj.|ارزیدن|/wɜːθ/|B1
-would|v.|ـ|/wʊd/|A1
-wound|n.|زخم|/wuːnd/|B1
-wrap|v.|بسته‌بندی کردن|/ræp/|B1
-wrist|n.|مچ دست|/rɪst/|B1
-yawn|v.|خمیازه کشیدن|/jɔːn/|B1
-yell|v.|فریاد زدن|/jel/|B1
-yield|v.|تسلیم شدن|/jiːld/|B1
-zone|n.|منطقه|/zəʊn/|B1
-`;
+/* فرهنگ لغت داخلی — بخش C تا O
+   قالب: word|pos|english-def|farsi|example|/ipa/|LVL */
+export const DICT_B = `cabinet|n.|a piece of furniture with shelves|کابینت؛ کمد|The dishes are in the cabinet.|/ˈkæbɪnət/|B1
+cable|n.|a thick wire carrying electricity or signals|کابل|Connect the cable to the TV.|/ˈkeɪbl/|B1
+cafe|n.|a small restaurant selling drinks and light food|کافه|Let's meet at the cafe at five.|/ˈkæfeɪ/|A2
+cake|n.|a sweet food made with flour and sugar|کیک|She made a chocolate cake.|/keɪk/|A1
+calculate|v.|to find an answer using numbers|محاسبه کردن|Calculate the total price.|/ˈkælkjuleɪt/|B1
+calendar|n.|a list of the days and months of a year|تقویم|My birthday is marked on the calendar.|/ˈkælɪndə/|A2
+call|v.|to telephone; to give a name|صدا زدن؛ زنگ زدن|Call me when you arrive.|/kɔːl/|A1
+calm|adj.|quiet and peaceful; not angry|آرام|The sea is calm this morning.|/kɑːm/|A2
+camera|n.|a machine for taking photos|دوربین|She took her camera on the trip.|/ˈkæmərə/|A1
+camp|n.|a place where people sleep in tents|اردو؛ کمپ|We went to summer camp.|/kæmp/|A2
+campaign|n.|a planned set of activities for a goal|کارزار|The election campaign starts next week.|/kæmˈpeɪn/|B2
+camping|n.|the activity of sleeping in a tent|کمپینگ|We love camping in the mountains.|/ˈkæmpɪŋ/|A2
+can|v.|to be able to; used for permission|توانستن|Can you swim?|/kæn/|A1
+cancel|v.|to decide not to do something planned|لغو کردن|They cancelled the flight because of fog.|/ˈkænsl/|A2
+cancer|n.|a serious illness of the body|سرطان|Scientists are fighting cancer.|/ˈkænsə/|B1
+candidate|n.|a person who wants a job or position|نامزد|There are three candidates for the job.|/ˈkændɪdət/|B1
+candle|n.|a stick that gives light when burning|شمع|The room was lit by candles.|/ˈkændl/|B1
+cap|n.|a soft hat|کلاه لبه‌دار|He wore a cap in the sun.|/kæp/|A2
+capable|adj.|able to do something well|توانا|She is capable of great things.|/ˈkeɪpəbl/|B2
+capital|n.|the most important city of a country|پایتخت|Tehran is the capital of Iran.|/ˈkæpɪtl/|A2
+captain|n.|the leader of a team or ship|کاپیتان؛ ناخدا|He is the captain of the football team.|/ˈkæptɪn/|A2
+car|n.|a vehicle with four wheels|ماشین|My father drives to work by car.|/kɑː/|A1
+card|n.|a small piece of paper|کارت|He sent me a birthday card.|/kɑːd/|A1
+care|v.|to feel something is important|اهمیت دادن؛ مراقبت کردن|She cares for her old grandmother.|/keə/|A1
+career|n.|the work you do for most of your life|حرفه؛ مسیر شغلی|She has a career in medicine.|/kəˈrɪə/|B1
+careful|adj.|thinking about what you do|مراقب|Be careful when you cross the road.|/ˈkeəfl/|A1
+careless|adj.|not careful|بی‌احتیاط|A careless driver caused the crash.|/ˈkeələs/|B1
+carpet|n.|thick material covering a floor|فرش|The carpet is red and soft.|/ˈkɑːpɪt/|A2
+carrot|n.|a long orange vegetable|هویج|Rabbits love to eat carrots.|/ˈkærət/|A1
+carry|v.|to hold and take somewhere|حمل کردن|He carried the heavy box upstairs.|/ˈkæri/|A1
+case|n.|a situation; an example|مورد؛ حالت|In that case, let's stay home.|/keɪs/|A2
+cash|n.|money in coins and notes|پول نقد|Do you prefer cash or card?|/kæʃ/|A2
+castle|n.|a large old strong building|قلعه|We visited an old castle.|/ˈkɑːsl/|A2
+cat|n.|a small animal with soft fur|گربه|The cat is sleeping on the sofa.|/kæt/|A1
+catch|v.|to get something that is moving|گرفتن|Catch the ball!|/kætʃ/|A1
+cause|v.|to make something happen|باعث شدن|Rain caused the accident.|/kɔːz/|A2
+celebrate|v.|to do something special for a happy day|جشن گرفتن|We celebrate Nowruz in spring.|/ˈselɪbreɪt/|A2
+celebration|n.|a happy event with a party|جشن|The wedding celebration lasted all night.|/ˌselɪˈbreɪʃn/|B1
+celebrity|n.|a famous person|افراد مشهور|Many celebrities live in this city.|/səˈlebrəti/|B1
+cell|n.|the smallest unit of life; a small room|سلول|The human body has trillions of cells.|/sel/|B1
+cent|n.|a money unit worth one hundredth|سنت|It costs ninety-nine cents.|/sent/|B1
+centre|n.|the middle point|مرکز|The hotel is in the city centre.|/ˈsentə/|A1
+century|n.|a period of one hundred years|قرن|This castle is nine centuries old.|/ˈsentʃəri/|B1
+ceremony|n.|a formal event on a special occasion|مراسم|The graduation ceremony is in June.|/ˈserəməni/|B1
+certain|adj.|sure; without doubt|مطمئن؛ قطعی|I'm certain I locked the door.|/ˈsɜːtn/|A2
+certainly|adv.|without doubt; yes|قطعاً؛ حتماً|I will certainly help you.|/ˈsɜːtnli/|B1
+certificate|n.|an official paper showing a fact|گواهی‌نامه|She received a course certificate.|/səˈtɪfɪkət/|B1
+chain|n.|a line of connected metal rings|زنجیر|He wore a gold chain.|/tʃeɪn/|B1
+chair|n.|a seat for one person|صندلی|Please sit on this chair.|/tʃeə/|A1
+challenge|n.|something difficult that tests you|چالش|Learning English is a fun challenge.|/ˈtʃælɪndʒ/|B1
+champion|n.|the winner of a competition|قهرمان|She is the world champion.|/ˈtʃæmpiən/|B1
+chance|n.|a possibility|شانس؛ فرصت|There is a chance of rain tomorrow.|/tʃɑːns/|A2
+change|v.|to become or make different|تغییر دادن|The weather changes quickly in spring.|/tʃeɪndʒ/|A1
+channel|n.|a TV station|کانال|Which channel is the match on?|/ˈtʃænl/|B1
+chapter|n.|a part of a book|فصل|Read chapter three for homework.|/ˈtʃæptə/|A2
+character|n.|a person in a story; personality|شخصیت|Harry Potter is a famous character.|/ˈkærəktə/|B1
+charge|v.|to ask a price for something|هزینه گرفتن|They charge five pounds for entry.|/tʃɑːdʒ/|B1
+charity|n.|an organization that helps people|خیریه|She gives money to charity.|/ˈtʃærəti/|B1
+chart|n.|a picture showing information|نمودار|Look at the chart on page ten.|/tʃɑːt/|B1
+chase|v.|to run after someone or something|تعقیب کردن|The dog chased the cat.|/tʃeɪs/|B1
+chat|v.|to talk in a friendly way|گپ زدن|We chatted for an hour.|/tʃæt/|A2
+cheap|adj.|low in price|ارزان|This shirt is very cheap.|/tʃiːp/|A1
+cheat|v.|to act dishonestly to win|تقلب کردن|Don't cheat in the exam.|/tʃiːt/|B1
+check|v.|to look carefully to be sure|بررسی کردن|Check your answers before you finish.|/tʃek/|A1
+cheek|n.|the side of your face|گونه|She kissed him on the cheek.|/tʃiːk/|B1
+cheerful|adj.|happy and positive|شاد و سرزنده|She gave a cheerful smile.|/ˈtʃɪəfl/|B1
+cheese|n.|a yellow or white food made from milk|پنیر|I like pizza with extra cheese.|/tʃiːz/|A1
+chef|n.|a professional cook|سرآشپز|The chef cooked a delicious meal.|/ʃef/|A2
+chemical|n.|a substance used in science|ماده‌ی شیمیایی|Wear gloves when using chemicals.|/ˈkemɪkl/|B1
+chemistry|n.|the science of substances|شیمی|He loves chemistry experiments.|/ˈkemɪstri/|B1
+cheque|n.|a written order to pay money|چک|He paid by cheque.|/tʃek/|B1
+chess|n.|a game for two people on a board|شطرنج|My grandfather taught me chess.|/tʃes/|B1
+chest|n.|the front part of your body|قفسه‌ی سینه|He felt pain in his chest.|/tʃest/|B1
+chicken|n.|a bird kept for eggs and meat|مرغ|We had chicken and rice for dinner.|/ˈtʃɪkɪn/|A1
+chief|n.|the leader of a group|رئیس؛ رئیس قبیله|The chief made the final decision.|/tʃiːf/|B2
+child|n.|a young person|کودک|The child is drawing a picture.|/tʃaɪld/|A1
+childhood|n.|the time when you are a child|کودکی|I spent my childhood in a village.|/ˈtʃaɪldhʊd/|B1
+chilly|adj.|unpleasantly cold|سرد و ناخوشایند|It's chilly outside today.|/ˈtʃɪli/|B1
+chocolate|n.|a sweet brown food|شکلات|I love chocolate ice cream.|/ˈtʃɒklət/|A1
+choice|n.|the act of choosing|انتخاب|You have two choices.|/tʃɔɪs/|A2
+choose|v.|to pick the one you want|انتخاب کردن|Choose a colour you like.|/tʃuːz/|A1
+church|n.|a building for Christian worship|کلیسا|The old church is on the hill.|/tʃɜːtʃ/|A2
+cigarette|n.|a small tube of tobacco for smoking|سیگار|Smoking cigarettes is harmful.|/ˌsɪɡəˈret/|B1
+cinema|n.|a place where you watch films|سینما|Let's go to the cinema tonight.|/ˈsɪnəmə/|A1
+circle|n.|a round shape|دایره|Draw a circle on the paper.|/ˈsɜːkl/|A2
+circumstance|n.|a fact affecting a situation|شرایط|Under the circumstances, we stayed home.|/ˈsɜːkəmstəns/|C1
+citizen|n.|a member of a country|شهروند|Every citizen can vote.|/ˈsɪtɪzn/|B1
+city|n.|a large town|شهر|Tehran is a big city.|/ˈsɪti/|A1
+civil|adj.|relating to ordinary people|مدنی|Civil rights protect everyone.|/ˈsɪvl/|B2
+claim|v.|to say something is true|ادعا کردن|He claims he saw a UFO.|/kleɪm/|B2
+clap|v.|to hit your hands together|دست زدن|The audience clapped loudly.|/klæp/|B1
+class|n.|a group of students; a lesson|کلاس|Our class has twenty students.|/klɑːs/|A1
+classic|adj.|of the highest quality; typical|کلاسیک|This is a classic film.|/ˈklæsɪk/|B1
+classroom|n.|a room where lessons happen|کلاس درس|The classroom is bright and clean.|/ˈklɑːsruːm/|A1
+clean|adj.|not dirty|تمیز|Keep your room clean.|/kliːn/|A1
+clear|adj.|easy to see or understand|واضح؛ صاف|The water is very clear here.|/klɪə/|A1
+clearly|adv.|in a clear way|به‌وضوح|She spoke clearly and slowly.|/ˈklɪəli/|A2
+clever|adj.|quick at learning|باهوش؛ زرنگ|The clever boy solved the puzzle.|/ˈklevə/|A2
+climate|n.|the weather of a place over many years|اقلیم|The climate here is dry and hot.|/ˈklaɪmət/|B1
+climb|v.|to go up|بالا رفتن|We climbed the mountain yesterday.|/klaɪm/|A1
+clock|n.|a machine that shows the time|ساعت|The clock shows half past nine.|/klɒk/|A1
+close|v.|to make something not open|بستن|Close the door, please.|/kləʊz/|A1
+closed|adj.|not open|بسته|The shop is closed on Fridays.|/kləʊzd/|A1
+cloth|n.|material for making clothes|پارچه|She bought a metre of cloth.|/klɒθ/|B1
+clothes|n.|things you wear|لباس|She bought some new clothes.|/kləʊðz/|A1
+cloud|n.|white or grey shapes in the sky|ابر|Dark clouds mean rain.|/klaʊd/|A1
+cloudy|adj.|full of clouds|ابری|It's cloudy today — take a jacket.|/ˈklaʊdi/|A2
+club|n.|a group of people with the same interest|باشگاه|He joined the football club.|/klʌb/|A1
+clue|n.|something that helps solve a problem|سرنخ|The detective found an important clue.|/kluː/|B1
+coach|n.|a person who trains a team|مربی|The coach gave us good advice.|/kəʊtʃ/|B1
+coal|n.|a black substance burned for heat|زغال‌سنگ|The factory burns coal.|/kəʊl/|B1
+coast|n.|the land next to the sea|ساحل|We drove along the coast.|/kəʊst/|B1
+coat|n.|clothing you wear over other clothes|کت؛ پالتو|Put on your coat — it's cold.|/kəʊt/|A1
+coffee|n.|a hot brown drink|قهوه|Would you like coffee or tea?|/ˈkɒfi/|A1
+coin|n.|money made of metal|سکه|I found a gold coin.|/kɔɪn/|B1
+cold|adj.|low in temperature|سرد|Winter here is very cold.|/kəʊld/|A1
+collapse|v.|to fall down suddenly|فرو ریختن|The old bridge collapsed.|/kəˈlæps/|B2
+colleague|n.|a person you work with|همکار|My colleagues are very friendly.|/ˈkɒliːɡ/|B1
+collect|v.|to bring things together|جمع کردن|He collects old stamps.|/kəˈlekt/|A2
+collection|n.|a group of things collected|مجموعه|She has a collection of stamps.|/kəˈlekʃn/|B1
+college|n.|a school for older students|دانشکده|She goes to college by train.|/ˈkɒlɪdʒ/|A2
+colour|n.|red, blue, green and so on|رنگ|What colour is your car?|/ˈkʌlə/|A1
+column|n.|a tall part of a building; a line of text|ستون|The temple has tall columns.|/ˈkɒləm/|B1
+combination|n.|a mixture of things|ترکیب|The dish is a combination of rice and meat.|/ˌkɒmbɪˈneɪʃn/|B1
+combine|v.|to join things together|ترکیب کردن|Combine the flour and water.|/kəmˈbaɪn/|B1
+come|v.|to move towards the speaker|آمدن|Come and look at this!|/kʌm/|A1
+comedy|n.|a funny film or play|کمدی|We watched a comedy last night.|/ˈkɒmədi/|B1
+comfort|n.|a feeling of being relaxed|آسایش|She offered words of comfort.|/ˈkʌmfət/|B1
+comfortable|adj.|giving comfort|راحت|This sofa is very comfortable.|/ˈkʌmftəbl/|A2
+command|n.|an order|فرمان|The soldiers obeyed the command.|/kəˈmɑːnd/|B2
+comment|n.|something you say about something|نظر|He made a funny comment.|/ˈkɒment/|B1
+commercial|adj.|relating to buying and selling|تجاری|The area is now commercial.|/kəˈmɜːʃl/|B2
+commission|n.|a group chosen for a task|کمیسیون|The commission studied the problem.|/kəˈmɪʃn/|C1
+commit|v.|to do something wrong; to promise|مرتکب شدن|He did not commit the crime.|/kəˈmɪt/|B2
+committee|n.|a group that makes decisions|کمیته|The committee meets every month.|/kəˈmɪti/|B2
+common|adj.|happening often; normal|رایج؛ معمول|This bird is common in the north.|/ˈkɒmən/|A2
+communicate|v.|to share information|ارتباط برقرار کردن|We communicate by email.|/kəˈmjuːnɪkeɪt/|B1
+communication|n.|the act of sharing information|ارتباطات|Good communication solves problems.|/kəˌmjuːnɪˈkeɪʃn/|B1
+community|n.|people living in one area|جامعه؛ اجتماع|The community built a new park.|/kəˈmjuːnəti/|B1
+company|n.|a business; being with people|شرکت؛ همراهی|He works for a big company.|/ˈkʌmpəni/|A1
+compare|v.|to look for differences and similarities|مقایسه کردن|Compare these two pictures.|/kəmˈpeə/|B1
+comparison|n.|the act of comparing|مقایسه|The comparison shows big differences.|/kəmˈpærɪsn/|B2
+compete|v.|to try to win against others|رقابت کردن|Ten teams compete in the league.|/kəmˈpiːt/|B1
+competition|n.|an event where people try to win|مسابقه|She won the singing competition.|/ˌkɒmpəˈtɪʃn/|A2
+complain|v.|to say you are not happy|شکایت کردن|He complained about the cold food.|/kəmˈpleɪn/|A2
+complaint|n.|a statement that you are unhappy|شکایت|We received a complaint about the noise.|/kəmˈpleɪnt/|B1
+complete|adj.|having all parts|کامل|The collection is now complete.|/kəmˈpliːt/|A2
+completely|adv.|totally|کاملاً|The room was completely dark.|/kəmˈpliːtli/|B1
+complex|adj.|difficult to understand|پیچیده|The rules are too complex.|/ˈkɒmpleks/|B2
+complicated|adj.|difficult; complex|پیچیده|The instructions are complicated.|/ˈkɒmplɪkeɪtɪd/|B1
+computer|n.|an electronic machine for information|رایانه|I do my homework on the computer.|/kəmˈpjuːtə/|A1
+concentrate|v.|to give all your attention|تمرکز کردن|I can't concentrate with this noise.|/ˈkɒnsntreɪt/|B1
+concept|n.|an idea|مفهوم|The concept is easy to understand.|/ˈkɒnsept/|B2
+concern|n.|worry|نگرانی|Her health is our main concern.|/kənˈsɜːn/|B2
+concert|n.|a show of live music|کنسرت|We went to a piano concert.|/ˈkɒnsət/|A2
+conclude|v.|to finish; to decide after thinking|نتیجه گرفتن|The report concludes that diet matters.|/kənˈkluːd/|B2
+conclusion|n.|the end; a decision|نتیجه‌گیری|In conclusion, I agree with you.|/kənˈkluːʒn/|B2
+condition|n.|the state of something|شرایط؛ وضعیت|The car is in good condition.|/kənˈdɪʃn/|A2
+conference|n.|a large formal meeting|کنفرانس|The conference is in Geneva.|/ˈkɒnfərəns/|B1
+confidence|n.|belief in yourself|اعتمادبه‌نفس|She speaks with confidence.|/ˈkɒnfɪdəns/|B1
+confident|adj.|feeling sure of yourself|مطمئن به خود|He is confident he will win.|/ˈkɒnfɪdənt/|B1
+confirm|v.|to make sure something is true|تأیید کردن|Please confirm your booking.|/kənˈfɜːm/|B1
+conflict|n.|a serious disagreement|تعارض؛ درگیری|The conflict lasted many years.|/ˈkɒnflɪkt/|B2
+confuse|v.|to make someone unable to understand|گیج کردن|The map confused me.|/kənˈfjuːz/|B1
+confused|adj.|unable to understand|گیج|I'm confused by these rules.|/kənˈfjuːzd/|A2
+confusing|adj.|difficult to understand|گیج‌کننده|The instructions are confusing.|/kənˈfjuːzɪŋ/|B1
+congratulate|v.|to tell someone you are happy for them|تبریک گفتن|We congratulated her on her success.|/kənˈɡrætʃuleɪt/|B1
+connect|v.|to join together|وصل کردن|Connect the printer to the computer.|/kəˈnekt/|A2
+connection|n.|something that joins things|اتصال؛ ارتباط|There is a connection between diet and health.|/kəˈnekʃn/|B1
+conscious|adj.|awake and aware|آگاه؛ به‌هوش|He was conscious during the operation.|/ˈkɒnʃəs/|B2
+consequence|n.|a result of an action|پیامد|Think about the consequences.|/ˈkɒnsɪkwəns/|B2
+consider|v.|to think about carefully|در نظر گرفتن|Please consider my suggestion.|/kənˈsɪdə/|B1
+considerable|adj.|large in amount|قابل توجه|He has considerable experience.|/kənˈsɪdərəbl/|B2
+consist|v.|to be made of parts|تشکیل شدن|The test consists of three parts.|/kənˈsɪst/|B1
+constant|adj.|happening all the time|دائم|The constant noise annoyed her.|/ˈkɒnstənt/|B2
+construct|v.|to build|ساختن|They constructed a new bridge.|/kənˈstrʌkt/|B2
+construction|n.|the work of building|ساخت‌وساز|Construction of the school begins soon.|/kənˈstrʌkʃn/|B2
+consume|v.|to use up; to eat or drink|مصرف کردن|We consume too much electricity.|/kənˈsjuːm/|B2
+contact|n.|communication with someone|تماس|Keep in contact with your friends.|/ˈkɒntækt/|B1
+contain|v.|to have something inside|شامل بودن|The box contains old photos.|/kənˈteɪn/|B1
+container|n.|a box for holding things|ظرف؛ کانتینر|Store food in a clean container.|/kənˈteɪnə/|B1
+content|adj.|happy and satisfied|راضی|She is content with her life.|/kənˈtent/|B2
+contest|n.|a competition|مسابقه|He won the photo contest.|/ˈkɒntest/|B1
+context|n.|the situation around something|بافت؛ زمینه|Understand the word in context.|/ˈkɒntekst/|B2
+continent|n.|a very large area of land|قاره|Asia is the largest continent.|/ˈkɒntɪnənt/|B1
+continue|v.|to keep going|ادامه دادن|The film continues after a short break.|/kənˈtɪnjuː/|A2
+contract|n.|a written legal agreement|قرارداد|They signed a two-year contract.|/ˈkɒntrækt/|B2
+contrast|n.|a clear difference|تضاد|There is a contrast between the two cities.|/ˈkɒntrɑːst/|B2
+contribute|v.|to give something to help|مشارکت کردن|Everyone contributed to the project.|/kənˈtrɪbjuːt/|B2
+contribution|n.|something you give to help|مشارکت|Her contribution was very valuable.|/ˌkɒntrɪˈbjuːʃn/|B2
+control|n.|the power to order or direct|کنترل|The pilot has control of the plane.|/kənˈtrəʊl/|A2
+convenient|adj.|suitable and easy to use|راحت؛ دم‌دست|The shop is convenient for the station.|/kənˈviːniənt/|B1
+conversation|n.|a talk between people|مکالمه|We had a long conversation.|/ˌkɒnvəˈseɪʃn/|A2
+convince|v.|to make someone believe|متقاعد کردن|She convinced me to come.|/kənˈvɪns/|B2
+cook|v.|to make food with heat|آشپزی کردن؛ پختن|My mother cooks delicious food.|/kʊk/|A1
+cooker|n.|a machine for cooking food|اجاق|The cooker is in the kitchen.|/ˈkʊkə/|A2
+cookie|n.|a small sweet food; a biscuit|کلوچه؛ کوکی|She baked chocolate cookies.|/ˈkʊki/|A2
+cool|adj.|a little cold; nice|خنک؛ باحال|The evening air is cool.|/kuːl/|A1
+cooperate|v.|to work together|همکاری کردن|The two schools cooperate on projects.|/kəʊˈɒpəreɪt/|B2
+cope|v.|to deal with a difficult situation|کنار آمدن|She copes well with stress.|/kəʊp/|B2
+copy|n.|one of many of the same thing|نسخه؛ کپی|Make two copies of this page.|/ˈkɒpi/|A2
+core|n.|the most important part|هسته؛ بخش اصلی|Reading is the core of language learning.|/kɔː/|B2
+corner|n.|the place where two lines or walls meet|گوشه|The shop is on the corner.|/ˈkɔːnə/|A1
+correct|adj.|right; without mistakes|درست؛ صحیح|Your answer is correct.|/kəˈrekt/|A2
+corridor|n.|a long passage in a building|راهرو|The classrooms are along the corridor.|/ˈkɒrɪdɔː/|B1
+cost|v.|to need that much money|قیمت داشتن|How much does this cost?|/kɒst/|A1
+costume|n.|clothes for a special occasion|لباس نمایشی|She wore a traditional costume.|/ˈkɒstjuːm/|B1
+cottage|n.|a small house in the country|کلبه|They stayed in a country cottage.|/ˈkɒtɪdʒ/|B1
+cotton|n.|soft white material for clothes|نخ؛ پنبه|The shirt is made of cotton.|/ˈkɒtn/|B1
+cough|v.|to push air out of your throat noisily|سرفه کردن|He coughed all night.|/kɒf/|A2
+could|v.|past of can; used for polite requests|می‌توانست|Could you help me, please?|/kʊd/|A1
+council|n.|a group that manages a local area|شورا|The city council built a library.|/ˈkaʊnsl/|B2
+count|v.|to say numbers in order|شمردن|Count from one to ten.|/kaʊnt/|A1
+counter|n.|a long table in a shop|پیشخوان|Pay at the counter, please.|/ˈkaʊntə/|B1
+country|n.|a land with its own government|کشور|Iran is a large country.|/ˈkʌntri/|A1
+countryside|n.|land away from towns|حومه؛ روستا|We love walking in the countryside.|/ˈkʌntrisaɪd/|A2
+county|n.|an area of a country|شهرستان|He lives in the next county.|/ˈkaʊnti/|B1
+couple|n.|two people in a relationship|زوج|The couple married in spring.|/ˈkʌpl/|A2
+courage|n.|the quality of being brave|شجاعت|It takes courage to speak in public.|/ˈkʌrɪdʒ/|B1
+course|n.|a series of lessons; part of a meal|دوره؛ غذا|I'm taking an English course.|/kɔːs/|A1
+court|n.|a place where legal cases are heard|دادگاه|The case went to court.|/kɔːt/|B1
+cousin|n.|the child of your aunt or uncle|پسرعمو؛ دخترخاله|My cousin lives in Canada.|/ˈkʌzn/|A1
+cover|v.|to put something over|پوشاندن|Snow covered the ground.|/ˈkʌvə/|A1
+cow|n.|a large farm animal that gives milk|گاو|The cow gives us milk.|/kaʊ/|A1
+crack|n.|a narrow space in something|ترک؛ شکاف|There is a crack in the wall.|/kræk/|B1
+craft|n.|skill in making things|صنایع دستی|She sells her crafts online.|/krɑːft/|B1
+crash|n.|an accident where vehicles hit|تصادف|There was a crash on the highway.|/kræʃ/|B1
+crazy|adj.|very strange; mad|دیوانه|That's a crazy idea!|/ˈkreɪzi/|A2
+cream|n.|a thick white liquid from milk|خامه|I like strawberries with cream.|/kriːm/|A2
+create|v.|to make something new|خلق کردن؛ ایجاد کردن|Artists create beautiful things.|/kriˈeɪt/|A2
+creative|adj.|good at making new things|خلاق|She is a very creative person.|/kriˈeɪtɪv/|B1
+creature|n.|any living animal|موجود زنده|Sea creatures are fascinating.|/ˈkriːtʃə/|B1
+credit|n.|money borrowed; praise|اعتبار|She paid by credit card.|/ˈkredɪt/|B1
+crew|n.|a group that works together on a ship or plane|خدمه|The crew welcomed the passengers.|/kruː/|B1
+crime|n.|an illegal activity|جرم|The police are fighting crime.|/kraɪm/|A2
+criminal|n.|a person who breaks the law|مجرم|The criminal was caught.|/ˈkrɪmɪnl/|B1
+crisis|n.|a time of great difficulty|بحران|The country faces an economic crisis.|/ˈkraɪsɪs/|B2
+criterion|n.|a standard for judging|معیار|The main criterion is quality.|/kraɪˈtɪəriən/|C1
+critic|n.|a person who judges books or films|منتقد|The critic loved the film.|/ˈkrɪtɪk/|B2
+critical|adj.|very important; saying what is wrong|حیاتی؛ انتقادی|This is a critical moment.|/ˈkrɪtɪkl/|B2
+criticism|n.|the act of judging faults|انتقاد|He can't take criticism.|/ˈkrɪtɪsɪzəm/|B2
+criticize|v.|to say what is wrong|انتقاد کردن|Don't criticize her work.|/ˈkrɪtɪsaɪz/|B2
+crop|n.|a plant grown by farmers|محصول|The wheat crop was excellent.|/krɒp/|B1
+cross|v.|to go from one side to the other|عبور کردن|Cross the street carefully.|/krɒs/|A1
+crowd|n.|a large group of people|جمعیت|A crowd waited for the singer.|/kraʊd/|A2
+crowded|adj.|full of people|شلوغ|The bus was very crowded.|/ˈkraʊdɪd/|A2
+crown|n.|a circle of gold worn by a king|تاج|The king wore a golden crown.|/kraʊn/|B1
+crucial|adj.|extremely important|حیاتی|Water is crucial for life.|/ˈkruːʃl/|B2
+cruel|adj.|causing pain and suffering|بی‌رحم|Don't be cruel to animals.|/ˈkruːəl/|B1
+cry|v.|to make tears; to shout|گریه کردن|The little girl began to cry.|/kraɪ/|A1
+cultural|adj.|relating to culture|فرهنگی|The city has many cultural events.|/ˈkʌltʃərəl/|B1
+culture|n.|the customs and arts of a people|فرهنگ|I love learning about other cultures.|/ˈkʌltʃə/|A2
+cup|n.|a small container for drinking|فنجان|A cup of tea, please.|/kʌp/|A1
+cupboard|n.|a piece of furniture for storing things|کمد؛ قفسه|The cups are in the cupboard.|/ˈkʌbəd/|A2
+cure|v.|to make someone healthy again|درمان کردن|Doctors cured his illness.|/kjʊə/|B1
+curious|adj.|wanting to know about things|کنجکاو|Cats are curious animals.|/ˈkjʊəriəs/|B1
+curly|adj.|having curves (hair)|فرفری|She has beautiful curly hair.|/ˈkɜːli/|A2
+currency|n.|the money of a country|ارز|The dollar is a global currency.|/ˈkʌrənsi/|B1
+current|adj.|happening now|کنونی|The current situation is difficult.|/ˈkʌrənt/|B2
+currently|adv.|at the present time|در حال حاضر|He is currently studying abroad.|/ˈkʌrəntli/|B1
+curriculum|n.|the subjects taught in a school|برنامه‌ی درسی|Art is part of the curriculum.|/kəˈrɪkjələm/|C1
+curtain|n.|cloth that covers a window|پرده|Close the curtains at night.|/ˈkɜːtn/|A2
+curve|n.|a line that bends|منحنی|The road has a sharp curve.|/kɜːv/|B1
+custom|n.|a traditional way of behaving|رسم؛ عادت|It is a custom to give gifts at Nowruz.|/ˈkʌstəm/|B1
+customer|n.|a person who buys things|مشتری|The customer asked for a discount.|/ˈkʌstəmə/|A2
+cut|v.|to divide with a knife|بریدن|Cut the paper with scissors.|/kʌt/|A1
+cute|adj.|very pretty and attractive|بامزه؛ خوشگل|What a cute baby!|/kjuːt/|A2
+cycle|n.|a repeated series of events|چرخه|The water cycle is important.|/ˈsaɪkl/|B1
+dad|n.|father|بابا|My dad works in a factory.|/dæd/|A1
+daily|adj.|happening every day|روزانه|She reads the daily news.|/ˈdeɪli/|A2
+damage|n.|harm or injury|خسارت|The storm caused a lot of damage.|/ˈdæmɪdʒ/|B1
+dance|v.|to move your body to music|رقصیدن|They danced at the wedding.|/dɑːns/|A1
+danger|n.|the chance of harm|خطر|Danger! Keep out!|/ˈdeɪndʒə/|A2
+dangerous|adj.|able to cause harm|خطرناک|Swimming here is dangerous.|/ˈdeɪndʒərəs/|A2
+dare|v.|to be brave enough to do something|جرأت کردن|I didn't dare to speak.|/deə/|B1
+dark|adj.|with little or no light|تاریک|The room was dark at night.|/dɑːk/|A1
+data|n.|facts and information|داده‌ها|The data shows a rise in sales.|/ˈdeɪtə/|B1
+date|n.|a day of the month|تاریخ|What's the date today?|/deɪt/|A1
+daughter|n.|a female child|دختر (فرزند)|Their daughter is a nurse.|/ˈdɔːtə/|A1
+day|n.|24 hours; the time when it is light|روز|Today is a beautiful day.|/deɪ/|A1
+dead|adj.|not alive|مرده|The tree has been dead for years.|/ded/|A2
+deaf|adj.|not able to hear|ناشنوا|She is deaf in one ear.|/def/|B1
+deal|n.|an agreement|معامله|We made a deal.|/diːl/|B1
+dear|adj.|loved; used in letters|عزیز|Dear friend, how are you?|/dɪə/|A2
+death|n.|the end of life|مرگ|The death of the king saddened everyone.|/deθ/|B1
+debate|n.|a formal discussion|بحث؛ مناظره|They held a debate about education.|/dɪˈbeɪt/|B2
+debt|n.|money that you owe|بدهی|He paid off his debt.|/det/|B2
+decade|n.|a period of ten years|دهه|The city changed in one decade.|/ˈdekeɪd/|B1
+december|n.|the twelfth month of the year|دسامبر|It snows in December.|/dɪˈsembə/|A1
+decide|v.|to make a choice|تصمیم گرفتن|I decided to study medicine.|/dɪˈsaɪd/|A1
+decision|n.|a choice that you make|تصمیم|It was a difficult decision.|/dɪˈsɪʒn/|A2
+declare|v.|to say officially|اعلام کردن|They declared the results at noon.|/dɪˈkleə/|B2
+decline|v.|to become less; to refuse|کاهش یافتن؛ رد کردن|Sales declined last year.|/dɪˈklaɪn/|B2
+decorate|v.|to make something look nice|تزئین کردن|We decorated the house for the party.|/ˈdekəreɪt/|A2
+decoration|n.|something that makes a place look nice|تزئین|The room needs some decoration.|/ˌdekəˈreɪʃn/|B1
+decrease|v.|to become smaller or less|کاهش دادن|The population decreased.|/dɪˈkriːs/|B1
+deep|adj.|going far down|عمیق|This pool is two metres deep.|/diːp/|A2
+deeply|adv.|very much; far down|عمیقاً|She was deeply moved by the film.|/ˈdiːpli/|B1
+defeat|v.|to win against someone|شکست دادن|Our team defeated the champions.|/dɪˈfiːt/|B1
+defence|n.|protection against attack|دفاع|The country spent more on defence.|/dɪˈfens/|B2
+defend|v.|to protect from attack|دفاع کردن|Soldiers defend the country.|/dɪˈfend/|B1
+define|v.|to explain the meaning|تعریف کردن|Define the word "freedom".|/dɪˈfaɪn/|B1
+definite|adj.|certain; clear|قطعی|We need a definite answer.|/ˈdefɪnət/|B2
+definitely|adv.|without any doubt|قطعاً|I will definitely come.|/ˈdefɪnətli/|B1
+definition|n.|the meaning of a word|تعریف|Look up the definition in the dictionary.|/ˌdefɪˈnɪʃn/|B1
+degree|n.|a unit of temperature; a university award|درجه؛ مدرک|It's thirty degrees today.|/dɪˈɡriː/|A2
+delay|v.|to make something late|تأخیر انداختن|The flight was delayed by fog.|/dɪˈleɪ/|B1
+deliberately|adv.|on purpose|عمداً|He deliberately ignored me.|/dɪˈlɪbərətli/|B2
+delicate|adj.|easily damaged; fine|ظریف|The glass is very delicate.|/ˈdelɪkət/|B2
+delicious|adj.|tasting very good|خوشمزه|This soup is delicious!|/dɪˈlɪʃəs/|A2
+delight|n.|great pleasure|خوشی؛ لذت|The children screamed with delight.|/dɪˈlaɪt/|B2
+deliver|v.|to take things to people|تحویل دادن|The postman delivers letters every day.|/dɪˈlɪvə/|B1
+delivery|n.|the act of bringing goods|تحویل|Delivery takes three days.|/dɪˈlɪvəri/|B1
+demand|n.|a strong request|تقاضا؛ درخواست|Demand for the product is high.|/dɪˈmɑːnd/|B2
+demonstrate|v.|to show how something works|نشان دادن|The teacher demonstrated the experiment.|/ˈdemənstreɪt/|B2
+dentist|n.|a doctor for teeth|دندان‌پزشک|I go to the dentist twice a year.|/ˈdentɪst/|A2
+deny|v.|to say something is not true|انکار کردن|He denied the accusation.|/dɪˈnaɪ/|B2
+depart|v.|to leave|عزیمت کردن|The train departs at six.|/dɪˈpɑːt/|B1
+department|n.|a part of a shop or organization|بخش؛ اداره|She works in the marketing department.|/dɪˈpɑːtmənt/|B1
+departure|n.|the act of leaving|عزیمت|The departure time is 10:30.|/dɪˈpɑːtʃə/|B1
+depend|v.|to need someone or something|بستگی داشتن|It depends on the weather.|/dɪˈpend/|A2
+deposit|n.|money paid as part of a larger payment|بیعانه|We paid a deposit on the flat.|/dɪˈpɒzɪt/|B2
+depressed|adj.|very sad and without hope|افسرده|She felt depressed after the exam.|/dɪˈprest/|B1
+depression|n.|a long period of sadness|افسردگی|He suffers from depression.|/dɪˈpreʃn/|B2
+depth|n.|how deep something is|عمق|The pool has a depth of two metres.|/depθ/|B1
+deputy|n.|a person who acts for the leader|معاون|The deputy manager is in a meeting.|/ˈdepjuti/|B2
+derive|v.|to come from a source|نشأت گرفتن|The word derives from Latin.|/dɪˈraɪv/|C1
+describe|v.|to say what something is like|توصیف کردن|Describe your best friend.|/dɪˈskraɪb/|A2
+description|n.|words that describe something|توصیف|The description matched the suspect.|/dɪˈskrɪpʃn/|B1
+desert|n.|a very dry area of land|بیابان|Camels live in the desert.|/ˈdezət/|A2
+deserve|v.|to be worthy of something|لایق بودن|You deserve a rest.|/dɪˈzɜːv/|B1
+design|n.|the plan of how something looks|طراحی|I like the design of this dress.|/dɪˈzaɪn/|A2
+designer|n.|a person who plans how things look|طراح|She is a fashion designer.|/dɪˈzaɪnə/|B1
+desire|n.|a strong wish|میل؛ آرزو|He has a desire to travel.|/dɪˈzaɪə/|B2
+desk|n.|a table for working or studying|میز تحریر|The dictionary is on my desk.|/desk/|A1
+desperate|adj.|needing something very much|ناامید؛ محتاج|They were desperate for water.|/ˈdespərət/|B2
+despite|prep.|without being affected by|با وجود|Despite the rain, we walked.|/dɪˈspaɪt/|B2
+dessert|n.|sweet food eaten at the end of a meal|دسر|We had fruit for dessert.|/dɪˈzɜːt/|A2
+destination|n.|the place you are going to|مقصد|Our destination is the beach.|/ˌdestɪˈneɪʃn/|B1
+destroy|v.|to damage beyond repair|نابود کردن|The fire destroyed the old house.|/dɪˈstrɔɪ/|A2
+destruction|n.|the act of destroying|نابودی|The storm caused great destruction.|/dɪˈstrʌkʃn/|B2
+detail|n.|a small part of something|جزئیات|Tell me every detail of the story.|/ˈdiːteɪl/|A2
+detect|v.|to discover something|کشف کردن|The test can detect the virus.|/dɪˈtekt/|B2
+detective|n.|a person who solves crimes|کارآگاه|The detective found the missing ring.|/dɪˈtektɪv/|B1
+determine|v.|to decide officially; to find out|تعیین کردن|Tests determine your level.|/dɪˈtɜːmɪn/|B2
+determined|adj.|having a strong decision|مصمم|She is determined to succeed.|/dɪˈtɜːmɪnd/|B1
+develop|v.|to grow or become more advanced|رشد دادن؛ توسعه دادن|The city has developed quickly.|/dɪˈveləp/|B1
+development|n.|the process of growing|توسعه|Economic development needs education.|/dɪˈveləpmənt/|B1
+device|n.|a machine or tool|دستگاه|This device measures temperature.|/dɪˈvaɪs/|B1
+devote|v.|to give time or love to something|اختصاص دادن|She devotes her time to charity.|/dɪˈvəʊt/|B2
+diagram|n.|a drawing that explains something|نمودار|The diagram shows the water cycle.|/ˈdaɪəɡræm/|B1
+dialogue|n.|a conversation; the words in a play|گفتگو|The film has good dialogue.|/ˈdaɪəlɒɡ/|B2
+diamond|n.|a very hard, clear, valuable stone|الماس|The ring has a small diamond.|/ˈdaɪəmənd/|B1
+diary|n.|a book where you write daily events|خاطرات؛ دفترچه|She writes in her diary every night.|/ˈdaɪəri/|A2
+dictionary|n.|a book that explains words|فرهنگ لغت|Look up the word in the dictionary.|/ˈdɪkʃənəri/|A1
+die|v.|to stop living|مردن|The flowers die without water.|/daɪ/|A2
+diet|n.|the food you usually eat|رژیم غذایی|A healthy diet includes fruit.|/ˈdaɪət/|B1
+difference|n.|the way things are not the same|تفاوت|Can you see the difference?|/ˈdɪfrəns/|A2
+different|adj.|not the same|متفاوت|These two bags are different.|/ˈdɪfrənt/|A1
+difficult|adj.|hard; not easy|دشوار؛ سخت|This question is difficult.|/ˈdɪfɪkəlt/|A1
+difficulty|n.|a problem|سختی؛ مشکل|She had difficulty with the test.|/ˈdɪfɪkəlti/|B1
+dig|v.|to make a hole in the ground|کندن|They dug a hole in the garden.|/dɪɡ/|B1
+digital|adj.|using computer technology|دیجیتال|We live in a digital age.|/ˈdɪdʒɪtl/|B1
+dinner|n.|the main meal of the day|شام؛ ناهار|Dinner is ready!|/ˈdɪnə/|A1
+direct|adj.|straight; not through other places|مستقیم|Is there a direct train to Shiraz?|/dəˈrekt/|A2
+direction|n.|the way something goes|جهت|Which direction is the museum?|/dəˈrekʃn/|A2
+directly|adv.|straight; without stopping|مستقیماً|Fly directly to Paris.|/dəˈrektli/|B1
+director|n.|a person who manages a film or company|کارگردان؛ مدیر|The director liked her performance.|/dəˈrektə/|B1
+dirt|n.|soil; something not clean|خاک؛ کثیفی|His hands were covered in dirt.|/dɜːt/|B1
+dirty|adj.|not clean|کثیف|Your shoes are dirty.|/ˈdɜːti/|A1
+disabled|adj.|having a physical or mental condition|معلول|The building has access for disabled people.|/dɪsˈeɪbld/|B1
+disadvantage|n.|something that makes success harder|عیب؛ نقطه‌ضعف|The disadvantage is the high cost.|/ˌdɪsədˈvɑːntɪdʒ/|B1
+disagree|v.|to have a different opinion|مخالف بودن|I disagree with your opinion.|/ˌdɪsəˈɡriː/|A2
+disappear|v.|to stop being seen|ناپدید شدن|The cat disappeared into the bushes.|/ˌdɪsəˈpɪə/|A2
+disappoint|v.|to make someone unhappy|ناامید کردن|The result disappointed us.|/ˌdɪsəˈpɔɪnt/|B1
+disappointed|adj.|unhappy because something failed|ناامید|She was disappointed with the score.|/ˌdɪsəˈpɔɪntɪd/|A2
+disaster|n.|a very bad event|فاجعه|The flood was a disaster.|/dɪˈzɑːstə/|B1
+discipline|n.|training people to obey rules|نظم و انضباط|The school has good discipline.|/ˈdɪsəplɪn/|B2
+discount|n.|a reduction in price|تخفیف|Students get a ten percent discount.|/ˈdɪskaʊnt/|B1
+discover|v.|to find for the first time|کشف کردن|Scientists discovered a new planet.|/dɪˈskʌvə/|A2
+discovery|n.|the act of finding something|کشف|The discovery changed science.|/dɪˈskʌvəri/|B1
+discuss|v.|to talk about with others|بحث کردن|Let's discuss the plan tomorrow.|/dɪˈskʌs/|A2
+discussion|n.|a conversation about a topic|بحث|We had a long discussion.|/dɪˈskʌʃn/|B1
+disease|n.|an illness|بیماری|Malaria is a serious disease.|/dɪˈziːz/|B1
+dish|n.|food prepared in a particular way; a plate|غذا؛ ظرف|This is a traditional dish.|/dɪʃ/|A1
+disk|n.|a flat round object for storing data|دیسک|Save the file to the disk.|/dɪsk/|B1
+dismiss|v.|to send away; to reject|رد کردن؛ اخراج کردن|The judge dismissed the case.|/dɪsˈmɪs/|B2
+disorder|n.|a lack of order; an illness|بی‌نظمی؛ اختلال|The room was in complete disorder.|/dɪsˈɔːdə/|B2
+display|v.|to show something|نمایش دادن|The museum displays ancient art.|/dɪˈspleɪ/|B1
+dispute|n.|a disagreement|اختلاف؛ مشاجره|The two countries are in dispute.|/dɪˈspjuːt/|B2
+distance|n.|how far it is between two places|فاصله|What's the distance to the village?|/ˈdɪstəns/|A2
+distant|adj.|far away|دور|They live in a distant village.|/ˈdɪstənt/|B1
+distinct|adj.|clearly different|متمایز|The two dialects are distinct.|/dɪˈstɪŋkt/|B2
+distinguish|v.|to see the difference|تشخیص دادن|Can you distinguish the twins?|/dɪˈstɪŋɡwɪʃ/|B2
+distribute|v.|to give to many people|توزیع کردن|They distributed food to the poor.|/dɪˈstrɪbjuːt/|B2
+district|n.|an area of a town or country|منطقه؛ ناحیه|We live in the old district.|/ˈdɪstrɪkt/|B1
+disturb|v.|to interrupt; to worry|مزاحم شدن؛ برهم زدن|Don't disturb the baby.|/dɪˈstɜːb/|B1
+diverse|adj.|showing a lot of variety|متنوع|The city has a diverse population.|/daɪˈvɜːs/|B2
+divide|v.|to separate into parts|تقسیم کردن|Divide the cake into eight pieces.|/dɪˈvaɪd/|B1
+division|n.|the act of dividing|تقسیم|The division of the team was fair.|/dɪˈvɪʒn/|B2
+divorce|n.|the legal end of a marriage|طلاق|Their divorce was final in June.|/dɪˈvɔːs/|B1
+do|v.|to perform an action|انجام دادن|What do you do on Fridays?|/duː/|A1
+doctor|n.|a person who treats sick people|دکتر؛ پزشک|You should see a doctor.|/ˈdɒktə/|A1
+document|n.|a written or printed paper|سند|Sign this document, please.|/ˈdɒkjumənt/|B1
+documentary|n.|a film showing real facts|فیلم مستند|We watched a documentary about lions.|/ˌdɒkjuˈmentri/|B1
+dog|n.|an animal that people keep as a pet|سگ|The dog followed him home.|/dɒɡ/|A1
+dollar|n.|the money unit of the US and others|دلار|It costs five dollars.|/ˈdɒlə/|A1
+domestic|adj.|relating to the home or one country|خانگی؛ داخلی|Domestic flights are cheaper.|/dəˈmestɪk/|B2
+dominate|v.|to control or be the most important|تسلط داشتن|One team dominated the game.|/ˈdɒmɪneɪt/|B2
+door|n.|the part you open to enter a room|در|Please close the door.|/dɔː/|A1
+double|adj.|twice as much|دوبرابر|I'd like a double room.|/ˈdʌbl/|A2
+doubt|n.|a feeling of not being sure|شک|I have no doubt you'll win.|/daʊt/|B1
+down|adv.|to or in a lower place|پایین|Sit down, please.|/daʊn/|A1
+download|v.|to copy data from the internet|دانلود کردن|I downloaded the app yesterday.|/ˌdaʊnˈləʊd/|A2
+downtown|n.|the centre of a city|مرکز شهر|The hotel is downtown.|/ˌdaʊnˈtaʊn/|B1
+downstairs|adv.|to a lower floor|پایین (طبقه)|The kitchen is downstairs.|/ˌdaʊnˈsteəz/|A2
+dozen|n.|twelve|دوجین|She bought a dozen eggs.|/ˈdʌzn/|B1
+draft|n.|a first version of a text|پیش‌نویس|This is just a draft.|/drɑːft/|B2
+drag|v.|to pull something along the ground|کشیدن|He dragged the suitcase to the car.|/dræɡ/|B1
+drama|n.|a play; exciting events|نمایش؛ درام|She loves drama and theatre.|/ˈdrɑːmə/|B1
+dramatic|adj.|sudden and exciting|چشمگیر؛ نمایشی|There was a dramatic change.|/drəˈmætɪk/|B2
+draw|v.|to make a picture with a pen|نقاشی کردن؛ کشیدن|She can draw very well.|/drɔː/|A1
+drawer|n.|a box that slides in a desk|کشو|The pens are in the drawer.|/drɔː/|A2
+drawing|n.|a picture made with a pen|نقاشی|This drawing is by my daughter.|/ˈdrɔːɪŋ/|A2
+dream|n.|pictures in your mind when sleeping|رؤیا؛ آرزو|I had a strange dream last night.|/driːm/|A1
+dress|n.|clothing for women and girls|لباس؛ پیراهن|She wore a blue dress.|/dres/|A1
+drink|v.|to take liquid into your mouth|نوشیدن|Drink plenty of water.|/drɪŋk/|A1
+drive|v.|to control a car|رانندگی کردن|He drives to work every day.|/draɪv/|A1
+driver|n.|a person who drives|راننده|The bus driver was friendly.|/ˈdraɪvə/|A1
+drop|v.|to fall; to let something fall|افتادن؛ انداختن|Don't drop the eggs!|/drɒp/|A1
+drug|n.|a medicine; an illegal substance|دارو؛ مواد مخدر|The doctor gave him a new drug.|/drʌɡ/|B1
+drum|n.|a musical instrument you hit|طبل|He plays the drum in a band.|/drʌm/|A2
+drunk|adj.|affected by alcohol|مست|He was too drunk to drive.|/drʌŋk/|B1
+dry|adj.|not wet|خشک|The clothes are dry now.|/draɪ/|A1
+duck|n.|a bird that lives on water|اردک|The duck swam across the pond.|/dʌk/|A2
+due|adj.|expected at a certain time|سررسید؛ به‌موقع|The train is due at five.|/djuː/|B1
+dull|adj.|not interesting; not bright|کسل‌کننده؛ کدر|The film was dull and long.|/dʌl/|B1
+dump|v.|to put waste somewhere|دور ریختن|Don't dump rubbish here.|/dʌmp/|B1
+during|prep.|through the whole of a time|در طولِ|He slept during the film.|/ˈdjʊərɪŋ/|A1
+dust|n.|dry dirt in very small pieces|غبار؛ خاک|There is dust on the shelves.|/dʌst/|B1
+duty|n.|something you must do|وظیفه|It's my duty to help.|/ˈdjuːti/|B1
+dynamic|adj.|full of energy and change|پویا|The city has a dynamic economy.|/daɪˈnæmɪk/|B2
+each|det.|every one considered separately|هر|Each student has a book.|/iːtʃ/|A1
+eager|adj.|wanting very much to do something|مشتاق|She was eager to start.|/ˈiːɡə/|B1
+ear|n.|the part of the body you hear with|گوش|Rabbits have long ears.|/ɪə/|A1
+early|adv.|before the usual time|زود|I wake up early every day.|/ˈɜːli/|A1
+earn|v.|to get money for work|درآمد داشتن؛ کسب کردن|She earns a good salary.|/ɜːn/|A2
+earth|n.|the planet we live on|زمین|The Earth moves around the Sun.|/ɜːθ/|A2
+earthquake|n.|a shaking of the ground|زلزله|The earthquake damaged many houses.|/ˈɜːθkweɪk/|B1
+ease|n.|lack of difficulty|آسانی|She passed the test with ease.|/iːz/|B2
+east|n.|the direction where the sun rises|شرق|The sun rises in the east.|/iːst/|A1
+eastern|adj.|in or from the east|شرقی|They live in the eastern part.|/ˈiːstən/|B1
+easy|adj.|not difficult|آسان|This exercise is very easy.|/ˈiːzi/|A1
+eat|v.|to put food in your mouth|خوردن|We eat lunch at one o'clock.|/iːt/|A1
+economy|n.|the money system of a country|اقتصاد|The economy is growing fast.|/ɪˈkɒnəmi/|B1
+edge|n.|the line where something ends|لبه|Don't stand at the edge of the roof.|/edʒ/|B1
+edit|v.|to make changes to a text|ویرایش کردن|She edited the article carefully.|/ˈedɪt/|B1
+edition|n.|one form of a published book|نسخه؛ چاپ|This is the third edition.|/ɪˈdɪʃn/|B2
+editor|n.|a person who prepares texts|ویراستار؛ سردبیر|The editor changed the headline.|/ˈedɪtə/|B1
+educate|v.|to teach|آموزش دادن|Schools educate the young.|/ˈedʒukeɪt/|B1
+education|n.|learning at school or university|آموزش؛ تحصیل|Education is important for everyone.|/ˌedʒuˈkeɪʃn/|A2
+effect|n.|the result of something|اثر؛ تأثیر|The medicine had a quick effect.|/ɪˈfekt/|B1
+effective|adj.|producing the result you want|مؤثر|This method is very effective.|/ɪˈfektɪv/|B1
+efficient|adj.|working well without waste|کارآمد|The new engine is more efficient.|/ɪˈfɪʃnt/|B1
+effort|n.|hard work to do something|تلاش|She passed with a lot of effort.|/ˈefət/|B1
+egg|n.|a round food that birds produce|تخم‌مرغ|I had two eggs for breakfast.|/eɡ/|A1
+eight|num.|the number 8|هشت|I have eight cousins.|/eɪt/|A1
+either|det.|one or the other of two|هرکدام از دو|You can sit on either side.|/ˈaɪðə/|A2
+elderly|adj.|old; used politely|سالمند|Elderly people need our respect.|/ˈeldəli/|B1
+elect|v.|to choose by voting|انتخاب کردن|They elected a new mayor.|/ɪˈlekt/|B1
+election|n.|the process of choosing by voting|انتخابات|The election is next month.|/ɪˈlekʃn/|B1
+electric|adj.|working by electricity|الکتریکی|We bought an electric heater.|/ɪˈlektrɪk/|A2
+electricity|n.|the power that works machines|برق|The house has no electricity.|/ɪˌlekˈtrɪsəti/|B1
+electronic|adj.|made with small electrical parts|الکترونیکی|Electronic devices are everywhere.|/ɪˌlekˈtrɒnɪk/|B1
+element|n.|a basic part of something|عنصر؛ جزء|Water is a key element of life.|/ˈelɪmənt/|B1
+elephant|n.|a very large grey animal with a long nose|فیل|An elephant never forgets.|/ˈelɪfənt/|A1
+elevator|n.|a machine that moves people up and down|آسانسور|Take the elevator to the fifth floor.|/ˈelɪveɪtə/|A2
+eleven|num.|the number 11|یازده|There are eleven players on a team.|/ɪˈlevn/|A1
+eliminate|v.|to remove completely|حذف کردن|We must eliminate waste.|/ɪˈlɪmɪneɪt/|B2
+else|adv.|in addition; different|دیگر؛ وگرنه|What else do you need?|/els/|A1
+elsewhere|adv.|in another place|جاهای دیگر|The shop is closed — try elsewhere.|/ˌelsˈweə/|B2
+email|n.|a message sent over the internet|ایمیل|Send me an email, please.|/ˈiːmeɪl/|A1
+embarrassed|adj.|feeling shy or ashamed|خجالت‌زده|She felt embarrassed by the mistake.|/ɪmˈbærəst/|B1
+embrace|v.|to hold someone in your arms|در آغوش گرفتن|They embraced at the airport.|/ɪmˈbreɪs/|C1
+emerge|v.|to come out; to appear|پدیدار شدن|New evidence emerged.|/ɪˈmɜːdʒ/|B2
+emergency|n.|a sudden dangerous situation|اورژانس؛ وضعیت اضطراری|Call 115 in an emergency.|/ɪˈmɜːdʒənsi/|A2
+emotion|n.|a strong feeling like love or anger|احساس؛ هیجان|Music can express emotion.|/ɪˈməʊʃn/|B1
+emotional|adj.|having strong feelings|احساسی|It was an emotional farewell.|/ɪˈməʊʃənl/|B1
+emphasis|n.|special importance|تأکید|The emphasis is on speaking.|/ˈemfəsɪs/|B2
+emphasize|v.|to give special importance|تأکید کردن|I emphasize the need for practice.|/ˈemfəsaɪz/|B2
+empire|n.|a group of countries ruled by one power|امپراتوری|The empire lasted two centuries.|/ˈempaɪə/|B2
+employ|v.|to give someone a job|استخدام کردن|The factory employs 500 people.|/ɪmˈplɔɪ/|B1
+employee|n.|a person who works for someone|کارمند|The employees started at nine.|/ɪmˈplɔɪiː/|B1
+employer|n.|a person or company that gives jobs|کارفرما|Her employer praised her work.|/ɪmˈplɔɪə/|B1
+employment|n.|the state of having a job|اشتغال|Employment is rising this year.|/ɪmˈplɔɪmənt/|B1
+empty|adj.|with nothing inside|خالی|The bottle is empty.|/ˈempti/|A1
+enable|v.|to make something possible|ممکن کردن|Technology enables new learning.|/ɪˈneɪbl/|B2
+encounter|v.|to meet unexpectedly|روبه‌رو شدن|We encountered a bear in the forest.|/ɪnˈkaʊntə/|C1
+encourage|v.|to give someone confidence|تشویق کردن|My teacher encouraged me to study.|/ɪnˈkʌrɪdʒ/|B1
+encouragement|n.|words that give confidence|دلگرمی؛ تشویق|Thanks for your encouragement.|/ɪnˈkʌrɪdʒmənt/|B1
+end|n.|the last part of something|پایان|The story has a happy end.|/end/|A1
+endless|adj.|with no end|بی‌پایان|The desert seemed endless.|/ˈendləs/|B1
+enemy|n.|someone who hates or fights you|دشمن|They made peace with their enemy.|/ˈenəmi/|B1
+energy|n.|the power to be active|انرژی|Children have lots of energy.|/ˈenədʒi/|A2
+enforce|v.|to make people obey a law|اجرایی کردن|The police enforce the law.|/ɪnˈfɔːs/|B2
+engage|v.|to become involved|مشغول شدن؛ درگیر شدن|Students engage in many activities.|/ɪnˈɡeɪdʒ/|B2
+engine|n.|a machine that makes things move|موتور|The engine makes a strange noise.|/ˈendʒɪn/|A2
+engineer|n.|a person who designs machines or buildings|مهندس|Her brother is an engineer.|/ˌendʒɪˈnɪə/|A2
+enhance|v.|to improve the quality|بهبود بخشیدن|Practice enhances your skills.|/ɪnˈhɑːns/|B2
+enjoy|v.|to like something and get pleasure from it|لذت بردن|I enjoy reading books.|/ɪnˈdʒɔɪ/|A1
+enormous|adj.|extremely large|عظیم|The whale was enormous.|/ɪˈnɔːməs/|B1
+enough|adj.|as much as you need|کافی|We have enough time.|/ɪˈnʌf/|A1
+enquire|v.|to ask for information|پرس‌وجو کردن|I enquired about the price.|/ɪnˈkwaɪə/|B2
+enrich|v.|to make richer or better|غنی کردن|Reading enriches the mind.|/ɪnˈrɪtʃ/|C1
+ensure|v.|to make certain|اطمینان حاصل کردن|Ensure the door is locked.|/ɪnˈʃʊə/|B2
+enter|v.|to go in|وارد شدن|Please enter the room quietly.|/ˈentə/|A2
+enterprise|n.|a business; a bold plan|شرکت؛ ابتکار|She started her own enterprise.|/ˈentəpraɪz/|B2
+entertainment|n.|things that amuse people|سرگرمی|The city offers great entertainment.|/ˌentəˈteɪnmənt/|B1
+enthusiasm|n.|great interest and excitement|اشتیاق|She shows great enthusiasm.|/ɪnˈθjuːziæzəm/|B2
+enthusiastic|adj.|very interested and excited|مشتاق|The audience was enthusiastic.|/ɪnˌθjuːziˈæstɪk/|B2
+entire|adj.|whole; complete|کامل؛ تمام|I read the entire book in one day.|/ɪnˈtaɪə/|B1
+entirely|adv.|completely|کاملاً|I don't entirely agree.|/ɪnˈtaɪəli/|B1
+entitle|v.|to give someone a right|حق دادن|Your ticket entitles you to a seat.|/ɪnˈtaɪtl/|B2
+entrance|n.|the way into a place|ورودی|Wait at the main entrance.|/ˈentrəns/|B1
+entry|n.|the act of going in|ورود|Entry to the museum is free.|/ˈentri/|B1
+envelope|n.|a paper cover for a letter|پاکت نامه|Put the letter in an envelope.|/ˈenvələʊp/|A2
+environment|n.|the natural world around us|محیط زیست|We must protect the environment.|/ɪnˈvaɪrənmənt/|B1
+environmental|adj.|relating to the environment|زیست‌محیطی|Environmental problems need action.|/ɪnˌvaɪrənˈmentl/|B1
+envy|v.|to want what someone else has|حسادت کردن|I envy your success.|/ˈenvi/|B1
+episode|n.|one part of a TV series|قسمت|I watched the first episode.|/ˈepɪsəʊd/|B1
+equal|adj.|the same in amount or value|برابر|All people are equal.|/ˈiːkwəl/|B1
+equipment|n.|the tools needed for an activity|تجهیزات|The gym has modern equipment.|/ɪˈkwɪpmənt/|B1
+equivalent|n.|something with the same value|معادل|A mile is roughly the equivalent of 1.6 km.|/ɪˈkwɪvələnt/|B2
+era|n.|a period of history|دوره؛ عصر|We live in the digital era.|/ˈɪərə/|B2
+error|n.|a mistake|خطا|There is an error in the report.|/ˈerə/|B1
+escape|v.|to get away from a place or danger|فرار کردن|The bird escaped from its cage.|/ɪˈskeɪp/|B1
+especially|adv.|more than usual; very much|به‌ویژه|I love fruits, especially mangoes.|/ɪˈspeʃəli/|A2
+essay|n.|a short piece of writing|مقاله؛ انشا|Write an essay about your city.|/ˈeseɪ/|B1
+essential|adj.|completely necessary|ضروری|Water is essential for life.|/ɪˈsenʃl/|B2
+establish|v.|to start something that will last|تأسیس کردن|They established the school in 1950.|/ɪˈstæblɪʃ/|B2
+estate|n.|a large area of land with buildings|املاک|He owns a large estate.|/ɪˈsteɪt/|B2
+estimate|v.|to guess a number or cost|تخمین زدن|I estimate the cost at 100 pounds.|/ˈestɪmeɪt/|B2
+evaluate|v.|to judge the value of something|ارزیابی کردن|Teachers evaluate student progress.|/ɪˈvæljueɪt/|B2
+even|adv.|used to make something surprising|حتی|Even children can do it.|/ˈiːvn/|A1
+evening|n.|the part of the day before you go to bed|عصر؛ شب|I watch TV in the evening.|/ˈiːvnɪŋ/|A1
+event|n.|something that happens|رویداد|The sports event was exciting.|/ɪˈvent/|A2
+eventually|adv.|in the end; after a long time|سرانجام|Eventually, we found the hotel.|/ɪˈventʃuəli/|B1
+ever|adv.|at any time|هرگز؛ تاکنون|Have you ever been to Paris?|/ˈevə/|A1
+every|det.|each; all the|هر|I practise English every day.|/ˈevri/|A1
+everybody|pron.|every person|همه|Everybody enjoyed the party.|/ˈevribɒdi/|A2
+everyday|adj.|used or happening each day|روزمره|These are everyday words.|/ˈevrideɪ/|A2
+everyone|pron.|every person|همه|Everyone likes pizza.|/ˈevriwʌn/|A1
+everything|pron.|all things|همه‌چیز|Everything is ready for the party.|/ˈevriθɪŋ/|A1
+everywhere|adv.|in all places|همه‌جا|There were flowers everywhere.|/ˈevriweə/|A2
+evidence|n.|facts that show something is true|مدرک؛ شواهد|There is no evidence of a crime.|/ˈevɪdəns/|B1
+evident|adj.|clear; easy to see|آشکار|His love for music is evident.|/ˈevɪdənt/|B2
+evil|adj.|extremely bad and harmful|شرور|The villain was evil.|/ˈiːvl/|B1
+evolution|n.|the process of gradual change|تکامل؛ فرگشت|Evolution explains species change.|/ˌiːvəˈluːʃn/|B2
+evolve|v.|to develop gradually|تکامل یافتن|Languages evolve over time.|/ɪˈvɒlv/|B2
+exact|adj.|completely correct|دقیقاً همان|What's the exact time?|/ɪɡˈzækt/|A2
+exactly|adv.|in an exact way|دقیقاً|That's exactly what I said.|/ɪɡˈzæktli/|A2
+exam|n.|a test of knowledge|امتحان|The English exam is on Monday.|/ɪɡˈzæm/|A1
+examination|n.|a formal test|آزمون|The examination lasts two hours.|/ɪɡˌzæmɪˈneɪʃn/|B1
+examine|v.|to look at carefully|بررسی کردن|The doctor examined her knee.|/ɪɡˈzæmɪn/|B1
+example|n.|something that shows what other things are like|مثال|Can you give me an example?|/ɪɡˈzɑːmpl/|A1
+excellent|adj.|extremely good|عالی|Your English is excellent!|/ˈeksələnt/|A1
+except|prep.|not including|به جز|Everyone came except Ali.|/ɪkˈsept/|A2
+exception|n.|something that is different|استثنا|Everyone passed, with one exception.|/ɪkˈsepʃn/|B2
+exchange|v.|to give one thing and get another|مبادله کردن|They exchanged phone numbers.|/ɪksˈtʃeɪndʒ/|B1
+excited|adj.|very happy and interested|هیجان‌زده|The children are excited about the trip.|/ɪkˈsaɪtɪd/|A1
+excitement|n.|a feeling of great happiness|هیجان|The crowd cheered with excitement.|/ɪkˈsaɪtmənt/|B1
+exciting|adj.|making you feel excited|هیجان‌انگیز|The match was very exciting.|/ɪkˈsaɪtɪŋ/|A1
+exclude|v.|to leave out|کنار گذاشتن|They excluded him from the team.|/ɪkˈskluːd/|B2
+excuse|n.|a reason you give for a fault|بهانه؛ عذر|There's no excuse for being late.|/ɪkˈskjuːs/|A2
+execute|v.|to carry out; to kill as punishment|اجرا کردن|They executed the plan perfectly.|/ˈeksɪkjuːt/|B2
+executive|n.|a person with high power in a business|مدیر اجرایی|She is a company executive.|/ɪɡˈzekjətɪv/|B2
+exercise|n.|activity you do to keep your body healthy|ورزش؛ تمرین|Morning exercise is good for you.|/ˈeksəsaɪz/|A1
+exhausted|adj.|extremely tired|بسیار خسته|I was exhausted after the race.|/ɪɡˈzɔːstɪd/|B1
+exhibition|n.|a public show of art or objects|نمایشگاه|The art exhibition opens today.|/ˌeksɪˈbɪʃn/|B1
+exist|v.|to be real|وجود داشتن|Do ghosts really exist?|/ɪɡˈzɪst/|B1
+existence|n.|the state of existing|وجود|The existence of water is essential.|/ɪɡˈzɪstəns/|B2
+exit|n.|the way out|خروجی|The exit is on your left.|/ˈeksɪt/|A2
+expand|v.|to become bigger|گسترش دادن|The company plans to expand.|/ɪkˈspænd/|B1
+expansion|n.|the process of becoming bigger|گسترش|The expansion created new jobs.|/ɪkˈspænʃn/|B2
+expect|v.|to think something will happen|انتظار داشتن|We expect rain tomorrow.|/ɪkˈspekt/|A2
+expectation|n.|a belief about what will happen|انتظار|The results met our expectations.|/ˌekspekˈteɪʃn/|B2
+expected|adj.|believed likely to happen|مورد انتظار|The expected delay was two hours.|/ɪkˈspektɪd/|B1
+expedition|n.|a journey for a special purpose|expedition؛ سفر اکتشافی|They went on a desert expedition.|/ˌekspəˈdɪʃn/|B2
+expense|n.|the money spent on something|هزینه|Travel expenses are paid by the firm.|/ɪkˈspens/|B2
+expensive|adj.|costing a lot of money|گران|That watch is too expensive.|/ɪkˈspensɪv/|A1
+experience|n.|knowledge from doing things|تجربه|She has ten years of experience.|/ɪkˈspɪəriəns/|A2
+experienced|adj.|having a lot of experience|باتجربه|He is an experienced pilot.|/ɪkˈspɪəriənst/|B1
+experiment|n.|a test to discover something|آزمایش|The experiment was a success.|/ɪkˈsperɪmənt/|B1
+expert|n.|a person with special knowledge|متخصص|She is an expert in history.|/ˈekspɜːt/|B1
+explain|v.|to make something clear|توضیح دادن|Please explain the rule again.|/ɪkˈspleɪn/|A1
+explanation|n.|words that make something clear|توضیح|Give me a clear explanation.|/ˌekspləˈneɪʃn/|B1
+explicit|adj.|clear and direct|صریح|He gave explicit instructions.|/ɪkˈsplɪsɪt/|C1
+explode|v.|to burst with a loud noise|منفجر شدن|The fireworks exploded in the sky.|/ɪkˈspləʊd/|B1
+exploit|v.|to use something well; to treat unfairly|بهره‌برداری کردن|They exploit cheap labour.|/ɪkˈsplɔɪt/|B2
+explore|v.|to travel to learn about a place|کاوش کردن|They explored the old city.|/ɪkˈsplɔː/|A2
+explosion|n.|the act of exploding|انفجار|The explosion shook the city.|/ɪkˈspləʊʒn/|B1
+export|n.|goods sold to other countries|صادرات|Oil is the country's main export.|/ˈekspɔːt/|B1
+expose|v.|to show something hidden|افشا کردن|The report exposed the scandal.|/ɪkˈspəʊz/|B2
+express|v.|to show a feeling or idea|ابراز کردن|Words can't express my thanks.|/ɪkˈspres/|B1
+expression|n.|a word or phrase; a look on the face|اصطلاح؛ حالت چهره|He had a sad expression.|/ɪkˈspreʃn/|B1
+extend|v.|to make longer or bigger|تمدید کردن؛ گسترش دادن|We extended our stay by two days.|/ɪkˈstend/|B2
+extension|n.|the act of making longer|تمدید؛ پسوند|She asked for an extension on the essay.|/ɪkˈstenʃn/|B2
+extensive|adj.|covering a large area|گسترده|The house has an extensive garden.|/ɪkˈstensɪv/|B2
+extent|n.|how far something reaches|میزان؛ وسعت|To what extent do you agree?|/ɪkˈstent/|B2
+external|adj.|outside; from the outside|خارجی|External walls need paint.|/ɪkˈstɜːnl/|B2
+extra|adj.|more than usual|اضافی|I need some extra time.|/ˈekstrə/|A1
+extract|v.|to take out|استخراج کردن|They extract oil from the ground.|/ɪkˈstrækt/|B2
+extraordinary|adj.|very unusual and impressive|خارق‌العاده|It was an extraordinary achievement.|/ɪkˈstrɔːdnri/|B2
+extreme|adj.|very great; furthest from normal|شدید؛ افراطی|The heat was extreme.|/ɪkˈstriːm/|B1
+extremely|adv.|very much|به‌شدت|The test was extremely difficult.|/ɪkˈstriːmli/|B1
+eye|n.|the part of the body you see with|چشم|She has big brown eyes.|/aɪ/|A1`;

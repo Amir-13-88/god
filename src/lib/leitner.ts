@@ -7,7 +7,7 @@ export interface SavedWord {
   w: string;
   box: number; // 0 = تازه، 1..6 = جعبه‌ها، 7 = یادگرفته
   due: number; // زمان مرور بعدی (ms)
-  lapses: number;
+  lapses: number; // شمار فراموشی‌ها
   added: number;
 }
 
@@ -20,7 +20,9 @@ export function newSaved(w: string): SavedWord {
 
 export function recordResult(s: SavedWord, ok: boolean): SavedWord {
   const now = Date.now();
-  if (!ok) return { ...s, box: 1, due: now + INTERVALS[0] * DAY, lapses: s.lapses + 1 };
+  if (!ok) {
+    return { ...s, box: 1, due: now + INTERVALS[0] * DAY, lapses: s.lapses + 1 };
+  }
   const box = Math.min(s.box + 1, 7);
   const due = box >= 7 ? now + 3650 * DAY : now + INTERVALS[box - 1] * DAY;
   return { ...s, box, due };
@@ -40,7 +42,7 @@ export function faNum(n: number | string): string {
 }
 
 export function dueLabel(s: SavedWord): string {
-  if (s.box >= 7) return "یادگرفته ✓";
+  if (s.box >= 7) return "یادگرفته";
   const diff = s.due - Date.now();
   if (diff <= 0) return "مرور: امروز";
   const days = Math.ceil(diff / DAY);
@@ -48,7 +50,7 @@ export function dueLabel(s: SavedWord): string {
 }
 
 export function nextIntervalLabel(s: SavedWord): string {
-  if (s.box >= 7) return "پایان مسیر 🎉";
+  if (s.box >= 7) return "پایان مسیر";
   if (s.box === 0) return "امروز (واژه‌ی تازه)";
   return `${faNum(INTERVALS[Math.min(s.box, INTERVALS.length) - 1])} روز دیگر`;
 }
