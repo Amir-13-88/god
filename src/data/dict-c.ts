@@ -685,4 +685,280 @@ transform|v.|to change completely|تبدیل کردن|Technology transformed our
 transmit|v.|to send out|منتقل کردن|Radio transmits signals.|/trænzˈmɪt/|C1
 ultimate|adj.|the last and greatest|نهایی|His ultimate goal is a medal.|/ˈʌltɪmət/|C1
 vulnerable|adj.|easily hurt|آسیب‌پذیر|Children are vulnerable to cold.|/ˈvʌlnərəbl/|C1
+achieve|v.|to succeed in doing something|دست یافتن|She achieved her goal at last.|/əˈtʃiːv/|B1
+acquire|v.|to get or obtain|به دست آوردن|He acquired a new skill.|/əˈkwaɪə/|B2
+adapt|v.|to change to fit new conditions|سازگار شدن|Plants adapt to their environment.|/əˈdæpt/|B2
+adequate|adj.|enough for a purpose|کافی|The food supply is adequate.|/ˈædɪkwət/|B2
+adjust|v.|to change slightly|تنظیم کردن|Adjust the volume, please.|/əˈdʒʌst/|B2
+advance|n.|forward movement|پیشرفت|Science made a great advance.|/ədˈvɑːns/|B1
+affect|v.|to influence|تأثیر گذاشتن|Weather affects my mood.|/əˈfekt/|B1
+afford|v.|to have enough money for|توانایی مالی داشتن|I can't afford a new car.|/əˈfɔːd/|B1
+agriculture|n.|farming|کشاورزی|Agriculture feeds the nation.|/ˈæɡrɪkʌltʃə/|B2
+alternative|n.|another choice|جایگزین|We need an alternative plan.|/ɔːlˈtɜːnətɪv/|B1
+amaze|v.|to surprise greatly|شگفت‌زده کردن|The magic show amazed us.|/əˈmeɪz/|A2
+ambitious|adj.|having a strong desire to succeed|بلندپرواز|She is very ambitious.|/æmˈbɪʃəs/|B2
+analyze|v.|to examine in detail|تحلیل کردن|Scientists analyze the data.|/ˈænəlaɪz/|B2
+ancient|adj.|very old|باستانی|They visited ancient ruins.|/ˈeɪnʃənt/|B1
+annual|adj.|happening once a year|سالانه|The annual meeting is in May.|/ˈænjuəl/|B1
+anxious|adj.|worried|نگران|He felt anxious before the test.|/ˈæŋkʃəs/|B2
+apparent|adj.|clear; easy to see|آشکار|The difference is apparent.|/əˈpærənt/|B2
+appetite|n.|the desire to eat|اشتها|Exercise gave me an appetite.|/ˈæpɪtaɪt/|B2
+approach|v.|to come near|نزدیک شدن|Approach the door slowly.|/əˈprəʊtʃ/|B1
+approve|v.|to agree officially|تأیید کردن|They approved the plan.|/əˈpruːv/|B1
+argument|n.|a disagreement|بحث؛ استدلال|They had a long argument.|/ˈɑːɡjumənt/|B1
+arrange|v.|to put in order|مرتب کردن|She arranged the flowers.|/əˈreɪndʒ/|A2
+assess|v.|to judge the value|ارزیابی کردن|Teachers assess students regularly.|/əˈses/|B2
+assist|v.|to help|کمک کردن|Can I assist you?|/əˈsɪst/|B1
+assume|v.|to accept as true without proof|فرض کردن|Don't assume he is late.|/əˈsjuːm/|B2
+attach|v.|to fasten; to connect|ضمیمه کردن|Attach the file to the email.|/əˈtætʃ/|B1
+attempt|v.|to try|تلاش کردن|He attempted the difficult climb.|/əˈtempt/|B1
+attitude|n.|a way of thinking|نگرش|A positive attitude helps.|/ˈætɪtjuːd/|B1
+attract|v.|to draw towards|جذب کردن|Flowers attract bees.|/əˈtrækt/|A2
+avoid|v.|to keep away from|اجتناب کردن|Avoid eating too much sugar.|/əˈvɔɪd/|A2
+aware|adj.|knowing about something|آگاه|Be aware of the risks.|/əˈweə/|A2
+barrier|n.|something that blocks|مانع|Language is a barrier to travel.|/ˈbæriə/|B1
+behalf|n.|as a representative|از طرف|She spoke on behalf of the team.|/bɪˈhɑːf/|B2
+benefit|n.|an advantage|مزیت|Regular sleep has many benefits.|/ˈbenɪfɪt/|B1
+blame|v.|to say someone caused a problem|سرزنش کردن|Don't blame me for this.|/bleɪm/|B1
+bond|n.|a strong connection|پیوند|There is a strong bond between them.|/bɒnd/|B2
+boost|v.|to increase|تقویت کردن|Good news boosted our spirits.|/buːst/|B2
+boundary|n.|a line that marks a limit|مرز|The river forms the boundary.|/ˈbaʊndri/|B2
+broad|adj.|wide|گسترده|The river is very broad here.|/brɔːd/|B1
+capable|adj.|able to do something|توانا|She is capable of great things.|/ˈkeɪpəbl/|B1
+capture|v.|to catch|گرفتن|The photo captured the moment.|/ˈkæptʃə/|B2
+challenge|n.|something difficult to do|چالش|Learning a language is a challenge.|/ˈtʃælɪndʒ/|B1
+characteristic|n.|a typical feature|ویژگی|Kindness is her main characteristic.|/ˌkærəktəˈrɪstɪk/|B2
+circumstance|n.|a condition of a situation|شرایط|Under the circumstances, we agreed.|/ˈsɜːkəmstəns/|B2
+claim|v.|to say something is true|ادعا کردن|He claims to be innocent.|/kleɪm/|B1
+clarify|v.|to make clear|شفاف کردن|Please clarify your point.|/ˈklærəfaɪ/|B2
+commit|v.|to promise to do|متعهد شدن|We committed to the project.|/kəˈmɪt/|B2
+communicate|v.|to share information|ارتباط برقرار کردن|We communicate by email.|/kəˈmjuːnɪkeɪt/|A2
+community|n.|people living in one area|جامعه|Our community is friendly.|/kəˈmjuːnəti/|A2
+compare|v.|to look at differences|مقایسه کردن|Compare the two pictures.|/kəmˈpeə/|A2
+complain|v.|to say you are not happy|شکایت کردن|He complained about the noise.|/kəmˈpleɪn/|A2
+complex|adj.|with many parts; difficult|پیچیده|This is a complex problem.|/ˈkɒmpleks/|B1
+concentrate|v.|to focus your attention|تمرکز کردن|Concentrate on your work.|/ˈkɒnsntreɪt/|B1
+concept|n.|an idea|مفهوم|Grasp the basic concept first.|/ˈkɒnsept/|B1
+conclude|v.|to end; to decide|نتیجه گرفتن|The meeting concluded at noon.|/kənˈkluːd/|B1
+confidence|n.|belief in yourself|اعتماد به نفس|She spoke with confidence.|/ˈkɒnfɪdəns/|B1
+confirm|v.|to say something is true|تأیید کردن|Please confirm your booking.|/kənˈfɜːm/|B1
+conflict|n.|a serious disagreement|تضاد|They resolved the conflict peacefully.|/ˈkɒnflɪkt/|B1
+consequence|n.|a result|پیامد|Think about the consequences.|/ˈkɒnsɪkwəns/|B1
+considerable|adj.|large in amount|قابل توجه|It took considerable effort.|/kənˈsɪdərəbl/|B2
+consistent|adj.|always the same|سازگار|Be consistent in your practice.|/kənˈsɪstənt/|B2
+constant|adj.|happening all the time|دائمی|He lives in constant pain.|/ˈkɒnstənt/|B1
+consume|v.|to use up; to eat|مصرف کردن|Cars consume a lot of fuel.|/kənˈsjuːm/|B2
+contact|n.|communication|تماس|Keep in contact with me.|/ˈkɒntækt/|A2
+contribute|v.|to give to a common purpose|سهم داشتن|Everyone contributed to the gift.|/kənˈtrɪbjuːt/|B1
+convince|v.|to make someone believe|متقاعد کردن|She convinced me to go.|/kənˈvɪns/|B1
+cope|v.|to deal with a problem|کنار آمدن|He copes well with stress.|/kəʊp/|B2
+crucial|adj.|extremely important|حیاتی|This decision is crucial.|/ˈkruːʃl/|B2
+culture|n.|the way of life of a group|فرهنگ|Every country has its own culture.|/ˈkʌltʃə/|A2
+decline|v.|to refuse politely|رد کردن|She declined the invitation.|/dɪˈklaɪn/|B2
+define|v.|to explain the meaning|تعریف کردن|Define the word clearly.|/dɪˈfaɪn/|B1
+demonstrate|v.|to show clearly|نشان دادن|The experiment demonstrates the theory.|/ˈdemənstreɪt/|B2
+deny|v.|to say something is not true|انکار کردن|He denied the accusation.|/dɪˈnaɪ/|B1
+derive|v.|to come from|گرفته شدن|The word derives from Latin.|/dɪˈraɪv/|B2
+detect|v.|to discover|تشخیص دادن|The device detects heat.|/dɪˈtekt/|B2
+determine|v.|to decide|تعیین کردن|The results determine the winner.|/dɪˈtɜːmɪn/|B1
+develop|v.|to grow or improve|توسعه دادن|The city is developing fast.|/dɪˈveləp/|A2
+devote|v.|to give time to|اختصاص دادن|She devotes time to charity.|/dɪˈvəʊt/|B2
+diminish|v.|to become smaller|کاهش یافتن|His influence diminished over time.|/dɪˈmɪnɪʃ/|C1
+distinct|adj.|clearly different|متمایز|The two styles are distinct.|/dɪˈstɪŋkt/|B2
+distribute|v.|to give out|توزیع کردن|They distributed free food.|/dɪˈstrɪbjuːt/|B1
+diverse|adj.|showing variety|متنوع|The team is very diverse.|/daɪˈvɜːs/|B2
+domestic|adj.|relating to the home|داخلی|They sell in the domestic market.|/dəˈmestɪk/|B2
+dominate|v.|to control|تسلط داشتن|One team dominated the game.|/ˈdɒmɪneɪt/|B2
+dramatic|adj.|sudden and striking|چشمگیر|There was a dramatic change.|/drəˈmætɪk/|B1
+duration|n.|the length of time|مدت|The course has a duration of six weeks.|/djuˈreɪʃn/|B2
+eliminate|v.|to remove completely|حذف کردن|We eliminated all errors.|/ɪˈlɪmɪneɪt/|B2
+emerge|v.|to come out|پدیدار شدن|New facts emerged.|/ɪˈmɜːdʒ/|B2
+emphasize|v.|to give importance to|تأکید کردن|The teacher emphasized practice.|/ˈemfəsaɪz/|B2
+enable|v.|to make possible|ممکن ساختن|The app enables fast learning.|/ɪˈneɪbl/|B2
+encounter|v.|to meet unexpectedly|برخورد کردن|We encountered many problems.|/ɪnˈkaʊntə/|B2
+enhance|v.|to improve|بهبود بخشیدن|Music enhances the mood.|/ɪnˈhɑːns/|B2
+enormous|adj.|very big|عظیم|The task is enormous.|/ɪˈnɔːməs/|B1
+ensure|v.|to make certain|اطمینان حاصل کردن|Ensure the door is locked.|/ɪnˈʃʊə/|B1
+environment|n.|the natural world|محیط زیست|Protect the environment.|/ɪnˈvaɪrənmənt/|A2
+equip|v.|to provide with tools|مجهز کردن|The lab is well equipped.|/ɪˈkwɪp/|B2
+establish|v.|to set up|تأسیس کردن|They established a new school.|/ɪˈstæblɪʃ/|B1
+estimate|v.|to guess the value|تخمین زدن|Estimate the total cost.|/ˈestɪmeɪt/|B1
+evaluate|v.|to judge the worth|ارزیابی کردن|Evaluate the results carefully.|/ɪˈvæljueɪt/|B2
+evidence|n.|facts that prove something|مدرک|There is strong evidence.|/ˈevɪdəns/|B1
+evolve|v.|to develop gradually|تکامل یافتن|Languages evolve over time.|/ɪˈvɒlv/|B2
+exceed|v.|to be more than|فراتر رفتن|Sales exceeded our hopes.|/ɪkˈsiːd/|B2
+exclude|v.|to leave out|حذف کردن|Exclude the extra costs.|/ɪkˈskluːd/|B2
+expand|v.|to become bigger|گسترش دادن|The business expanded quickly.|/ɪkˈspænd/|B1
+expose|v.|to make visible|افشا کردن|The report exposed the truth.|/ɪkˈspəʊz/|B2
+extend|v.|to make longer|تمدید کردن|We extended our stay by a week.|/ɪkˈstend/|B1
+external|adj.|on the outside|خارجی|The walls need external repair.|/ɪkˈstɜːnl/|B2
+extreme|adj.|very great|شدید|Avoid extreme heat.|/ɪkˈstriːm/|B1
+facilitate|v.|to make easier|تسهیل کردن|The guide facilitated our trip.|/fəˈsɪlɪteɪt/|C1
+factor|n.|something that causes a result|عامل|Cost is a major factor.|/ˈfæktə/|B1
+feature|n.|an important part|ویژگی|The phone has many features.|/ˈfiːtʃə/|A2
+flexible|adj.|able to change easily|انعطاف‌پذیر|My schedule is flexible.|/ˈfleksəbl/|B1
+focus|v.|to concentrate|تمرکز کردن|Focus on one task at a time.|/ˈfəʊkəs/|A2
+formal|adj.|official; following rules|رسمی|Wear formal clothes.|/ˈfɔːml/|A2
+framework|n.|a basic structure|چارچوب|This is a useful framework.|/ˈfreɪmwɜːk/|B2
+fundamental|adj.|basic and important|بنیادی|Trust is fundamental to friendship.|/ˌfʌndəˈmentl/|B2
+generate|v.|to produce|تولید کردن|The plan generates income.|/ˈdʒenəreɪt/|B2
+genuine|adj.|real; not fake|اصیل|She showed genuine interest.|/ˈdʒenjuɪn/|B2
+global|adj.|relating to the whole world|جهانی|Climate change is a global issue.|/ˈɡləʊbl/|B1
+gradual|adj.|happening slowly|تدریجی|There was a gradual improvement.|/ˈɡrædʒuəl/|B2
+guarantee|v.|to promise for certain|تضمین کردن|I guarantee you will love it.|/ˌɡærənˈtiː/|B1
+hesitate|v.|to pause before acting|مردد بودن|Don't hesitate to ask.|/ˈhezɪteɪt/|B1
+highlight|v.|to emphasize|برجسته کردن|The report highlights the risks.|/ˈhaɪlaɪt/|B1
+identify|v.|to recognize|شناسایی کردن|Identify the main idea.|/aɪˈdentɪfaɪ/|B1
+ignore|v.|to pay no attention to|نادیده گرفتن|Ignore the noise.|/ɪɡˈnɔː/|A2
+illustrate|v.|to explain with examples|توضیح دادن|The chart illustrates growth.|/ˈɪləstreɪt/|B2
+immediate|adj.|happening at once|فوری|We need an immediate answer.|/ɪˈmiːdiət/|B1
+impact|n.|a strong effect|اثر|The film had a big impact on me.|/ˈɪmpækt/|B1
+imply|v.|to suggest without saying|به طور غیرمستقیم گفتن|Are you implying I lied?|/ɪmˈplaɪ/|B2
+impose|v.|to force on others|تحمیل کردن|They imposed a new tax.|/ɪmˈpəʊz/|B2
+incident|n.|an event, often unpleasant|حادثه|The incident was reported.|/ˈɪnsɪdənt/|B1
+indicate|v.|to show|نشان دادن|The sign indicates the exit.|/ˈɪndɪkeɪt/|B1
+individual|n.|a single person|فرد|Each individual is unique.|/ˌɪndɪˈvɪdʒuəl/|B1
+inevitable|adj.|certain to happen|اجتناب‌ناپذیر|Change is inevitable.|/ɪnˈevɪtəbl/|B2
+influence|v.|to affect|تأثیر گذاشتن|Friends influence your choices.|/ˈɪnfluəns/|B1
+inform|v.|to tell|اطلاع دادن|Please inform us of any change.|/ɪnˈfɔːm/|B1
+initiative|n.|a new plan|ابتکار|They launched a green initiative.|/ɪˈnɪʃətɪv/|B2
+innovative|adj.|new and original|نوآورانه|An innovative solution won the prize.|/ˈɪnəveɪtɪv/|B2
+insight|n.|a deep understanding|بینش|The book offers great insight.|/ˈɪnsaɪt/|B2
+instance|n.|an example|نمونه|For instance, take this case.|/ˈɪnstəns/|B1
+intense|adj.|very strong|شدید|The training was intense.|/ɪnˈtens/|B1
+interact|v.|to act together|تعامل کردن|Students interact in groups.|/ˌɪntərˈækt/|B1
+internal|adj.|on the inside|داخلی|The company faces internal problems.|/ɪnˈtɜːnl/|B2
+interval|n.|a space between two times|فاصله|Trains run at ten-minute intervals.|/ˈɪntəvl/|B2
+invest|v.|to put money in|سرمایه‌گذاری کردن|Invest in your education.|/ɪnˈvest/|B1
+isolate|v.|to separate|جدا کردن|Isolate the infected cells.|/ˈaɪsəleɪt/|B2
+issue|n.|an important topic|مسئله|Discuss the main issue.|/ˈɪʃuː/|B1
+justify|v.|to give a good reason for|توجیه کردن|Can you justify the cost?|/ˈdʒʌstɪfaɪ/|B2
+launch|v.|to start something new|راه‌اندازی کردن|They launched a new product.|/lɔːntʃ/|B1
+legislation|n.|laws|قانون‌گذاری|New legislation protects workers.|/ˌledʒɪsˈleɪʃn/|B2
+liberal|adj.|open to new ideas|لیبرال|A liberal education broadens the mind.|/ˈlɪbərəl/|B2
+likewise|adv.|in the same way|به همین ترتیب|The students worked hard, and the teachers likewise.|/ˈlaɪkwaɪz/|B2
+limit|v.|to restrict|محدود کردن|Limit your screen time.|/ˈlɪmɪt/|A2
+link|v.|to connect|پیوند دادن|The two events are linked.|/lɪŋk/|A2
+locate|v.|to find the position of|جایابی کردن|We located the missing file.|/ləʊˈkeɪt/|B1
+major|adj.|very important|اصلی|Pollution is a major problem.|/ˈmeɪdʒə/|A2
+massive|adj.|very large|عظیم|They built a massive bridge.|/ˈmæsɪv/|B1
+maximum|n.|the greatest amount|حداکثر|The maximum speed is 100.|/ˈmæksɪməm/|B1
+method|n.|a way of doing something|روش|This method works well.|/ˈmeθəd/|A2
+minimum|n.|the smallest amount|حداقل|The minimum age is 18.|/ˈmɪnɪməm/|B1
+minor|adj.|not important|جزئی|It was a minor problem.|/ˈmaɪnə/|B1
+modify|v.|to change slightly|اصلاح کردن|We modified the design.|/ˈmɒdɪfaɪ/|B2
+monitor|v.|to watch carefully|نظارت کردن|Doctors monitor his condition.|/ˈmɒnɪtə/|B1
+motivate|v.|to give someone a reason|انگیزه دادن|Praise motivates children.|/ˈməʊtɪveɪt/|B2
+mutual|adj.|shared by both|متقابل|They have mutual respect.|/ˈmjuːtʃuəl/|B2
+narrow|adj.|small in width|باریک|The road is very narrow.|/ˈnærəʊ/|A2
+negative|adj.|bad; saying no|منفی|Avoid negative thoughts.|/ˈneɡətɪv/|A2
+network|n.|a group of connected things|شبکه|Build a strong network.|/ˈnetwɜːk/|A2
+nevertheless|adv.|however|با این حال|It was hard; nevertheless, we succeeded.|/ˌnevəðəˈles/|B2
+notion|n.|an idea|تصور|The notion of freedom inspires us.|/ˈnəʊʃn/|B2
+obtain|v.|to get|به دست آوردن|Obtain permission first.|/əbˈteɪn/|B1
+occupy|v.|to fill a place|اشغال کردن|Books occupy the shelf.|/ˈɒkjupaɪ/|B2
+occur|v.|to happen|اتفاق افتادن|Accidents occur at night.|/əˈkɜː/|B1
+opportunity|n.|a good chance|فرصت|Don't miss this opportunity.|/ˌɒpəˈtjuːnəti/|A2
+option|n.|a choice|گزینه|You have two options.|/ˈɒpʃn/|A2
+origin|n.|the place where something starts|خاستگاه|The word has a Latin origin.|/ˈɒrɪdʒɪn/|B1
+outcome|n.|a result|نتیجه|We await the outcome.|/ˈaʊtkʌm/|B1
+overall|adj.|including everything|کلی|The overall result was good.|/ˌəʊvərˈɔːl/|B1
+overcome|v.|to defeat|غلبه کردن|She overcame her fear.|/ˌəʊvəˈkʌm/|B1
+perspective|n.|a way of looking at things|دیدگاه|Try a different perspective.|/pəˈspektɪv/|B2
+phase|n.|a stage|مرحله|The project is in its final phase.|/feɪz/|B1
+philosophy|n.|the study of basic ideas|فلسفه|He studied philosophy at university.|/fəˈlɒsəfi/|B2
+policy|n.|a plan of action|سیاست|The new policy starts in June.|/ˈpɒləsi/|B1
+positive|adj.|good; hopeful|مثبت|Keep a positive attitude.|/ˈpɒzətɪv/|A2
+practice|n.|doing something regularly|تمرین|Practice makes perfect.|/ˈpræktɪs/|A2
+primary|adj.|most important|اولیه|Our primary goal is safety.|/ˈpraɪməri/|B1
+procedure|n.|a series of steps|رویه|Follow the correct procedure.|/prəˈsiːdʒə/|B1
+process|n.|a series of actions|فرایند|Learning is a slow process.|/ˈprəʊses/|A2
+professional|adj.|relating to a job|حرفه‌ای|She gave professional advice.|/prəˈfeʃənl/|B1
+progress|n.|forward movement|پیشرفت|You are making good progress.|/ˈprəʊɡres/|A2
+prohibit|v.|to forbid|ممنوع کردن|Smoking is prohibited here.|/prəˈhɪbɪt/|B2
+proportion|n.|a part of a whole|تناسب|A large proportion agreed.|/prəˈpɔːʃn/|B2
+protect|v.|to keep safe|محافظت کردن|Protect your skin from the sun.|/prəˈtekt/|A2
+provide|v.|to give|فراهم کردن|The school provides books.|/prəˈvaɪd/|A2
+publish|v.|to print and sell|منتشر کردن|They publish a monthly magazine.|/ˈpʌblɪʃ/|B1
+purchase|v.|to buy|خریدن|Purchase your ticket online.|/ˈpɜːtʃəs/|B1
+range|n.|a variety|محدوده|We offer a wide range of products.|/reɪndʒ/|A2
+rapid|adj.|very fast|سریع|The city saw rapid growth.|/ˈræpɪd/|B1
+ratio|n.|a comparison of two amounts|نسبت|The ratio is two to one.|/ˈreɪʃiəʊ/|B2
+react|v.|to respond|واکنش نشان دادن|How did she react to the news?|/riˈækt/|A2
+recover|v.|to get better again|بهبود یافتن|He recovered from his illness.|/rɪˈkʌvə/|B1
+reduce|v.|to make smaller|کاهش دادن|Reduce your sugar intake.|/rɪˈdjuːs/|A2
+reform|n.|a change to improve|اصلاحات|Education reform is needed.|/rɪˈfɔːm/|B2
+refuse|v.|to say no|رد کردن|She refused the offer.|/rɪˈfjuːz/|A2
+regard|v.|to think of|در نظر گرفتن|We regard her as a friend.|/rɪˈɡɑːd/|B1
+region|n.|an area of a country|منطقه|The northern region is cold.|/ˈriːdʒən/|A2
+regulate|v.|to control with rules|تنظیم کردن|The government regulates prices.|/ˈreɡjuleɪt/|B2
+reinforce|v.|to make stronger|تقویت کردن|Practice reinforces memory.|/ˌriːɪnˈfɔːs/|B2
+reject|v.|to refuse to accept|رد کردن|They rejected the proposal.|/rɪˈdʒekt/|B1
+relate|v.|to connect|ارتباط داشتن|This relates to our topic.|/rɪˈleɪt/|B1
+release|v.|to set free|آزاد کردن|They released a new album.|/rɪˈliːs/|B1
+relief|n.|a feeling of comfort|تسکین|It was a great relief.|/rɪˈliːf/|B1
+rely|v.|to depend on|تکیه کردن|You can rely on me.|/rɪˈlaɪ/|B1
+remove|v.|to take away|حذف کردن|Remove your shoes, please.|/rɪˈmuːv/|A2
+replace|v.|to put something new instead|جایگزین کردن|Replace the old battery.|/rɪˈpleɪs/|A2
+represent|v.|to stand for|نمایندگی کردن|The symbol represents peace.|/ˌreprɪˈzent/|B1
+respond|v.|to answer|پاسخ دادن|She responded quickly.|/rɪˈspɒnd/|A2
+restore|v.|to bring back|بازیابی کردن|They restored the old building.|/rɪˈstɔː/|B2
+retain|v.|to keep|نگه داشتن|Retain your receipt.|/rɪˈteɪn/|B2
+reveal|v.|to make known|آشکار کردن|The tests revealed the cause.|/rɪˈviːl/|B2
+revenue|n.|income from business|درآمد|Revenue grew this year.|/ˈrevənjuː/|B2
+reverse|v.|to change to the opposite|معکوس کردن|Reverse the decision.|/rɪˈvɜːs/|B2
+revise|v.|to study again; to change|مرور کردن|Revise before the exam.|/rɪˈvaɪz/|B1
+revolution|n.|a big change|انقلاب|The digital revolution changed everything.|/ˌrevəˈluːʃn/|B2
+reward|n.|something given for good work|پاداش|Hard work brings its own reward.|/rɪˈwɔːd/|B1
+risk|n.|the chance of harm|خطر|Take care to avoid risk.|/rɪsk/|A2
+role|n.|a part played|نقش|She played a key role.|/rəʊl/|A2
+route|n.|a way from one place to another|مسیر|Take the shortest route.|/ruːt/|A2
+scheme|n.|an official plan|طرح|A new housing scheme was approved.|/skiːm/|B2
+seek|v.|to look for|جستن|They seek a better life.|/siːk/|B1
+select|v.|to choose|انتخاب کردن|Select your favourite colour.|/sɪˈlekt/|A2
+sequence|n.|the order of things|توالی|Follow the correct sequence.|/ˈsiːkwəns/|B1
+shift|n.|a change|تغییر|There was a shift in opinion.|/ʃɪft/|B1
+significance|n.|importance|اهمیت|The discovery has great significance.|/sɪɡˈnɪfɪkəns/|B2
+similar|adj.|almost the same|مشابه|The two houses are similar.|/ˈsɪmɪlə/|A2
+site|n.|a place|محل|The building site is nearby.|/saɪt/|A2
+solve|v.|to find the answer|حل کردن|We solved the puzzle.|/sɒlv/|A2
+source|n.|where something comes from|منبع|Water is the source of life.|/sɔːs/|A2
+specific|adj.|clear and exact|مشخص|Give me specific details.|/spəˈsɪfɪk/|B1
+stable|adj.|not likely to change|پایدار|The economy is stable.|/ˈsteɪbl/|B2
+strategy|n.|a plan to achieve a goal|راهبرد|We need a new strategy.|/ˈstrætədʒi/|B1
+stress|n.|pressure|استرس|Too much stress is harmful.|/stres/|A2
+structure|n.|the way parts are arranged|ساختار|The essay has a clear structure.|/ˈstrʌktʃə/|B1
+submit|v.|to hand in|ارسال کردن|Submit your form by Friday.|/səbˈmɪt/|B1
+subsequent|adj.|happening after|بعدی|Subsequent events proved him right.|/ˈsʌbsɪkwənt/|B2
+substantial|adj.|large in amount|قابل توجه|They made substantial progress.|/səbˈstænʃl/|B2
+sum|n.|an amount of money|مبلغ|A large sum was donated.|/sʌm/|B1
+support|v.|to help|حمایت کردن|Support your local team.|/səˈpɔːt/|A2
+survive|v.|to stay alive|زنده ماندن|Few survived the storm.|/səˈvaɪv/|B1
+symbol|n.|a sign that represents something|نماد|The dove is a symbol of peace.|/ˈsɪmbl/|B1
+target|n.|something you aim to reach|هدف|We met our sales target.|/ˈtɑːɡɪt/|B1
+task|n.|a piece of work|وظیفه|Finish the task on time.|/tɑːsk/|A2
+technique|n.|a way of doing something|تکنیک|Learn a new technique.|/tekˈniːk/|B1
+technology|n.|machines and tools|فناوری|Technology changes our lives.|/tekˈnɒlədʒi/|A2
+theory|n.|an idea that explains something|نظریه|Einstein proposed a new theory.|/ˈθɪəri/|B1
+thereby|adv.|by that means|بدین ترتیب|He saved money, thereby avoiding debt.|/ˌðeəˈbaɪ/|B2
+threat|n.|a danger|تهدید|Pollution is a threat to health.|/θret/|B1
+thus|adv.|in this way|بنابراین|He worked hard, and thus succeeded.|/ðʌs/|B2
+topic|n.|a subject|موضوع|Choose a topic for your essay.|/ˈtɒpɪk/|A2
+tradition|n.|a custom passed down|سنت|It is a family tradition.|/trəˈdɪʃn/|A2
+transfer|v.|to move to another place|انتقال دادن|Transfer the money to my account.|/trænsˈfɜː/|B1
+trend|n.|a general direction|روند|The trend is towards online shopping.|/trend/|B1
+trigger|v.|to cause to happen|محرک بودن|The news triggered protests.|/ˈtrɪɡə/|B2
+undergo|v.|to experience|تحت بودن|He will undergo surgery.|/ˌʌndəˈɡəʊ/|B2
+undertake|v.|to agree to do|بر عهده گرفتن|She undertook the research.|/ˌʌndəˈteɪk/|B2
+unique|adj.|the only one of its kind|منحصربه‌فرد|Every person is unique.|/juˈniːk/|B1
+vary|v.|to be different|متفاوت بودن|Prices vary from shop to shop.|/ˈveəri/|B1
+vehicle|n.|a machine for transport|وسیله نقلیه|The vehicle broke down.|/ˈviːəkl/|B1
+via|prep.|by way of|از طریق|We travelled via Paris.|/ˈvaɪə/|B2
+violate|v.|to break a rule|نقض کردن|They violated the agreement.|/ˈvaɪəleɪt/|B2
+visible|adj.|able to be seen|قابل دیدن|The stars are visible tonight.|/ˈvɪzəbl/|B1
+volume|n.|the amount of space; loudness|حجم|Turn down the volume.|/ˈvɒljuːm/|B1
+welfare|n.|health and happiness|رفاه|The welfare of children matters.|/ˈwelfeə/|B2
+whereas|conj.|but; while|در حالی که|He likes tea, whereas she likes coffee.|/weərˈæz/|B2
+widespread|adj.|found over a large area|گسترده|The disease is widespread.|/ˈwaɪdspred/|B2
+yield|v.|to produce|بازده داشتن|The farm yields good crops.|/jiːld/|B2
 `;
