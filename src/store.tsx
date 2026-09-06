@@ -33,6 +33,66 @@ function persist(key: string, value: unknown) {
   } catch { /* حافظه پر */ }
 }
 
+/**
+ * تجزیه‌ی انعطاف‌پذیر فایل واژه — چند فرمت رایج را می‌خواند تا وارد کردن
+ * دیکشنری‌های بزرگِ آماده آسان شود:
+ *  1) آرایه‌ی JSON:  [{"w":"book","fa":"کتاب","en":"...","ex":"...","ph":"...","lvl":"A1","pos":"n."}]
+ *  2) آبجکت JSON:    {"book":"کتاب", "water":"آب"}
+ *  3) خطوط متنی:     book - کتاب   |   book: کتاب   |   book = کتاب   |   book<TAB>کتاب
+ */
+export function parseWordList(text: string): CustomInput[] | null {
+  const s = text.trim();
+  if (!s) return null;
+
+  // حالت JSON
+  if (s.startsWith("{") || s.startsWith("[")) {
+    try {
+      const data = JSON.parse(s);
+      if (Array.isArray(data)) {
+        const out: CustomInput[] = [];
+        for (const it of data) {
+          if (typeof it === "string") {
+            const m = it.split(/\s*[-=:\t]\s*/);
+            if (m.length >= 2 && m[0].trim()) out.push({ w: m[0].trim(), fa: m.slice(1).join(" ").trim() });
+          } else if (it && typeof it === "object" && typeof it.w === "string" && it.w.trim()) {
+            out.push({
+              w: it.w.trim(),
+              fa: typeof it.fa === "string" ? it.fa : "",
+              en: typeof it.en === "string" ? it.en : "",
+              ex: typeof it.ex === "string" ? it.ex : "",
+              ph: typeof it.ph === "string" ? it.ph : "",
+              pos: typeof it.pos === "string" ? it.pos : "",
+              lvl: it.lvl,
+            });
+          }
+        }
+        return out.length ? out : null;
+      }
+      if (data && typeof data === "object") {
+        const out: CustomInput[] = [];
+        for (const [k, v] of Object.entries(data)) {
+          if (k.trim()) out.push({ w: k.trim(), fa: typeof v === "string" ? v : "" });
+        }
+        return out.length ? out : null;
+      }
+    } catch {
+      /* JSON نبود — به خطوط متنی می‌افتیم */
+    }
+  }
+
+  // حالت خطوط متنی
+  const out: CustomInput[] = [];
+  for (const raw of s.split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line || line.startsWith("#")) continue;
+    const m = line.match(/^([A-Za-z][A-Za-z'’ \-]{0,40}?)\s*[-=:–—]?\s*\t?\s*(.+)$/);
+    if (m && m[1].trim() && m[2].trim()) {
+      out.push({ w: m[1].trim(), fa: m[2].trim() });
+    }
+  }
+  return out.length ? out : null;
+}
+
 export interface CustomInput {
   w: string;
   fa?: string;
@@ -72,6 +132,7 @@ interface AppCtx {
   speak: (w: string) => void;
   exportDict: () => void;
   importFile: (f: File) => void;
+  downloadTemplate: () => void;
 }
 
 const Ctx = createContext<AppCtx | null>(null);
@@ -289,18 +350,33 @@ export function AppProvider({ children }: { children: ReactNode }) {
     toast("فایل فرهنگ لغت دانلود شد", "ok");
   }, [allEntries, toast]);
 
+  const downloadTemplate = useCallback(() => {
+    const sample = [
+      { w: "book", fa: "کتاب", en: "a set of written pages", ex: "I read a book.", ph: "/bʊk/", lvl: "A1", pos: "n." },
+      { w: "water", fa: "آب", en: "a clear liquid", ex: "Drink some water.", ph: "/ˈwɔːtə/", lvl: "A1", pos: "n." },
+      { w: "run", fa: "دویدن", en: "to move fast on foot", ex: "I run every morning.", ph: "/rʌn/", lvl: "A1", pos: "v." },
+    ];
+    const blob = new Blob([JSON.stringify(sample, null, 1)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "word-list-template.json";
+    a.click();
+    URL.revokeObjectURL(url);
+    toast("فایل نمونه دانلود شد — آن را پر کنید و دوباره وارد کنید", "ok");
+  }, [toast]);
+
   const importFile = useCallback(
     (f: File) => {
       const reader = new FileReader();
       reader.onload = () => {
-        try {
-          const arr = JSON.parse(String(reader.result)) as CustomInput[];
-          if (!Array.isArray(arr)) throw new Error("bad");
-          const n = addCustom(arr, { save: false, prefix: "file" });
-          toast(n > 0 ? `${n} واژه از فایل وارد شد` : "واژه‌ی جدیدی در فایل نبود", n > 0 ? "ok" : "info");
-        } catch {
-          toast("فایل JSON معتبر نیست", "bad");
+        const list = parseWordList(String(reader.result));
+        if (!list) {
+          toast("فرمت فایل شناخته نشد. از JSON یا خطوط «word - معنی» استفاده کنید", "bad");
+          return;
         }
+        const n = addCustom(list, { save: false, prefix: "file" });
+        toast(n > 0 ? `${n} واژه از فایل وارد شد و آفلاین ذخیره شد` : "واژه‌ی جدیدی در فایل نبود", n > 0 ? "ok" : "info");
       };
       reader.readAsText(f);
     },
@@ -315,7 +391,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     detail, openDetail: (e) => setDetail(e), closeDetail: () => setDetail(null),
     toasts, toast,
     online, standalone, installEvt, promptInstall,
-    speak, exportDict, importFile,
+    speak, exportDict, importFile, downloadTemplate,
   };
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

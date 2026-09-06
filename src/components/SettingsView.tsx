@@ -9,7 +9,7 @@ import { Card } from "./ui";
 export default function SettingsView() {
   const {
     online, standalone, installEvt, promptInstall, toast,
-    exportDict, importFile, importedCount, allEntries, baseCount, dictReady,
+    exportDict, importFile, importedCount, allEntries, baseCount, dictReady, downloadTemplate,
   } = useApp();
   const fileRef = useRef<HTMLInputElement>(null);
   const [armed, setArmed] = useState(false);
@@ -106,13 +106,13 @@ export default function SettingsView() {
             </span>
             <span className="flex-1">
               <span className="block font-bold text-[13.5px] text-gold-deep">وارد کردن فایل واژه</span>
-              <span className="block text-[11.5px] text-mute mt-0.5">فایل JSON دانلودشده یا واژه‌های خودتان را وارد کنید</span>
+              <span className="block text-[11.5px] text-mute mt-0.5">فایل آماده یا واژه‌های خودتان — با هر فرمتی</span>
             </span>
           </button>
           <input
             ref={fileRef}
             type="file"
-            accept=".json,application/json"
+            accept=".json,.txt,.csv,text/plain,application/json"
             className="hidden"
             onChange={(e) => {
               const f = e.target.files?.[0];
@@ -120,6 +120,25 @@ export default function SettingsView() {
               e.target.value = "";
             }}
           />
+          <button
+            onClick={downloadTemplate}
+            className="w-full flex items-center gap-3 bg-paper border-2 border-line hover:border-oxford-mid/40 rounded-xl p-3 transition-colors text-start group"
+          >
+            <span className="w-9 h-9 rounded-lg bg-oxford-soft text-oxford grid place-items-center group-hover:scale-105 transition-transform shrink-0">
+              <Icon name="download" className="w-4.5 h-4.5" />
+            </span>
+            <span className="flex-1">
+              <span className="block font-bold text-[12.5px] text-oxford">دانلود فایل نمونه (قالب)</span>
+              <span className="block text-[11px] text-mute mt-0.5">قالب را پر کنید و دوباره وارد کنید</span>
+            </span>
+          </button>
+          <div className="text-[11.5px] text-mute leading-6 bg-paper rounded-xl p-3.5 space-y-1.5">
+            <p className="font-bold text-ink">فرمت‌های پذیرفته‌شده:</p>
+            <p className="ltr-i font-latin text-[11px]">book - کتاب</p>
+            <p className="ltr-i font-latin text-[11px]">water: آب</p>
+            <p className="ltr-i font-latin text-[11px]">run = دویدن</p>
+            <p>یا فایل JSON (آرایه یا آبجکت). واژه‌های واردشده برای همیشه آفلاین می‌مانند.</p>
+          </div>
           <p className="text-[11.5px] text-mute leading-6 flex gap-2">
             <span className="text-oxford-mid shrink-0"><Icon name="info" className="w-4 h-4" /></span>
             دیکشنری پایه {faNum(baseCount)} واژه را به‌شکل آفلاین دارد؛ بقیه‌ی واژه‌های دنیا با یک اتصال کوتاه اینترنت برای همیشه آفلاین می‌شوند.
