@@ -1,1 +1,86 @@
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Lalezar", "Vazirmatn", sans-serif;
+  --font-body: "Vazirmatn", "Segoe UI", Tahoma, sans-serif;
+  --font-latin: "Fraunces", "Georgia", serif;
+
+  --color-paper: #eef2f7;
+  --color-card: #ffffff;
+  --color-ink: #13243a;
+  --color-mute: #5f7089;
+  --color-line: #dbe3ee;
+
+  --color-oxford: #0b2e52;
+  --color-oxford-deep: #071f3a;
+  --color-oxford-mid: #1c4a7e;
+  --color-oxford-soft: #e2eaf5;
+
+  --color-gold: #e8a33d;
+  --color-gold-deep: #a86f14;
+  --color-gold-soft: #fbeed4;
+
+  --color-ok: #178a55;
+  --color-ok-soft: #ddf2e6;
+  --color-bad: #ce4b62;
+  --color-bad-soft: #fbe3e8;
+  --color-warn: #d98a2b;
+}
+
+html { font-family: var(--font-body); }
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  background-image:
+    radial-gradient(52rem 30rem at 110% -10%, rgba(232,163,61,0.10), transparent 60%),
+    radial-gradient(46rem 30rem at -15% 110%, rgba(11,46,82,0.09), transparent 62%),
+    radial-gradient(rgba(11,46,82,0.055) 1px, transparent 1.4px);
+  background-size: auto, auto, 22px 22px;
+  min-height: 100dvh;
+}
+
+.ltr { direction: ltr; unicode-bidi: isolate; text-align: left; }
+.ltr-i { direction: ltr; unicode-bidi: isolate; }
+
+@keyframes rise { from { opacity:0; transform: translateY(14px);} to { opacity:1; transform: translateY(0);} }
+@keyframes pop { 0% { transform: scale(.6);} 60% { transform: scale(1.12);} 100% { transform: scale(1);} }
+@keyframes drift { 0%,100% { transform: translateY(0) rotate(-4deg);} 50% { transform: translateY(-18px) rotate(5deg);} }
+@keyframes toastIn { from { opacity:0; transform: translateY(16px) scale(.94);} to { opacity:1; transform: translateY(0) scale(1);} }
+@keyframes pulseDot { 0%,100% { box-shadow: 0 0 0 0 rgba(232,163,61,.55);} 70% { box-shadow: 0 0 0 9px rgba(232,163,61,0);} }
+@keyframes barGrow { from { width:0; } }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+
+.anim-rise { animation: rise .45s cubic-bezier(.2,.7,.3,1) both; }
+.anim-pop { animation: pop .35s cubic-bezier(.2,.7,.3,1.4) both; }
+.anim-toast { animation: toastIn .3s cubic-bezier(.2,.7,.3,1) both; }
+.pulse-gold { animation: pulseDot 2.2s infinite; }
+.bar-grow { animation: barGrow .9s cubic-bezier(.2,.7,.3,1) both; }
+
+.drift-letter {
+  position: absolute; font-family: var(--font-latin); font-weight: 700;
+  color: rgba(11,46,82,.05); user-select: none; pointer-events: none;
+  animation: drift 11s ease-in-out infinite;
+}
+
+/* اسکلتون بارگذاری دیکشنری */
+.skeleton {
+  background: linear-gradient(90deg, #e8edf5 25%, #f5f8fc 50%, #e8edf5 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 10px;
+}
+
+/* کارت چرخشی سه‌بعدی */
+.persp { perspective: 1400px; }
+.flip-inner { position: relative; transform-style: preserve-3d; transition: transform .55s cubic-bezier(.3,.7,.25,1); }
+.flip-inner.flipped { transform: rotateY(180deg); }
+.flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { transform: rotateY(180deg); position: absolute; inset: 0; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+::selection { background: rgba(232,163,61,.4); }
+
+.word-row { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.word-row:hover { transform: translateY(-2px); box-shadow: 0 10px 26px -12px rgba(11,46,82,.28); border-color: #c3d2e6; }
