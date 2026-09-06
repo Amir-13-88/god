@@ -62,8 +62,9 @@ export function loadBaseEntries(): Promise<Entry[]> {
     import("../data/dict-e"),
     import("../data/dict-f"),
     import("../data/dict-g"),
+    import("../data/dict-h"),
   ])
-    .then(([a, b, c, d, e2, f, g]) => {
+    .then(([a, b, c, d, e2, f, g, h]) => {
       const seen = new Set<string>();
       const out: Entry[] = [];
       for (const e of [
@@ -74,6 +75,7 @@ export function loadBaseEntries(): Promise<Entry[]> {
         ...parse(e2.DICT_E, "e-"),
         ...parse(f.DICT_F, "f-"),
         ...parse(g.DICT_G, "g-"),
+        ...parse(h.DICT_H, "h-"),
       ]) {
         const key = e.w.toLowerCase() + "\u0001" + e.pos;
         if (seen.has(key)) continue;
