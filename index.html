@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+    <link rel="apple-touch-icon" href="icons/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B2E52" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="لایتنر زبان — دیکشنری آفلاین انگلیسی با مثال، تلفظ و مرور ۱، ۳، ۷، ۲۱، ۳۰ و ۹۰ روزه" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,600&display=swap" />
+    </noscript>
+    <title>لایتنر زبان | دیکشنری آفلاین انگلیسی–فارسی</title>
+    <style>
+      #boot { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; background: #eef2f7; font-family: "Vazirmatn","Segoe UI",Tahoma,sans-serif; z-index: 9999; }
+      #boot .bk { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg,#1c4a7e,#071f3a); display: grid; place-items: center; animation: bootPulse 1.4s ease-in-out infinite; }
+      #boot p { margin: 0; color: #5f7089; font-size: 14px; font-weight: 700; }
+      #boot .bar { width: 130px; height: 5px; border-radius: 99px; background: #dbe3ee; overflow: hidden; }
+      #boot .bar i { display: block; height: 100%; width: 40%; border-radius: 99px; background: #e8a33d; animation: bootSlide 1.1s ease-in-out infinite; }
+      @keyframes bootPulse { 0%,100% { transform: scale(1);} 50% { transform: scale(1.08);} }
+      @keyframes bootSlide { 0% { transform: translateX(260%);} 100% { transform: translateX(-260%);} }
+      #bootErr { display: none; text-align: center; color: #13243a; padding: 0 24px; max-width: 340px; line-height: 2; }
+      #bootErr button { margin-top: 10px; border: 0; background: #0b2e52; color: #fff; font: inherit; font-weight: 800; border-radius: 12px; padding: 12px 28px; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <div class="bk">
+          <svg viewBox="0 0 24 24" width="38" height="38" fill="none">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14Z" stroke="#E8A33D" stroke-width="1.9" stroke-linejoin="round"/>
+            <path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5" stroke="#E8A33D" stroke-width="1.9" stroke-linejoin="round"/>
+            <path d="M9.5 11.5 12 7l2.5 4.5M10.3 10h3.4" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p>در حال باز شدن لایتنر زبان…</p>
+        <div class="bar"><i></i></div>
+        <div id="bootErr">
+          <p>فایل‌های برنامه هنوز کامل دریافت نشده‌اند. اتصال را چک کنید و دوباره تلاش کنید — بعد از اولین بار، آفلاین هم کامل کار می‌کند.</p>
+          <button onclick="location.reload()">تلاش دوباره</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.setTimeout(function () {
+        var b = document.getElementById("boot");
+        if (!b || b.dataset.mounted) return;
+        b.querySelector("p").style.display = "none";
+        b.querySelector(".bar").style.display = "none";
+        document.getElementById("bootErr").style.display = "block";
+      }, 10000);
+      window.addEventListener("error", function (e) {
+        var t = e.target;
+        if (t && (t.tagName === "SCRIPT" || t.tagName === "LINK")) {
+          var b = document.getElementById("boot");
+          if (b && !b.dataset.mounted) {
+            b.querySelector("p").style.display = "none";
+            b.querySelector(".bar").style.display = "none";
+            document.getElementById("bootErr").style.display = "block";
+          }
+        }
+      }, true);
+    </script>
+    <script type="module" src="src/main.tsx"></script>
+  </body>
+</html>
