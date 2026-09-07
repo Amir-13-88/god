@@ -5,15 +5,18 @@ import { InstallModal } from "./Header";
 import { INTERVALS, faNum } from "../lib/leitner";
 import { cachedCount } from "../lib/enrich";
 import { Card } from "./ui";
+import AccountView from "./AccountView";
 
 export default function SettingsView() {
   const {
     online, standalone, installEvt, promptInstall, toast,
     exportDict, importFile, importedCount, allEntries, baseCount, dictReady, downloadTemplate,
+    saved, imported,
   } = useApp();
   const fileRef = useRef<HTMLInputElement>(null);
   const [armed, setArmed] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+  const [settingsTab, setSettingsTab] = useState<'main' | 'account'>('main');
 
   const handleClear = () => {
     if (!armed) {
@@ -29,6 +32,42 @@ export default function SettingsView() {
 
   return (
     <div className="space-y-4">
+      {/* تب‌ها */}
+      <div className="flex gap-2 bg-card border-2 border-line rounded-xl p-1.5">
+        <button
+          onClick={() => setSettingsTab('main')}
+          className={`flex-1 flex items-center justify-center gap-2 text-[13px] font-bold rounded-lg py-2.5 transition-all ${
+            settingsTab === 'main' ? 'bg-oxford text-white' : 'text-ink hover:bg-paper'
+          }`}
+        >
+          <Icon name="gear" className="w-4 h-4" />
+          تنظیمات
+        </button>
+        <button
+          onClick={() => setSettingsTab('account')}
+          className={`flex-1 flex items-center justify-center gap-2 text-[13px] font-bold rounded-lg py-2.5 transition-all ${
+            settingsTab === 'account' ? 'bg-oxford text-white' : 'text-ink hover:bg-paper'
+          }`}
+        >
+          <Icon name="user" className="w-4 h-4" />
+          حساب کاربری
+        </button>
+      </div>
+
+      {settingsTab === 'account' && (
+        <AccountView
+          saved={saved}
+          imported={imported}
+          onDataLoaded={(data) => {
+            // TODO: Implement data loading from cloud
+            toast('داده‌ها از ابر بارگذاری شد', 'ok');
+          }}
+          toast={toast}
+        />
+      )}
+
+      {settingsTab === 'main' && (
+      <>
       <Card title="نصب و کارکرد آفلاین" icon="install" tone="#a86f14">
         <div className="space-y-3">
           <div className="grid grid-cols-2 gap-2.5">
@@ -167,6 +206,8 @@ export default function SettingsView() {
       </Card>
 
       {showHelp && <InstallModal onClose={() => setShowHelp(false)} />}
+      </>
+      )}
     </div>
   );
 }

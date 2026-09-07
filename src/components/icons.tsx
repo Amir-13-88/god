@@ -34,6 +34,7 @@ const PATHS: Record<string, ReactNode> = {
   globe: (<><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z" /></>),
   pencil: (<><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3Z" /><path d="m15 5 4 4" /></>),
   flame: (<path d="M12 2c1 4-4 6-4 11a4 4 0 0 0 8 0c0-2-1-3.5-1-3.5s3 1.5 3 4.5a7 7 0 1 1-14 0C4 8 10 6 12 2Z" />),
+  user: (<><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" /></>),
 };
 
 export default function Icon({ name, className = "w-5 h-5", strokeWidth = 2 }: IconProps) {
