@@ -147,6 +147,8 @@ export function loadBaseEntries(): Promise<Entry[]> {
         out.push(e);
       }
       _cache = out.sort((x, y) => x.w.localeCompare(y.w));
+      console.log('📚 Total words loaded:', _cache.length);
+      console.log('📚 Complete entries:', completeEntries.length);
       return _cache;
     })
     .catch((err) => {
