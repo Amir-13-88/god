@@ -70,10 +70,59 @@ export function loadBaseEntries(): Promise<Entry[]> {
     import("../data/dict-m"),
     import("../data/dict-n"),
     import("../data/dict-o"),
+    import("../data/dict-complete"),
+    import("../data/dict-complete-2"),
+    import("../data/dict-complete-3"),
+    import("../data/dict-complete-4"),
   ])
-    .then(([a, b, c, d, e2, f, g, h, i2, j, k, l, m, n, o]) => {
+    .then(([a, b, c, d, e2, f, g, h, i2, j, k, l, m, n, o, complete, complete2, complete3, complete4]) => {
       const seen = new Set<string>();
       const out: Entry[] = [];
+      
+      // تبدیل فرمت کامل به فرمت Entry
+      const completeEntries: Entry[] = [
+        ...complete.COMPLETE_DICTIONARY.map((item: any, i: number) => ({
+          id: `complete-${i}-${item.word.replace(/\s+/g, "-")}`,
+          w: item.word,
+          pos: item.pos,
+          en: item.definition,
+          fa: item.translation,
+          ex: item.example,
+          ph: item.phonetic || "",
+          lvl: item.level,
+        })),
+        ...complete2.COMPLETE_DICTIONARY_2.map((item: any, i: number) => ({
+          id: `complete2-${i}-${item.word.replace(/\s+/g, "-")}`,
+          w: item.word,
+          pos: item.pos,
+          en: item.definition,
+          fa: item.translation,
+          ex: item.example,
+          ph: item.phonetic || "",
+          lvl: item.level,
+        })),
+        ...complete3.COMPLETE_DICTIONARY_3.map((item: any, i: number) => ({
+          id: `complete3-${i}-${item.word.replace(/\s+/g, "-")}`,
+          w: item.word,
+          pos: item.pos,
+          en: item.definition,
+          fa: item.translation,
+          ex: item.example,
+          ph: item.phonetic || "",
+          lvl: item.level,
+        })),
+        ...complete4.COMPLETE_DICTIONARY_4.map((item: any, i: number) => ({
+          id: `complete4-${i}-${item.word.replace(/\s+/g, "-")}`,
+          w: item.word,
+          pos: item.pos,
+          en: item.definition,
+          fa: item.translation,
+          ex: item.example,
+          ph: item.phonetic || "",
+          lvl: item.level,
+        }))
+      ];
+      
       for (const e of [
         ...parse(a.DICT_A, "a-"),
         ...parse(b.DICT_B, "b-"),
@@ -90,6 +139,7 @@ export function loadBaseEntries(): Promise<Entry[]> {
         ...parse(m.DICT_M, "m-"),
         ...parse(n.DICT_N, "n-"),
         ...parse(o.DICT_O, "o-"),
+        ...completeEntries,
       ]) {
         const key = e.w.toLowerCase();
         if (seen.has(key)) continue;
