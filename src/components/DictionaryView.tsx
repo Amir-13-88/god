@@ -72,6 +72,13 @@ export default function DictionaryView() {
 
   return (
     <div className="space-y-4">
+      {/* نمایش تعداد کل واژه‌ها */}
+      <div className="bg-gradient-to-r from-oxford to-oxford-mid text-white rounded-xl px-4 py-3 text-center anim-rise">
+        <div className="text-[13px] font-bold">
+          📚 تعداد کل واژه‌های دیکشنری: <span className="text-gold text-[18px] font-black">{faNum(allEntries.length)}</span> واژه
+        </div>
+      </div>
+
       <div className="flex items-stretch gap-2">
         <div className="flex-1">
           <SearchBox value={q} onChange={(v) => { setQ(v); setLimit(PAGE); }} placeholder="جست‌وجوی واژه یا معنی فارسی…" />
